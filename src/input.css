@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Work+Sans:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-cream text-ink-900 font-sans antialiased;
+    line-height: 1.7;
+  }
+  h1, h2, h3, h4 {
+    @apply font-serif text-ink-900;
+    letter-spacing: -0.03em;
+    line-height: 1.15;
+  }
+  ::selection {
+    @apply bg-sage-200 text-ink-900;
+  }
+  a, button {
+    @apply transition-colors duration-200;
+  }
+  a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible {
+    outline: 2px solid theme("colors.sage.500");
+    outline-offset: 2px;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center gap-2 rounded-full bg-sage-600 px-6 py-3 text-sm font-semibold text-white shadow-card transition-transform duration-200 ease-out hover:-translate-y-0.5 hover:bg-sage-700 active:translate-y-0 active:bg-sage-800;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center gap-2 rounded-full border border-ink-900/15 bg-white px-6 py-3 text-sm font-semibold text-ink-900 transition-transform duration-200 ease-out hover:-translate-y-0.5 hover:border-sage-400 active:translate-y-0;
+  }
+  .section-eyebrow {
+    @apply text-xs font-semibold uppercase tracking-[0.18em] text-sage-700;
+  }
+}
