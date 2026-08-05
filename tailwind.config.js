@@ -11,9 +11,9 @@ module.exports = {
           300: "#9AA3A0",
         },
         cream: {
-          DEFAULT: "#FAF8F4",
+          DEFAULT: "#F7F7F7",
           100: "#FFFFFF",
-          200: "#F3EFE7",
+          200: "#F7F7F7",
         },
         sage: {
           50: "#EFF8F2",
