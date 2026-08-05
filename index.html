@@ -40,36 +40,27 @@
 </header>
 
   <main>
-    <!-- Hero -->
-<section class="relative flex w-full min-h-[calc(100vh-6rem)] items-center overflow-hidden">
+    <!-- Hero (pinned) + Who We Are (scrolls up over it) -->
+<div class="relative">
+<section class="sticky top-0 z-0 flex w-full min-h-[calc(100vh-6rem)] items-center justify-center overflow-hidden px-6 text-center">
   <div class="absolute inset-0">
     <img src="assets/img/clinic/clinic-team-entrance.jpg" alt="Curie Oncology clinical team at the Bangsar South entrance" class="h-full w-full object-cover" />
-    <div class="absolute inset-0 bg-gradient-to-r from-cream-100 via-cream-100/85 to-cream-100/10"></div>
-    <div class="absolute inset-0 bg-gradient-to-t from-cream-100/40 via-transparent to-transparent"></div>
+    <div class="absolute inset-0 bg-gradient-to-b from-ink-900/55 via-ink-900/30 to-ink-900/65"></div>
   </div>
-  <div class="relative mx-auto w-full max-w-[1200px] px-6 py-20">
-    <div class="max-w-xl" data-reveal>
-      <span class="section-eyebrow inline-block rounded-full bg-sage-50 px-4 py-1.5">Excellence in Oncology</span>
-      <h1 class="mt-6 text-4xl sm:text-5xl md:text-[3.5rem]">
-        <span class="block">Compassionate Care,</span>
-        <span class="block text-sage-700">Precision Oncology.</span>
-      </h1>
-      <p class="mt-6 max-w-md text-lg leading-relaxed17 text-ink-700">
-        At Curie Oncology, we bridge the gap between cutting-edge molecular science and deeply personalized patient care.
-      </p>
-      <div class="mt-9 flex flex-wrap items-center gap-4">
-        <a href="#contact" class="btn-primary">
-          Book Appointment
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-        <a href="our-doctors.html" class="btn-secondary">Meet Our Doctors</a>
-      </div>
-    </div>
+  <div class="relative z-10 mx-auto max-w-2xl" data-reveal>
+    <span class="inline-block rounded-full bg-white/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-sage-200">Excellence in Oncology</span>
+    <h1 class="mt-6 text-4xl text-white drop-shadow sm:text-5xl md:text-6xl">
+      <span class="block">Compassionate Care,</span>
+      <span class="block text-sage-300">Precision Oncology.</span>
+    </h1>
+    <p class="mx-auto mt-6 max-w-lg text-lg leading-relaxed17 text-white/85 drop-shadow">
+      At Curie Oncology, we bridge the gap between cutting-edge molecular science and deeply personalized patient care.
+    </p>
   </div>
 </section>
 
 <!-- Who We Are / Mission & Values -->
-<section class="bg-cream-200 py-24">
+<section class="relative z-10 bg-cream-200 py-24">
   <div class="mx-auto max-w-[1200px] px-6">
     <div class="max-w-2xl" data-reveal>
       <h2 class="text-3xl text-sage-700 sm:text-4xl">Who We Are</h2>
@@ -109,6 +100,7 @@
     </div>
   </div>
 </section>
+</div>
 
 <!-- Our Team -->
 <section class="bg-cream-100 py-24">
