@@ -39,9 +39,9 @@ Fields per doctor: Name & photo, Credentials, Schedule, Languages, Appointment t
 | Dr Muhammad Azrif Ahmad Annuar | ✅ `brand_assets/doctors/Dr-Muhammad-Azrif.jpg` | `../localisation/Dr Muhammad Azrif_Profile Full_EN.pdf`, `../from client/Dr Azrif - Website Write Up 210324 Edited.docx` |
 | Dr Lau Fen Nee | ✅ `brand_assets/doctors/Dr-Lau-Fen-Nee.jpg` | `../localisation/Dr Lau Fen_Profile Full_EN.pdf` |
 | Dr Sow Wen Jen (Jenson) | ✅ `brand_assets/doctors/Dr-Sow-Wen-Jen.jpg` | `../localisation/Dr Sow Wen Jensen_Profile Full_EN.pdf`, `../from client/Dr Jenson Sow 250324.docx` |
-| Dr Ho Gwo Fuang | 🚫 no photo on file | `../localisation/Dr Ho Gwo Fuang_Profile Full_EN.pdf` |
+| Dr Ho Gwo Fuang | ✅ `brand_assets/doctors/Dr-Ho-Gwo-Fuang.jpg` | `../localisation/Dr Ho Gwo Fuang_Profile Full_EN.pdf` |
 
-⚠️ Content gap: the reference site shows 7 team members (6 Medical Oncologists, 1 Haematologist, 1 Senior Radiation Oncologist) for the group; only 5 Malaysia-entity doctors have bio material locally, and only 4 of those have photos. Confirm the full current roster with the client before building the team grid.
+⚠️ Content gap: the reference site shows 7 team members (6 Medical Oncologists, 1 Haematologist, 1 Senior Radiation Oncologist) for the group; only 5 Malaysia-entity doctors have bio material locally. All 5 now have photos on file. Confirm the full current roster with the client before building the team grid.
 
 ## 03 · Services
 WP structure: static Pages, or a `Service` CPT if the client wants to add/reorder services without a developer.

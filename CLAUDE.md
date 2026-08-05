@@ -52,10 +52,10 @@ The site should feel considered and alive, not static — but restrained, since 
 - Keep easing consistent site-wide — define it once as a CSS custom property (spring-style, e.g. `cubic-bezier(0.34, 1.56, 0.64, 1)` for entrances, a gentler ease-out for hover states) rather than picking a new curve per component.
 
 ## Brand Assets
-- Always check `brand_assets/` before designing. It contains the logo (PNG + JPG), four doctor headshots, and clinic/team photography.
+- Always check `brand_assets/` before designing. It contains the logo (SVG/PNG/JPG), all five doctor headshots, and clinic/team photography.
 - Use these real assets — do not use placeholder images or invent a wordmark where a real one exists.
 - Colors: derive the palette from the logo's sage-green tagline and the clinic's warm mid-century interior tones (see `DESIGN-BRIEF.md`) — do not invent brand colors, and do not default to the reference site's teal.
-- Content gap: only 4 of the doctors have headshots on file. Flag missing doctor photos/bios to the client rather than fabricating placeholder headshots for real staff.
+- Doctor bios (the written profile text, not photos) are still pending — flag missing bio copy to the client rather than fabricating biographical claims for real staff.
 
 ## Anti-Generic Guardrails
 - **Colors**: no default Tailwind palette (indigo-500, blue-600, etc.). Derive everything from the real sage-green/mustard brand palette.
