@@ -1,10 +1,11 @@
 <header class="sticky top-0 z-50 border-b border-ink-900/[0.06] bg-cream-100/90 backdrop-blur">
   <div class="mx-auto flex h-24 max-w-[1200px] items-center justify-between px-6">
     <a href="index.html" class="flex items-center gap-3">
-      <img src="assets/img/logo/curie-logo.svg" alt="Curie Oncology — Spring Will Come" class="h-[56px] w-auto md:h-[60px]" />
+      <img src="assets/img/logo/curie-logo.svg" alt="Curie Oncology — Spring Will Come" class="h-[62px] w-auto" />
     </a>
 
     <nav class="hidden items-center gap-8 lg:flex" aria-label="Primary">
+      <a href="index.html" class="text-sm text-ink-700 hover:text-sage-700 {{NAV_HOME}}">Home</a>
       <a href="about.html" class="text-sm text-ink-700 hover:text-sage-700 {{NAV_ABOUT}}">About Us</a>
       <a href="our-doctors.html" class="text-sm text-ink-700 hover:text-sage-700 {{NAV_DOCTORS}}">Doctors</a>
       <a href="our-services.html" class="text-sm text-ink-700 hover:text-sage-700 {{NAV_SERVICES}}">Services</a>
@@ -12,18 +13,78 @@
       <a href="index.html#contact" class="text-sm text-ink-700 hover:text-sage-700 {{NAV_CONTACT}}">Contact Us</a>
     </nav>
 
-    <div class="flex items-center gap-5">
-      <div class="hidden items-center gap-1 text-xs font-semibold tracking-wide text-ink-500 md:flex" aria-label="Language switcher">
-        <button type="button" class="rounded px-1.5 py-1 text-sage-700 hover:bg-sage-50">EN</button>
-        <span class="text-ink-300">/</span>
-        <button type="button" class="rounded px-1.5 py-1 hover:bg-sage-50 hover:text-sage-700">BM</button>
-        <span class="text-ink-300">/</span>
-        <button type="button" class="rounded px-1.5 py-1 hover:bg-sage-50 hover:text-sage-700">中文</button>
-      </div>
-      <a href="index.html#contact" class="btn-primary !px-5 !py-2.5 !text-xs">
-        Book Appointment
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-      </a>
-    </div>
+    <button
+      type="button"
+      id="nav-toggle"
+      class="relative flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-ink-900 transition-colors duration-200 hover:bg-sage-50 active:bg-sage-100 lg:hidden"
+      aria-expanded="false"
+      aria-controls="mobile-nav"
+      aria-label="Open menu"
+    >
+      <svg id="nav-icon-open" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      <svg id="nav-icon-close" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="hidden"><path d="M6 6l12 12M18 6 6 18"/></svg>
+    </button>
+  </div>
+
+  <div id="mobile-nav" class="mobile-nav lg:hidden" aria-hidden="true">
+    <nav class="flex max-h-[calc(100vh-6rem)] flex-col overflow-y-auto divide-y divide-ink-900/[0.06] border-t border-ink-900/[0.06] bg-cream-100 px-6 shadow-lift" aria-label="Primary mobile" data-lenis-prevent>
+      <a href="index.html" class="py-4 text-base text-ink-700 hover:text-sage-700 {{NAV_HOME}}">Home</a>
+      <a href="about.html" class="py-4 text-base text-ink-700 hover:text-sage-700 {{NAV_ABOUT}}">About Us</a>
+      <a href="our-doctors.html" class="py-4 text-base text-ink-700 hover:text-sage-700 {{NAV_DOCTORS}}">Doctors</a>
+      <a href="our-services.html" class="py-4 text-base text-ink-700 hover:text-sage-700 {{NAV_SERVICES}}">Services</a>
+      <a href="health-education.html" class="py-4 text-base text-ink-700 hover:text-sage-700 {{NAV_HEALTH}}">Health Education</a>
+      <a href="index.html#contact" class="py-4 text-base text-ink-700 hover:text-sage-700 {{NAV_CONTACT}}">Contact Us</a>
+    </nav>
   </div>
 </header>
+
+<script>
+  (function () {
+    var toggle = document.getElementById('nav-toggle');
+    var panel = document.getElementById('mobile-nav');
+    var iconOpen = document.getElementById('nav-icon-open');
+    var iconClose = document.getElementById('nav-icon-close');
+    if (!toggle || !panel) return;
+
+    function closeMenu() {
+      panel.classList.remove('is-open');
+      panel.setAttribute('aria-hidden', 'true');
+      toggle.setAttribute('aria-expanded', 'false');
+      toggle.setAttribute('aria-label', 'Open menu');
+      iconOpen.classList.remove('hidden');
+      iconClose.classList.add('hidden');
+    }
+
+    function openMenu() {
+      panel.classList.add('is-open');
+      panel.setAttribute('aria-hidden', 'false');
+      toggle.setAttribute('aria-expanded', 'true');
+      toggle.setAttribute('aria-label', 'Close menu');
+      iconOpen.classList.add('hidden');
+      iconClose.classList.remove('hidden');
+    }
+
+    toggle.addEventListener('click', function () {
+      if (panel.classList.contains('is-open')) closeMenu();
+      else openMenu();
+    });
+
+    panel.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', closeMenu);
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') closeMenu();
+    });
+
+    document.addEventListener('click', function (e) {
+      if (!panel.classList.contains('is-open')) return;
+      if (panel.contains(e.target) || toggle.contains(e.target)) return;
+      closeMenu();
+    });
+
+    window.addEventListener('resize', function () {
+      if (window.innerWidth >= 1024) closeMenu();
+    });
+  })();
+</script>

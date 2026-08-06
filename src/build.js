@@ -11,7 +11,7 @@ const shell = read(path.join(PARTIALS, "shell.html"));
 const footer = read(path.join(PARTIALS, "footer.html"));
 const headerTemplate = read(path.join(PARTIALS, "header.html"));
 
-const NAV_KEYS = ["ABOUT", "DOCTORS", "SERVICES", "HEALTH", "CONTACT"];
+const NAV_KEYS = ["HOME", "ABOUT", "DOCTORS", "SERVICES", "HEALTH", "CONTACT"];
 
 const pages = [
   {
@@ -19,7 +19,7 @@ const pages = [
     src: "home.html",
     title: "Curie Oncology — Compassionate Care, Precision Oncology",
     description: "Curie Oncology is a boutique oncology practice in Kuala Lumpur offering precision, multidisciplinary cancer care. Spring Will Come.",
-    nav: null,
+    nav: "HOME",
   },
   {
     file: "about.html",
@@ -49,12 +49,54 @@ const pages = [
     description: "Patient education resources on cancer types, treatment flow, screening, and supportive care from Curie Oncology.",
     nav: "HEALTH",
   },
+  {
+    file: "meet-our-doctors.html",
+    src: "meet-our-doctors.html",
+    title: "Meet Our Doctors — Curie Oncology",
+    description: "Browse Curie Oncology's full team of consultant clinical oncologists and open each doctor's dedicated profile.",
+    nav: "DOCTORS",
+  },
+  {
+    file: "dr-lau-fen-nee.html",
+    src: "dr-lau-fen-nee.html",
+    title: "Dr Lau Fen Nee — Curie Oncology",
+    description: "Dr Lau Fen Nee, Senior Consultant Clinical Oncologist at Curie Oncology, specialising in medical oncology and radiotherapy.",
+    nav: "DOCTORS",
+  },
+  {
+    file: "dr-ho-gwo-fuang.html",
+    src: "dr-ho-gwo-fuang.html",
+    title: "Dr. Ho Gwo Fuang — Curie Oncology",
+    description: "Dr. Ho Gwo Fuang, Senior Consultant Clinical Oncologist at Curie Oncology, specialising in gastrointestinal cancers.",
+    nav: "DOCTORS",
+  },
+  {
+    file: "dr-sow-wen-jen.html",
+    src: "dr-sow-wen-jen.html",
+    title: "Dr Sow Wen Jen (Jenson) — Curie Oncology",
+    description: "Dr Sow Wen Jen (Jenson), Consultant Clinical Oncologist at Curie Oncology, specialising in gastrointestinal cancers.",
+    nav: "DOCTORS",
+  },
+  {
+    file: "dato-dr-fuad-ismail.html",
+    src: "dato-dr-fuad-ismail.html",
+    title: "Dato' Dr Fuad Ismail — Curie Oncology",
+    description: "Dato' Dr Fuad Ismail, Visiting Senior Consultant Clinical Oncologist at Curie Oncology, specialising in breast, cervical, and colorectal cancers.",
+    nav: "DOCTORS",
+  },
+  {
+    file: "dr-muhammad-azrif.html",
+    src: "dr-muhammad-azrif.html",
+    title: "Dr Muhammad Azrif — Curie Oncology",
+    description: "Dr Muhammad Azrif, Visiting Senior Consultant Clinical Oncologist at Curie Oncology, specialising in radiation oncology.",
+    nav: "DOCTORS",
+  },
 ];
 
 for (const page of pages) {
   let header = headerTemplate;
   for (const key of NAV_KEYS) {
-    header = header.replace(`{{NAV_${key}}}`, key === page.nav ? "font-semibold text-sage-700" : "");
+    header = header.replaceAll(`{{NAV_${key}}}`, key === page.nav ? "font-semibold text-sage-700" : "");
   }
 
   const content = read(path.join(PAGES, page.src));
