@@ -77,6 +77,17 @@
     transform: translateY(0);
   }
 
+  /* Pure dissolve variant of the above — opacity only, no rise. For imagery
+     (a "dissolve" is a cross-fade in film terms, not a slide-and-fade). */
+  [data-intro-fade] {
+    opacity: 0;
+    transition: opacity 1.4s ease-out;
+    transition-delay: calc(var(--intro-delay, 0) * 1ms);
+  }
+  [data-intro-fade].is-revealed {
+    opacity: 1;
+  }
+
   /* Doctor card "Highlights" accordion */
   .quick-peek-panel {
     max-height: 0;
@@ -143,6 +154,10 @@
     [data-intro] {
       opacity: 1;
       transform: none;
+      transition: none;
+    }
+    [data-intro-fade] {
+      opacity: 1;
       transition: none;
     }
     .parallax-bg {
