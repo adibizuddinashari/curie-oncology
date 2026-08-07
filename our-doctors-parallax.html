@@ -1,0 +1,739 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Doctors (Classic) - Curie Oncology</title>
+  <meta name="description" content="Meet Curie Oncology's team of consultant clinical oncologists in Kuala Lumpur." />
+  <link rel="icon" href="assets/img/logo/curie-logo-mark.png" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="sticky top-0 z-50 border-b border-ink-900/[0.06] bg-cream-100/90 backdrop-blur transition-transform duration-300 ease-in-out">
+  <div class="mx-auto flex h-24 max-w-[1200px] items-center justify-between px-6">
+    <a href="index.html" class="flex items-center gap-3">
+      <img src="assets/img/logo/curie-logo.svg" alt="Curie Oncology - Spring Will Come" class="h-[62px] w-auto" />
+    </a>
+
+    <nav class="hidden items-center gap-8 lg:flex" aria-label="Primary">
+      <a href="index.html" class="text-sm text-ink-700 hover:text-sage-700 ">Home</a>
+      <a href="about.html" class="text-sm text-ink-700 hover:text-sage-700 ">About Us</a>
+      <a href="our-doctors.html" class="text-sm text-ink-700 hover:text-sage-700 font-semibold text-sage-700">Doctors</a>
+      <a href="our-services.html" class="text-sm text-ink-700 hover:text-sage-700 ">Services</a>
+      <a href="health-education.html" class="text-sm text-ink-700 hover:text-sage-700 ">Health Education</a>
+      <a href="index.html#contact" class="text-sm text-ink-700 hover:text-sage-700 ">Contact Us</a>
+    </nav>
+
+    <button
+      type="button"
+      id="nav-toggle"
+      class="relative flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-ink-900 transition-colors duration-200 hover:bg-sage-50 active:bg-sage-100 lg:hidden"
+      aria-expanded="false"
+      aria-controls="mobile-nav"
+      aria-label="Open menu"
+    >
+      <svg id="nav-icon-open" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      <svg id="nav-icon-close" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="hidden"><path d="M6 6l12 12M18 6 6 18"/></svg>
+    </button>
+  </div>
+
+  <div id="mobile-nav" class="mobile-nav lg:hidden" aria-hidden="true">
+    <nav class="flex max-h-[calc(100vh-6rem)] flex-col overflow-y-auto divide-y divide-ink-900/[0.06] border-t border-ink-900/[0.06] bg-cream-100 px-6 shadow-lift" aria-label="Primary mobile" data-lenis-prevent>
+      <a href="index.html" class="py-4 text-base text-ink-700 hover:text-sage-700 ">Home</a>
+      <a href="about.html" class="py-4 text-base text-ink-700 hover:text-sage-700 ">About Us</a>
+      <a href="our-doctors.html" class="py-4 text-base text-ink-700 hover:text-sage-700 font-semibold text-sage-700">Doctors</a>
+      <a href="our-services.html" class="py-4 text-base text-ink-700 hover:text-sage-700 ">Services</a>
+      <a href="health-education.html" class="py-4 text-base text-ink-700 hover:text-sage-700 ">Health Education</a>
+      <a href="index.html#contact" class="py-4 text-base text-ink-700 hover:text-sage-700 ">Contact Us</a>
+    </nav>
+  </div>
+</header>
+
+<script>
+  (function () {
+    var toggle = document.getElementById('nav-toggle');
+    var panel = document.getElementById('mobile-nav');
+    var iconOpen = document.getElementById('nav-icon-open');
+    var iconClose = document.getElementById('nav-icon-close');
+    if (!toggle || !panel) return;
+
+    function closeMenu() {
+      panel.classList.remove('is-open');
+      panel.setAttribute('aria-hidden', 'true');
+      toggle.setAttribute('aria-expanded', 'false');
+      toggle.setAttribute('aria-label', 'Open menu');
+      iconOpen.classList.remove('hidden');
+      iconClose.classList.add('hidden');
+    }
+
+    function openMenu() {
+      panel.classList.add('is-open');
+      panel.setAttribute('aria-hidden', 'false');
+      toggle.setAttribute('aria-expanded', 'true');
+      toggle.setAttribute('aria-label', 'Close menu');
+      iconOpen.classList.add('hidden');
+      iconClose.classList.remove('hidden');
+    }
+
+    toggle.addEventListener('click', function () {
+      if (panel.classList.contains('is-open')) closeMenu();
+      else openMenu();
+    });
+
+    panel.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', closeMenu);
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') closeMenu();
+    });
+
+    document.addEventListener('click', function (e) {
+      if (!panel.classList.contains('is-open')) return;
+      if (panel.contains(e.target) || toggle.contains(e.target)) return;
+      closeMenu();
+    });
+
+    window.addEventListener('resize', function () {
+      if (window.innerWidth >= 1024) closeMenu();
+    });
+  })();
+</script>
+
+<script>
+  (function () {
+    // Hide the header on scroll-down, reveal it on scroll-up - skipped
+    // entirely under reduced motion so the nav just stays put as before.
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+    var header = document.querySelector('header');
+    var mobileNav = document.getElementById('mobile-nav');
+    if (!header) return;
+
+    var lastY = window.scrollY;
+    var threshold = 80;
+    var ticking = false;
+
+    function onScroll() {
+      var currentY = window.scrollY;
+      var navOpen = mobileNav && mobileNav.classList.contains('is-open');
+
+      if (navOpen || currentY <= threshold || currentY < lastY) {
+        header.classList.remove('-translate-y-full');
+      } else if (currentY > lastY) {
+        header.classList.add('-translate-y-full');
+      }
+
+      lastY = currentY;
+      ticking = false;
+    }
+
+    window.addEventListener(
+      'scroll',
+      function () {
+        if (!ticking) {
+          window.requestAnimationFrame(onScroll);
+          ticking = true;
+        }
+      },
+      { passive: true }
+    );
+  })();
+</script>
+
+  <main>
+    <!-- Fixed parallax portrait backgrounds -->
+<div class="fixed inset-0 -z-10" aria-hidden="true">
+  <div class="parallax-bg is-active" data-bg="0" style="background-image:url('assets/img/clinic/clinic-team-entrance.jpg')"></div>
+  <div class="parallax-bg" data-bg="1" style="background-image:url('assets/img/doctors/Dr-Lau-Fen-Nee.jpg'); background-position:center 15%;"></div>
+  <div class="parallax-bg" data-bg="2" style="background-image:url('assets/img/doctors/Dr-Sow-Wen-Jen.jpg'); background-position:center 15%;"></div>
+  <div class="parallax-bg" data-bg="3" style="background-image:url('assets/img/doctors/Dr-Ho-Gwo-Fuang.jpg'); background-position:center 15%;"></div>
+  <div class="parallax-bg" data-bg="4" style="background-image:url('assets/img/doctors/Dr-Fuad-Ismail.jpg'); background-position:center 15%;"></div>
+  <div class="parallax-bg" data-bg="5" style="background-image:url('assets/img/doctors/Dr-Muhammad-Azrif.jpg'); background-position:center 15%;"></div>
+  <div class="absolute inset-0 bg-gradient-to-t from-cream-100 via-cream-100/85 to-cream-100/15"></div>
+</div>
+
+<!-- Hero -->
+<section class="relative flex min-h-[calc(100vh-6rem)] items-center justify-center overflow-hidden px-6 text-center">
+  <div id="doctors-hero" class="relative z-10 mx-auto max-w-2xl">
+    <span class="section-eyebrow inline-block rounded-full bg-sage-50 px-4 py-1.5" data-intro>Clinical Excellence</span>
+    <h1 class="mt-6 text-4xl sm:text-5xl md:text-6xl" data-intro>Expert Minds, Compassionate Care.</h1>
+    <p class="mx-auto mt-6 max-w-lg text-lg leading-relaxed17 text-ink-700" data-intro>Meet the consultant clinical oncologists behind Curie Oncology's multidisciplinary approach.</p>
+    <div class="mt-14 flex justify-center text-ink-500" data-intro>
+      <svg class="animate-bounce" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+    </div>
+  </div>
+</section>
+
+<!-- Dr Lau Fen Nee -->
+<section class="doctor-parallax-section relative flex min-h-screen items-center justify-center px-6 py-24 md:justify-end md:px-16 lg:px-24" data-doctor-index="0">
+  <div class="doctor-card w-full max-w-md rounded-xl2 bg-white/95 p-8 shadow-lift backdrop-blur sm:p-10">
+    <div class="flex items-center gap-2 text-sage-700">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 6v6c0 5 3.4 8.7 8 10 4.6-1.3 8-5 8-10V6l-8-4Z"/><path d="m9 12 2 2 4-4"/></svg>
+      <span class="text-xs font-semibold uppercase tracking-wide">Resident Specialist</span>
+    </div>
+    <h2 class="mt-4 text-3xl text-ink-900">Dr Lau Fen Nee</h2>
+    <p class="mt-1 text-sm text-ink-700">Senior Consultant Clinical Oncologist</p>
+    <div class="mt-6">
+      <p class="text-xs font-semibold uppercase tracking-wide text-sage-700">Qualifications</p>
+      <p class="mt-1 text-sm text-ink-700">MBBS (UM), FRCR (UK)</p>
+    </div>
+    <div class="mt-6 rounded-lg bg-sage-50 p-4">
+      <p class="flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-sage-700">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+        Schedule
+      </p>
+      <div class="mt-2 space-y-1 text-sm text-ink-700">
+        <div class="flex justify-between"><span>Monday</span><span>9AM–5PM</span></div>
+        <div class="flex justify-between"><span>Thursday</span><span>9AM–5PM</span></div>
+      </div>
+    </div>
+
+    <button type="button" class="quick-peek-toggle mt-5 flex w-full items-center justify-between rounded-lg bg-sage-50 px-4 py-3 text-xs font-semibold uppercase tracking-wide text-sage-700 transition-colors duration-200 hover:bg-sage-100 active:bg-sage-200" aria-expanded="false" aria-controls="peek-dr-lau-fen-nee">
+      <span class="inline-flex items-center gap-2">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+        Highlights
+      </span>
+      <svg class="peek-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+    </button>
+    <div id="peek-dr-lau-fen-nee" class="quick-peek-panel" aria-hidden="true">
+      <div class="space-y-4 pt-5 text-sm text-ink-700">
+        <div>
+          <p class="text-[11px] font-semibold uppercase tracking-wide text-sage-700">Education</p>
+          <p class="mt-1">FRCR (Clinical Oncology), Royal College of Radiologists, UK - 1999</p>
+        </div>
+        <div>
+          <p class="text-[11px] font-semibold uppercase tracking-wide text-sage-700">Recognition</p>
+          <ul class="mt-1.5 space-y-1.5">
+            <li class="flex gap-2"><span class="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-sage-400"></span><span>Former Head, Dept. of Radiotherapy &amp; Oncology, Institut Kanser Negara</span></li>
+            <li class="flex gap-2"><span class="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-sage-400"></span><span>Chair, National Specialist Register - Clinical Oncology Subcommittee</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <a href="index.html#contact" class="btn-primary mt-7 w-full justify-center">Book Consultation</a>
+    <a href="dr-lau-fen-nee.html" class="mt-3 flex items-center justify-center gap-1 text-sm font-semibold text-sage-700 hover:text-sage-800">
+      View Full Profile
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+  </div>
+</section>
+
+<!-- Dr Sow Wen Jen (Jenson) -->
+<section class="doctor-parallax-section relative flex min-h-screen items-center justify-center px-6 py-24 md:justify-end md:px-16 lg:px-24" data-doctor-index="1">
+  <div class="doctor-card w-full max-w-md rounded-xl2 bg-white/95 p-8 shadow-lift backdrop-blur sm:p-10">
+    <div class="flex items-center gap-2 text-sage-700">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 6v6c0 5 3.4 8.7 8 10 4.6-1.3 8-5 8-10V6l-8-4Z"/><path d="m9 12 2 2 4-4"/></svg>
+      <span class="text-xs font-semibold uppercase tracking-wide">Resident Specialist</span>
+    </div>
+    <h2 class="mt-4 text-3xl text-ink-900">Dr Sow Wen Jen (Jenson)</h2>
+    <p class="mt-1 text-sm text-ink-700">Consultant Clinical Oncologist</p>
+    <div class="mt-6">
+      <p class="text-xs font-semibold uppercase tracking-wide text-sage-700">Qualifications</p>
+      <p class="mt-1 text-sm text-ink-700">MBBS (IMU), MCO (UM)</p>
+    </div>
+    <div class="mt-6 rounded-lg bg-sage-50 p-4">
+      <p class="flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-sage-700">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+        Schedule
+      </p>
+      <div class="mt-2 space-y-1 text-sm text-ink-700">
+        <div class="flex justify-between"><span>Mon</span><span>2–5PM</span></div>
+        <div class="flex justify-between"><span>Tue</span><span>2–5PM</span></div>
+        <div class="flex justify-between"><span>Wed</span><span>9–1PM</span></div>
+        <div class="flex justify-between"><span>Thu</span><span>9–5PM</span></div>
+        <div class="flex justify-between"><span>Fri</span><span>9–5PM</span></div>
+        <div class="flex justify-between"><span>Sat</span><span>9–1PM</span></div>
+      </div>
+    </div>
+
+    <button type="button" class="quick-peek-toggle mt-5 flex w-full items-center justify-between rounded-lg bg-sage-50 px-4 py-3 text-xs font-semibold uppercase tracking-wide text-sage-700 transition-colors duration-200 hover:bg-sage-100 active:bg-sage-200" aria-expanded="false" aria-controls="peek-dr-sow-wen-jen">
+      <span class="inline-flex items-center gap-2">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+        Highlights
+      </span>
+      <svg class="peek-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+    </button>
+    <div id="peek-dr-sow-wen-jen" class="quick-peek-panel" aria-hidden="true">
+      <div class="space-y-4 pt-5 text-sm text-ink-700">
+        <div>
+          <p class="text-[11px] font-semibold uppercase tracking-wide text-sage-700">Education</p>
+          <p class="mt-1">Master of Clinical Oncology, Universiti Malaya Medical Centre (UMMC) - 2018</p>
+        </div>
+        <div>
+          <p class="text-[11px] font-semibold uppercase tracking-wide text-sage-700">Recognition</p>
+          <ul class="mt-1.5 space-y-1.5">
+            <li class="flex gap-2"><span class="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-sage-400"></span><span>Committee Member, Malaysian Oncological Society (since 2013)</span></li>
+            <li class="flex gap-2"><span class="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-sage-400"></span><span>Member, ESMO, ESTRO &amp; IAEA</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <a href="index.html#contact" class="btn-primary mt-7 w-full justify-center">Book Consultation</a>
+    <a href="dr-sow-wen-jen.html" class="mt-3 flex items-center justify-center gap-1 text-sm font-semibold text-sage-700 hover:text-sage-800">
+      View Full Profile
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+  </div>
+</section>
+
+<!-- Dr. Ho Gwo Fuang -->
+<section class="doctor-parallax-section relative flex min-h-screen items-center justify-center px-6 py-24 md:justify-end md:px-16 lg:px-24" data-doctor-index="2">
+  <div class="doctor-card w-full max-w-md rounded-xl2 bg-white/95 p-8 shadow-lift backdrop-blur sm:p-10">
+    <div class="flex items-center gap-2 text-sage-700">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 6v6c0 5 3.4 8.7 8 10 4.6-1.3 8-5 8-10V6l-8-4Z"/><path d="m9 12 2 2 4-4"/></svg>
+      <span class="text-xs font-semibold uppercase tracking-wide">Resident Specialist</span>
+    </div>
+    <h2 class="mt-4 text-3xl text-ink-900">Dr. Ho Gwo Fuang</h2>
+    <p class="mt-1 text-sm text-ink-700">Senior Consultant Clinical Oncologist</p>
+    <div class="mt-6">
+      <p class="text-xs font-semibold uppercase tracking-wide text-sage-700">Qualifications</p>
+      <p class="mt-1 text-sm text-ink-700">MRCP (London), FRCR (UK), MB ChB (UK), BSc (Scotland)</p>
+    </div>
+    <div class="mt-6 rounded-lg bg-sage-50 p-4">
+      <p class="flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-sage-700">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+        Schedule
+      </p>
+      <div class="mt-2 space-y-1 text-sm text-ink-700">
+        <div class="flex justify-between"><span>Tuesday</span><span>9AM–12PM</span></div>
+        <div class="flex justify-between"><span>Wednesday</span><span>9AM–12PM</span></div>
+      </div>
+    </div>
+
+    <button type="button" class="quick-peek-toggle mt-5 flex w-full items-center justify-between rounded-lg bg-sage-50 px-4 py-3 text-xs font-semibold uppercase tracking-wide text-sage-700 transition-colors duration-200 hover:bg-sage-100 active:bg-sage-200" aria-expanded="false" aria-controls="peek-dr-ho-gwo-fuang">
+      <span class="inline-flex items-center gap-2">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+        Highlights
+      </span>
+      <svg class="peek-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+    </button>
+    <div id="peek-dr-ho-gwo-fuang" class="quick-peek-panel" aria-hidden="true">
+      <div class="space-y-4 pt-5 text-sm text-ink-700">
+        <div>
+          <p class="text-[11px] font-semibold uppercase tracking-wide text-sage-700">Education</p>
+          <p class="mt-1">FRCR, Royal College of Radiologists, London, UK - 2005</p>
+        </div>
+        <div>
+          <p class="text-[11px] font-semibold uppercase tracking-wide text-sage-700">Recognition</p>
+          <ul class="mt-1.5 space-y-1.5">
+            <li class="flex gap-2"><span class="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-sage-400"></span><span>Professor &amp; Faculty Member, Universiti Malaya Medical Centre (17 years)</span></li>
+            <li class="flex gap-2"><span class="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-sage-400"></span><span>JCI Outstanding Young Malaysian Award (2009)</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <a href="index.html#contact" class="btn-primary mt-7 w-full justify-center">Book Consultation</a>
+    <a href="dr-ho-gwo-fuang.html" class="mt-3 flex items-center justify-center gap-1 text-sm font-semibold text-sage-700 hover:text-sage-800">
+      View Full Profile
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+  </div>
+</section>
+
+<!-- Dato' Dr Fuad Ismail -->
+<section class="doctor-parallax-section relative flex min-h-screen items-center justify-center px-6 py-24 md:justify-end md:px-16 lg:px-24" data-doctor-index="3">
+  <div class="doctor-card w-full max-w-md rounded-xl2 bg-white/95 p-8 shadow-lift backdrop-blur sm:p-10">
+    <div class="flex items-center gap-2 text-mustard-600">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+      <span class="text-xs font-semibold uppercase tracking-wide">Visiting Specialist</span>
+    </div>
+    <h2 class="mt-4 text-3xl text-ink-900">Dato' Dr Fuad Ismail</h2>
+    <p class="mt-1 text-sm text-ink-700">Senior Consultant Clinical Oncologist</p>
+    <div class="mt-6">
+      <p class="text-xs font-semibold uppercase tracking-wide text-mustard-600">Qualifications</p>
+      <p class="mt-1 text-sm text-ink-700">MD (UKM), FFRRCSI (Ireland), FRCR (UK)</p>
+    </div>
+    <div class="mt-6 rounded-lg bg-mustard-50 p-4">
+      <p class="flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-mustard-600">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+        Schedule
+      </p>
+      <div class="mt-2 space-y-1 text-sm text-ink-700">
+        <div class="flex justify-between"><span>Saturday</span><span>9AM–1PM</span></div>
+      </div>
+    </div>
+
+    <button type="button" class="quick-peek-toggle mt-5 flex w-full items-center justify-between rounded-lg bg-mustard-50 px-4 py-3 text-xs font-semibold uppercase tracking-wide text-mustard-600 transition-colors duration-200 hover:bg-mustard-100 active:bg-mustard-200" aria-expanded="false" aria-controls="peek-dato-dr-fuad-ismail">
+      <span class="inline-flex items-center gap-2">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+        Highlights
+      </span>
+      <svg class="peek-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+    </button>
+    <div id="peek-dato-dr-fuad-ismail" class="quick-peek-panel" aria-hidden="true">
+      <div class="space-y-4 pt-5 text-sm text-ink-700">
+        <div>
+          <p class="text-[11px] font-semibold uppercase tracking-wide text-mustard-600">Education</p>
+          <p class="mt-1">FRCR, Royal College of Radiologists, London, UK - 1996</p>
+        </div>
+        <div>
+          <p class="text-[11px] font-semibold uppercase tracking-wide text-mustard-600">Recognition</p>
+          <ul class="mt-1.5 space-y-1.5">
+            <li class="flex gap-2"><span class="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-mustard-400"></span><span>Professor &amp; Head, Dept. of Radiotherapy &amp; Oncology, UKM Medical Centre</span></li>
+            <li class="flex gap-2"><span class="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-mustard-400"></span><span>National Coordinator, IAEA Regional Cooperative Agreement Project</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <a href="index.html#contact" class="btn-secondary mt-7 w-full justify-center">Book Consultation</a>
+    <a href="dato-dr-fuad-ismail.html" class="mt-3 flex items-center justify-center gap-1 text-sm font-semibold text-mustard-600 hover:text-mustard-700">
+      View Full Profile
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+  </div>
+</section>
+
+<!-- Dr Muhammad Azrif -->
+<section class="doctor-parallax-section relative flex min-h-screen items-center justify-center px-6 py-24 md:justify-end md:px-16 lg:px-24" data-doctor-index="4">
+  <div class="doctor-card w-full max-w-md rounded-xl2 bg-white/95 p-8 shadow-lift backdrop-blur sm:p-10">
+    <div class="flex items-center gap-2 text-mustard-600">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+      <span class="text-xs font-semibold uppercase tracking-wide">Visiting Specialist</span>
+    </div>
+    <h2 class="mt-4 text-3xl text-ink-900">Dr Muhammad Azrif</h2>
+    <p class="mt-1 text-sm text-ink-700">Senior Consultant Clinical Oncologist</p>
+    <div class="mt-6">
+      <p class="text-xs font-semibold uppercase tracking-wide text-mustard-600">Qualifications</p>
+      <p class="mt-1 text-sm text-ink-700">MBBS (London), MRCP, FRCR (UK), CCT (UK), Fellowship Radiation Oncology (Toronto)</p>
+    </div>
+    <div class="mt-6 rounded-lg bg-mustard-50 p-4">
+      <p class="flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-mustard-600">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+        Schedule
+      </p>
+      <div class="mt-2 space-y-1 text-sm text-ink-700">
+        <div class="flex justify-between"><span>Wednesday</span><span>2PM–5PM</span></div>
+      </div>
+    </div>
+
+    <button type="button" class="quick-peek-toggle mt-5 flex w-full items-center justify-between rounded-lg bg-mustard-50 px-4 py-3 text-xs font-semibold uppercase tracking-wide text-mustard-600 transition-colors duration-200 hover:bg-mustard-100 active:bg-mustard-200" aria-expanded="false" aria-controls="peek-dr-muhammad-azrif">
+      <span class="inline-flex items-center gap-2">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+        Highlights
+      </span>
+      <svg class="peek-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+    </button>
+    <div id="peek-dr-muhammad-azrif" class="quick-peek-panel" aria-hidden="true">
+      <div class="space-y-4 pt-5 text-sm text-ink-700">
+        <div>
+          <p class="text-[11px] font-semibold uppercase tracking-wide text-mustard-600">Education</p>
+          <p class="mt-1">Fellowship, Radiation Oncology, University of Toronto, Canada - 2007</p>
+        </div>
+        <div>
+          <p class="text-[11px] font-semibold uppercase tracking-wide text-mustard-600">Recognition</p>
+          <ul class="mt-1.5 space-y-1.5">
+            <li class="flex gap-2"><span class="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-mustard-400"></span><span>President, Malaysian Oncological Society (2018–2021)</span></li>
+            <li class="flex gap-2"><span class="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-mustard-400"></span><span>Consultant Clinical Oncologist, Prince Court Medical Centre &amp; Gleneagles Hospital KL</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <a href="index.html#contact" class="btn-secondary mt-7 w-full justify-center">Book Consultation</a>
+    <a href="dr-muhammad-azrif.html" class="mt-3 flex items-center justify-center gap-1 text-sm font-semibold text-mustard-600 hover:text-mustard-700">
+      View Full Profile
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+  </div>
+</section>
+
+<!-- Contact Banner -->
+<section class="relative bg-sage-800 py-20">
+  <div class="mx-auto max-w-[720px] px-6 text-center" data-reveal>
+    <h2 class="text-3xl text-white sm:text-4xl">Need specialist assistance?</h2>
+    <p class="mt-4 text-lg leading-relaxed17 text-sage-100">Contact our clinic directly to discuss your concerns or schedule a consultation with our oncology team. This is our current confirmed roster - additional specialists may join as we expand.</p>
+    <div class="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
+      <a href="tel:+60128223310" class="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-sage-800 shadow-soft transition-transform duration-200 hover:-translate-y-0.5">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.68 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.32 1.85.55 2.81.68A2 2 0 0 1 22 16.92Z"/></svg>
+        +60 12 822 3310
+      </a>
+      <a href="mailto:hello@curieoncology.my" class="inline-flex items-center gap-2 rounded-full border border-white/30 px-6 py-3 text-sm font-semibold text-white transition-transform duration-200 hover:-translate-y-0.5 hover:bg-white/10">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m4 6 8 6 8-6"/></svg>
+        Email Us
+      </a>
+    </div>
+  </div>
+</section>
+
+<script>
+  (function () {
+    var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var bgs = document.querySelectorAll('.parallax-bg');
+    var sections = document.querySelectorAll('.doctor-parallax-section');
+    var hero = document.getElementById('doctors-hero');
+
+    if (reduceMotion) {
+      document.querySelectorAll('.doctor-card').forEach(function (card) {
+        card.classList.add('is-visible');
+      });
+    }
+
+    // Background switching + card reveal: content changes, not gratuitous motion -
+    // keep this running under reduced motion too (the CSS already drops the fade/slide transitions).
+    var observer = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            var index = Number(entry.target.getAttribute('data-doctor-index'));
+            bgs.forEach(function (bg) {
+              bg.classList.toggle('is-active', Number(bg.getAttribute('data-bg')) === index + 1);
+            });
+            var card = entry.target.querySelector('.doctor-card');
+            if (card) card.classList.add('is-visible');
+          }
+        });
+      },
+      { threshold: 0.35 }
+    );
+
+    sections.forEach(function (section) { observer.observe(section); });
+
+    // Scroll-linked hero parallax fade/translate: skip entirely under reduced motion.
+    if (hero && !reduceMotion) {
+      window.addEventListener(
+        'scroll',
+        function () {
+          var y = window.scrollY;
+          var vh = window.innerHeight;
+          if (y < vh) {
+            hero.style.opacity = String(Math.max(0, 1 - y / (vh * 0.7)));
+            hero.style.transform = 'translateY(' + (-y * 0.4) + 'px)';
+          }
+        },
+        { passive: true }
+      );
+    }
+  })();
+</script>
+
+  </main>
+  <footer class="border-t border-ink-900/[0.06] bg-cream-200">
+  <div class="mx-auto max-w-[1200px] px-8 pb-16">
+    <div class="flex flex-col items-center text-center" data-reveal>
+      <img src="assets/img/logo/curie-logo-stacked.svg" alt="Curie Oncology - Spring Will Come" class="h-[200px] w-auto" />
+    </div>
+
+    <div class="mt-14 grid grid-cols-1 pt-50 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
+      <div>
+        <p class="max-w-xs text-sm leading-relaxed17 text-ink-700">
+          Precision medicine and compassionate cancer care, rooted in Kuala Lumpur.
+        </p>
+        <div class="mt-6 flex items-center gap-3">
+          <a href="#" aria-label="Facebook" class="flex h-10 w-10 items-center justify-center rounded-full bg-white text-ink-700 shadow-soft transition-transform duration-200 hover:-translate-y-0.5 hover:text-sage-700">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94Z"/></svg>
+          </a>
+          <a href="#" aria-label="Instagram" class="flex h-10 w-10 items-center justify-center rounded-full bg-white text-ink-700 shadow-soft transition-transform duration-200 hover:-translate-y-0.5 hover:text-sage-700">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
+          </a>
+          <a href="#" aria-label="YouTube" class="flex h-10 w-10 items-center justify-center rounded-full bg-white text-ink-700 shadow-soft transition-transform duration-200 hover:-translate-y-0.5 hover:text-sage-700">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23 12s0-3.6-.46-5.3a2.9 2.9 0 0 0-2-2C18.9 4.2 12 4.2 12 4.2s-6.9 0-8.54.5a2.9 2.9 0 0 0-2 2C1 8.4 1 12 1 12s0 3.6.46 5.3a2.9 2.9 0 0 0 2 2c1.64.5 8.54.5 8.54.5s6.9 0 8.54-.5a2.9 2.9 0 0 0 2-2C23 15.6 23 12 23 12ZM9.8 15.5V8.5l6.2 3.5-6.2 3.5Z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <p class="text-sm font-semibold text-ink-900">Quick Links</p>
+        <ul class="mt-4 space-y-3 text-sm text-ink-700">
+          <li><a href="about.html" class="hover:text-sage-700">About Us</a></li>
+          <li><a href="our-doctors.html" class="hover:text-sage-700">Our Doctors</a></li>
+          <li><a href="our-services.html" class="hover:text-sage-700">Our Services</a></li>
+          <li><a href="health-education.html" class="hover:text-sage-700">Health Education</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="text-sm font-semibold text-ink-900">Resources</p>
+        <ul class="mt-4 space-y-3 text-sm text-ink-700">
+          <li><a href="#" class="hover:text-sage-700">Privacy Policy</a></li>
+          <li><a href="#" class="hover:text-sage-700">Terms of Use</a></li>
+          <li><a href="#" class="hover:text-sage-700">Disclaimer</a></li>
+        </ul>
+        <p class="mt-3 text-xs italic text-ink-500">Legal copy pending client sign-off.</p>
+      </div>
+
+      <div id="contact">
+        <p class="text-sm font-semibold text-ink-900">Find Us</p>
+        <ul class="mt-4 space-y-3 text-sm leading-relaxed17 text-ink-700">
+          <li>Unit 2-3 &amp; 2-4, Cengild Medical Center Nexus,<br />Jalan Kerinchi Kanan, Bangsar South,<br />59200 Kuala Lumpur</li>
+          <li><a href="tel:+60128223310" class="hover:text-sage-700">+60 12 822 3310</a></li>
+          <li>Mon–Fri: 8:30am–5:30pm<br />Sat: 8:30am–12:30pm</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mt-14 flex flex-col gap-3 border-t border-ink-900/[0.06] pt-8 text-xs text-ink-500 sm:flex-row sm:items-center sm:justify-between">
+      <p>Curie Oncology Sdn Bhd © 2024. All Rights Reserved.</p>
+      <p class="italic">KKLIU / MOH approval notice pending client provision.</p>
+    </div>
+  </div>
+</footer>
+
+<a
+  href="https://wa.me/60128223310"
+  target="_blank"
+  rel="noopener"
+  aria-label="Chat with us on WhatsApp"
+  class="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-sage-600 text-white shadow-floating transition-transform duration-200 ease-out hover:-translate-y-1 hover:bg-sage-700 active:translate-y-0"
+>
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39a9.9 9.9 0 0 0 4.75 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm5.8 14.06c-.24.68-1.4 1.33-1.93 1.4-.49.07-1.1.1-1.78-.11-.41-.13-.94-.3-1.62-.6-2.85-1.23-4.71-4.1-4.85-4.29-.14-.19-1.16-1.54-1.16-2.94 0-1.4.73-2.08.99-2.37.26-.28.57-.35.76-.35.19 0 .38 0 .55.01.18.01.42-.07.65.5.24.58.81 2 .88 2.15.07.14.12.31.02.5-.09.19-.14.31-.28.48-.14.16-.29.36-.42.49-.14.14-.28.29-.12.57.16.28.71 1.17 1.52 1.9 1.05.94 1.93 1.23 2.21 1.37.28.14.44.12.6-.07.16-.19.68-.79.86-1.06.18-.28.36-.23.61-.14.24.09 1.55.73 1.82.87.27.14.44.2.51.32.07.12.07.68-.17 1.36Z"/></svg>
+</a>
+
+<script>
+  (function () {
+    var els = document.querySelectorAll('[data-reveal]');
+    if (!els.length) return;
+
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      els.forEach(function (el) { el.classList.add('is-revealed'); });
+      return;
+    }
+
+    var observer = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-revealed');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.15, rootMargin: '0px 0px -80px 0px' }
+    );
+
+    els.forEach(function (el, i) {
+      el.style.setProperty('--reveal-delay', String((i % 4) * 90));
+      observer.observe(el);
+    });
+  })();
+</script>
+
+<script>
+  (function () {
+    var els = document.querySelectorAll('[data-intro], [data-intro-fade]');
+    if (!els.length) return;
+
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      els.forEach(function (el) { el.classList.add('is-revealed'); });
+      return;
+    }
+
+    els.forEach(function (el, i) {
+      el.style.setProperty('--intro-delay', String(150 + i * 220));
+    });
+
+    // Double rAF ensures the initial (opacity:0) state is painted first,
+    // so adding .is-revealed actually animates instead of snapping in.
+    requestAnimationFrame(function () {
+      requestAnimationFrame(function () {
+        els.forEach(function (el) { el.classList.add('is-revealed'); });
+      });
+    });
+  })();
+</script>
+
+<script>
+  (function () {
+    var toggles = document.querySelectorAll('.quick-peek-toggle');
+    if (!toggles.length) return;
+
+    var pairs = [];
+    toggles.forEach(function (btn) {
+      var panel = document.getElementById(btn.getAttribute('aria-controls'));
+      if (panel) pairs.push({ btn: btn, panel: panel });
+    });
+
+    function closePair(pair) {
+      pair.panel.style.maxHeight = pair.panel.scrollHeight + 'px';
+      requestAnimationFrame(function () {
+        pair.panel.style.maxHeight = '0px';
+      });
+      pair.panel.classList.remove('is-open');
+      pair.btn.setAttribute('aria-expanded', 'false');
+      pair.panel.setAttribute('aria-hidden', 'true');
+    }
+
+    function openPair(pair) {
+      pair.panel.classList.add('is-open');
+      pair.panel.style.maxHeight = pair.panel.scrollHeight + 'px';
+      pair.btn.setAttribute('aria-expanded', 'true');
+      pair.panel.setAttribute('aria-hidden', 'false');
+    }
+
+    pairs.forEach(function (pair) {
+      pair.btn.addEventListener('click', function () {
+        var isOpen = pair.btn.getAttribute('aria-expanded') === 'true';
+
+        // Exclusive accordion: only one card's panel stays expanded at a time.
+        pairs.forEach(function (other) {
+          if (other !== pair && other.btn.getAttribute('aria-expanded') === 'true') {
+            closePair(other);
+          }
+        });
+
+        if (isOpen) closePair(pair);
+        else openPair(pair);
+      });
+
+      pair.panel.addEventListener('transitionend', function (e) {
+        if (e.propertyName === 'max-height' && pair.btn.getAttribute('aria-expanded') === 'true') {
+          pair.panel.style.maxHeight = 'none';
+        }
+      });
+
+      window.addEventListener('resize', function () {
+        if (pair.btn.getAttribute('aria-expanded') === 'true') {
+          pair.panel.style.maxHeight = 'none';
+        }
+      });
+    });
+  })();
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.26/dist/lenis.min.js"></script>
+<script>
+  (function () {
+    // Smooth scroll via Lenis (industry-standard smooth-scroll library) rather
+    // than a hand-rolled version. Wheel/trackpad input is smoothed; touch
+    // devices are left close to native by Lenis's own defaults.
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    if (typeof Lenis === 'undefined') return;
+
+    var lenis = new Lenis({
+      duration: 1.4,
+      easing: function (t) { return 1 - Math.pow(1 - t, 3); },
+    });
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+
+    // Route same-page anchor links (nav links, "#contact", etc.) through Lenis
+    // instead of the browser's native smooth-scroll - the two fighting over
+    // scroll position every frame is what caused the jump above to fail.
+    document.querySelectorAll('a[href*="#"]').forEach(function (link) {
+      link.addEventListener('click', function (e) {
+        var url;
+        try {
+          url = new URL(link.getAttribute('href'), window.location.href);
+        } catch (err) {
+          return;
+        }
+        if (url.pathname !== window.location.pathname || !url.hash) return;
+        var target = document.querySelector(url.hash);
+        if (!target) return;
+        e.preventDefault();
+        lenis.scrollTo(target);
+      });
+    });
+  })();
+</script>
+
+</body>
+</html>

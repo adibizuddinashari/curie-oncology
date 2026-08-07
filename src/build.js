@@ -32,6 +32,13 @@ const pages = [
     file: "our-doctors.html",
     src: "our-doctors.html",
     title: "Our Doctors - Curie Oncology",
+    description: "Meet Curie Oncology's team of consultant clinical oncologists, with a fixed portrait frame that transitions as you scroll.",
+    nav: "DOCTORS",
+  },
+  {
+    file: "our-doctors-parallax.html",
+    src: "our-doctors-parallax.html",
+    title: "Our Doctors (Classic) - Curie Oncology",
     description: "Meet Curie Oncology's team of consultant clinical oncologists in Kuala Lumpur.",
     nav: "DOCTORS",
   },

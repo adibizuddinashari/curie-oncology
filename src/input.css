@@ -122,6 +122,34 @@
     pointer-events: auto;
   }
 
+  /* Doctors split-portrait page — cross-fading fixed frame image + caption */
+  .portrait-frame-img,
+  .portrait-caption-item {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .portrait-frame-img.is-active,
+  .portrait-caption-item.is-active {
+    opacity: 1;
+  }
+
+  /* Doctors split-portrait page — the card paired with the active portrait
+     pops into its own highlighted "card", inactive cards sit flat on the page */
+  .doctor-detail-card {
+    @apply rounded-xl2 border border-transparent p-8 lg:p-10;
+    transform: scale(0.98);
+    transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1), background-color 0.5s ease-out, border-color 0.5s ease-out;
+  }
+  .doctor-detail-card.is-active-card {
+    @apply border-sage-200 bg-white shadow-floating;
+    transform: scale(1);
+  }
+  .doctor-detail-card--mustard.is-active-card {
+    @apply border-mustard-200;
+  }
+
   /* Doctors page — fixed parallax portrait backgrounds */
   .parallax-bg {
     position: fixed;
@@ -161,6 +189,14 @@
       transition: none;
     }
     .parallax-bg {
+      transition: none;
+    }
+    .portrait-frame-img,
+    .portrait-caption-item {
+      transition: none;
+    }
+    .doctor-detail-card {
+      transform: none;
       transition: none;
     }
     .mobile-nav {
