@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "build:pages": "node src/build.js",
-    "build:css": "tailwindcss -i src/input.css -o assets/css/style.css --minify",
+    "build:css": "tailwindcss -i src/input.css -o assets/css/style.css",
     "build": "npm run build:pages && npm run build:css",
     "watch:css": "tailwindcss -i src/input.css -o assets/css/style.css --watch"
   },
