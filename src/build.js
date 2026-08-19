@@ -45,15 +45,15 @@ const pages = [
   {
     file: "our-services.html",
     src: "our-services.html",
-    title: "Our Services - Curie Oncology",
-    description: "Comprehensive oncology services from outpatient consultation to chemo day care, molecular testing, and patient assistance.",
+    title: "Oncology Services - Curie Oncology",
+    description: "Curie Oncology's clinical and diagnostic services, from chemotherapy infusion and radiation therapy to molecular testing and clinical trials.",
     nav: "SERVICES",
   },
   {
     file: "health-education.html",
     src: "health-education.html",
     title: "Health Education - Curie Oncology",
-    description: "Patient education resources on cancer types, treatment flow, screening, and supportive care from Curie Oncology.",
+    description: "Patient education guides on cancer recovery, cancer therapy, prevention, and everyday tips for people living with cancer.",
     nav: "HEALTH",
   },
   {
@@ -96,6 +96,13 @@ const pages = [
     src: "dr-muhammad-azrif.html",
     title: "Dr Muhammad Azrif - Curie Oncology",
     description: "Dr Muhammad Azrif, Visiting Senior Consultant Clinical Oncologist at Curie Oncology, specialising in radiation oncology.",
+    nav: "DOCTORS",
+  },
+  {
+    file: "dr-tan-ai-lian.html",
+    src: "dr-tan-ai-lian.html",
+    title: "Dr Tan Ai Lian - Curie Oncology",
+    description: "Dr Tan Ai Lian, Clinical Oncologist, sees patients at Bagan Specialist Centre in Penang.",
     nav: "DOCTORS",
   },
 ];
