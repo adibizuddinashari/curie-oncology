@@ -1542,17 +1542,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   border-top-width: 1px;
 }
 
-.border-dashed{
-  border-style: dashed;
-}
-
 .border-ink-300{
   --tw-border-opacity: 1;
   border-color: rgb(154 163 160 / var(--tw-border-opacity, 1));
-}
-
-.border-ink-900\/15{
-  border-color: rgb(31 42 40 / 0.15);
 }
 
 .border-ink-900\/\[0\.06\]{
@@ -2168,6 +2160,11 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 
 .hover\:bg-white\/10:hover{
   background-color: rgb(255 255 255 / 0.1);
+}
+
+.hover\:text-mustard-600:hover{
+  --tw-text-opacity: 1;
+  color: rgb(143 101 25 / var(--tw-text-opacity, 1));
 }
 
 .hover\:text-mustard-700:hover{
