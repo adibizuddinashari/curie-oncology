@@ -1123,6 +1123,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   aspect-ratio: 4/5;
 }
 
+.aspect-square{
+  aspect-ratio: 1 / 1;
+}
+
 .h-1{
   height: 0.25rem;
 }
@@ -2273,10 +2277,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 
   .sm\:flex-row{
     flex-direction: row;
-  }
-
-  .sm\:items-end{
-    align-items: flex-end;
   }
 
   .sm\:items-center{
