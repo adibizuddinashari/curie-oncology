@@ -9,6 +9,9 @@
 }
 
 @layer base {
+  html {
+    font-size: 112.5%; /* 18px base (was 16px) - scales all rem-based type/spacing uniformly */
+  }
   @media (prefers-reduced-motion: no-preference) {
     html {
       scroll-behavior: smooth;

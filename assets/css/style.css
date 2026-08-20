@@ -556,6 +556,11 @@ video {
   display: none;
 }
 
+html {
+  font-size: 112.5%;
+  /* 18px base (was 16px) - scales all rem-based type/spacing uniformly */
+}
+
 @media (prefers-reduced-motion: no-preference) {
   html {
     scroll-behavior: smooth;
@@ -938,10 +943,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   bottom: -1.25rem;
 }
 
-.-bottom-6{
-  bottom: -1.5rem;
-}
-
 .-left-\[27px\]{
   left: -27px;
 }
@@ -1097,6 +1098,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 
 .hidden{
   display: none;
+}
+
+.aspect-\[16\/10\]{
+  aspect-ratio: 16/10;
 }
 
 .aspect-\[21\/9\]{
@@ -2239,10 +2244,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 
 @media (min-width: 640px){
-  .sm\:left-8{
-    left: 2rem;
-  }
-
   .sm\:max-w-xs{
     max-width: 20rem;
   }
