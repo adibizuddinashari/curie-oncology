@@ -105,6 +105,13 @@ const pages = [
     description: "Dr Tan Ai Lian, Clinical Oncologist, sees patients at Bagan Specialist Centre in Penang.",
     nav: "DOCTORS",
   },
+  {
+    file: "dr-yeoh-chit-cheng.html",
+    src: "dr-yeoh-chit-cheng.html",
+    title: "Dr Yeoh Chit Cheng - Curie Oncology",
+    description: "Dr Yeoh Chit Cheng at Curie Oncology - full profile details pending.",
+    nav: "DOCTORS",
+  },
 ];
 
 for (const page of pages) {
