@@ -4,6 +4,19 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        // Curie brand guidelines palette (matches Paper page B tokens)
+        moss: "#173325",        // Midnight Moss
+        forest: "#2F5C46",      // Deep Forest
+        eucalyptus: { DEFAULT: "#598771", text: "#4B7260" },
+        curie: "#86C39D",       // Curie Green
+        seafoam: "#B5D9C4",
+        frost: "#E5F2EC",
+        warm: "#F7F4EF",        // Warm Grey
+        mist: "#F4F7F5",        // Neutral Grey
+        body: "#4E4E4E",        // Text (web)
+        clay: { DEFAULT: "#C87D65", text: "#A06451" },
+        honey: { DEFAULT: "#DDA76A", text: "#896842" },
+        field: "#7B9385",       // input border
         ink: {
           900: "#1F2A28",
           700: "#3A4744",
@@ -50,7 +63,9 @@ module.exports = {
       },
       fontFamily: {
         serif: ["Fraunces", "Georgia", "serif"],
-        sans: ["Work Sans", "sans-serif"],
+        // TT Norms Pro is the brand typeface. It is NOT bundled (desktop licence only);
+        // it renders where installed, otherwise falls back to Outfit (free, similar geometry).
+        sans: ['"TT Norms Pro"', "Outfit", "system-ui", "sans-serif"],
       },
       boxShadow: {
         soft: "0 2px 8px -2px rgba(31, 42, 40, 0.08), 0 8px 24px -8px rgba(31, 42, 40, 0.10)",
@@ -60,6 +75,9 @@ module.exports = {
       },
       letterSpacing: {
         tightest: "-0.03em",
+        body: "0.05em",
+        heading: "0.08em",
+        label: "0.16em",
       },
       lineHeight: {
         relaxed17: "1.7",

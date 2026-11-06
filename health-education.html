@@ -3,31 +3,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Health Education - Curie Oncology</title>
+  <title>Resource Centre - Curie Oncology</title>
   <meta name="description" content="Patient education guides on cancer recovery, cancer therapy, prevention, and everyday tips for people living with cancer." />
   <link rel="icon" href="assets/img/logo/curie-logo-mark.png" />
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-  <header class="sticky top-0 z-50 border-b border-ink-900/[0.06] bg-cream-100/90 backdrop-blur transition-transform duration-300 ease-in-out">
-  <div class="mx-auto flex h-24 max-w-[1200px] items-center justify-between px-6">
+  <header class="sticky top-0 z-50 border-b border-moss/[0.08] bg-white/95 backdrop-blur transition-transform duration-300 ease-in-out">
+  <div class="mx-auto flex h-[88px] max-w-[1240px] lg:h-[108px] items-center justify-between px-6">
     <a href="index.html" class="flex items-center gap-3">
-      <img src="assets/img/logo/curie-logo.svg" alt="Curie Oncology - Spring Will Come" class="h-[62px] w-auto" />
+      <img src="assets/img/logo/curie-logo.svg" alt="Curie Oncology - Spring Will Come" class="h-[46px] w-auto lg:h-[52px]" />
     </a>
 
-    <nav class="hidden items-center gap-8 lg:flex" aria-label="Primary">
-      <a href="index.html" class="text-sm text-ink-700 hover:text-sage-700 ">Home</a>
-      <a href="about.html" class="text-sm text-ink-700 hover:text-sage-700 ">About Us</a>
-      <a href="meet-our-doctors.html" class="text-sm text-ink-700 hover:text-sage-700 ">Doctors</a>
-      <a href="our-services.html" class="text-sm text-ink-700 hover:text-sage-700 ">Oncology Services</a>
-      <a href="health-education.html" class="text-sm text-ink-700 hover:text-sage-700 font-semibold text-sage-700">Health Education</a>
-      <a href="index.html#contact" class="text-sm text-ink-700 hover:text-sage-700 ">Contact Us</a>
+    <nav class="hidden items-center gap-5 lg:flex xl:gap-7" aria-label="Primary">
+      <a href="index.html" class="whitespace-nowrap text-xs font-medium uppercase tracking-body text-body hover:text-forest ">Home</a>
+      <a href="about.html" class="whitespace-nowrap text-xs font-medium uppercase tracking-body text-body hover:text-forest ">About Us</a>
+      <a href="meet-our-doctors.html" class="whitespace-nowrap text-xs font-medium uppercase tracking-body text-body hover:text-forest ">Doctors</a>
+      <a href="our-services.html" class="whitespace-nowrap text-xs font-medium uppercase tracking-body text-body hover:text-forest ">Oncology Services</a>
+      <a href="health-education.html" class="whitespace-nowrap text-xs font-medium uppercase tracking-body text-body hover:text-forest !text-forest">Resource Centre</a>
+      <a href="index.html#contact" class="whitespace-nowrap text-xs font-medium uppercase tracking-body text-body hover:text-forest ">Contact Us</a>
+      <a href="index.html#contact" class="btn-primary ml-2 h-[46px] whitespace-nowrap px-6 text-xs">Book Appointment</a>
     </nav>
 
     <button
       type="button"
       id="nav-toggle"
-      class="relative flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-ink-900 transition-colors duration-200 hover:bg-sage-50 active:bg-sage-100 lg:hidden"
+      class="relative flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-moss transition-colors duration-200 hover:bg-frost active:bg-seafoam lg:hidden"
       aria-expanded="false"
       aria-controls="mobile-nav"
       aria-label="Open menu"
@@ -38,13 +39,14 @@
   </div>
 
   <div id="mobile-nav" class="mobile-nav lg:hidden" aria-hidden="true">
-    <nav class="flex max-h-[calc(100vh-6rem)] flex-col overflow-y-auto divide-y divide-ink-900/[0.06] border-t border-ink-900/[0.06] bg-cream-100 px-6 shadow-lift" aria-label="Primary mobile" data-lenis-prevent>
-      <a href="index.html" class="py-4 text-base text-ink-700 hover:text-sage-700 ">Home</a>
-      <a href="about.html" class="py-4 text-base text-ink-700 hover:text-sage-700 ">About Us</a>
-      <a href="meet-our-doctors.html" class="py-4 text-base text-ink-700 hover:text-sage-700 ">Doctors</a>
-      <a href="our-services.html" class="py-4 text-base text-ink-700 hover:text-sage-700 ">Oncology Services</a>
-      <a href="health-education.html" class="py-4 text-base text-ink-700 hover:text-sage-700 font-semibold text-sage-700">Health Education</a>
-      <a href="index.html#contact" class="py-4 text-base text-ink-700 hover:text-sage-700 ">Contact Us</a>
+    <nav class="flex max-h-[calc(100vh-6rem)] flex-col overflow-y-auto divide-y divide-moss/[0.08] border-t border-moss/[0.08] bg-white px-6 shadow-lift" aria-label="Primary mobile" data-lenis-prevent>
+      <a href="index.html" class="py-4 text-sm font-medium uppercase tracking-body text-body hover:text-forest ">Home</a>
+      <a href="about.html" class="py-4 text-sm font-medium uppercase tracking-body text-body hover:text-forest ">About Us</a>
+      <a href="meet-our-doctors.html" class="py-4 text-sm font-medium uppercase tracking-body text-body hover:text-forest ">Doctors</a>
+      <a href="our-services.html" class="py-4 text-sm font-medium uppercase tracking-body text-body hover:text-forest ">Oncology Services</a>
+      <a href="health-education.html" class="py-4 text-sm font-medium uppercase tracking-body text-body hover:text-forest !text-forest">Resource Centre</a>
+      <a href="index.html#contact" class="py-4 text-sm font-medium uppercase tracking-body text-body hover:text-forest ">Contact Us</a>
+      <div class="py-5"><a href="index.html#contact" class="btn-primary w-full justify-center">Book Appointment</a></div>
     </nav>
   </div>
 </header>
@@ -142,194 +144,180 @@
 </script>
 
   <main>
-    <!-- Hero -->
-<section class="relative overflow-hidden">
-  <div class="absolute inset-0">
-    <img src="assets/img/clinic/nurses-station.webp" alt="Nurses at the Curie Oncology treatment area" class="h-full w-full object-cover" />
-    <div class="absolute inset-0 bg-gradient-to-t from-cream-100 via-cream-100/85 to-cream-100/15"></div>
-  </div>
-  <div class="relative mx-auto max-w-[820px] px-6 py-28 text-center md:py-32">
-    <h1 class="mt-6 text-4xl sm:text-5xl" data-intro>
-      <span class="block">Your Journey Through</span>
-      <span class="block text-sage-700">Cancer Care</span>
-    </h1>
-    <p class="mx-auto mt-6 max-w-lg text-lg leading-relaxed17 text-ink-700" data-intro>Practical, patient-facing guides on recovery, treatment, prevention, and day-to-day life with cancer.</p>
-    <div class="mt-9 flex flex-wrap items-center justify-center gap-4" data-intro>
-      <a href="#topics" class="btn-primary">Explore Resources</a>
-      <a href="index.html#contact" class="btn-secondary">Speak to a Specialist</a>
-    </div>
-  </div>
+    <!-- Hero (Curie SG approach). STOCK PLACEHOLDER photo - replace with a real Curie photo -->
+<section class="page-hero" style="background-image: url('assets/img/stock/hero-learn-hands.jpg');">
+  <h1 data-intro>Resource Centre</h1>
 </section>
 
 <!-- Search / Filter Bar -->
-<section class="border-b border-ink-900/[0.06] bg-cream-100 py-5">
+<section class="border-b border-moss/[0.08] bg-white py-5">
   <div class="mx-auto flex max-w-[1200px] flex-col gap-4 px-6 sm:flex-row sm:items-center sm:justify-between">
     <label class="relative w-full max-w-sm">
-      <svg class="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-ink-300" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
-      <input type="search" placeholder="Search recovery, therapy, prevention..." class="w-full rounded-full border-0 bg-cream-200 py-2.5 pl-11 pr-4 text-sm text-ink-900 placeholder:text-ink-300 focus:ring-2 focus:ring-sage-400" />
+      <svg class="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-seafoam" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+      <input type="search" placeholder="Search recovery, therapy, prevention..." class="w-full rounded-full border-0 bg-warm py-2.5 pl-11 pr-4 text-sm text-moss placeholder:text-seafoam focus:ring-2 focus:ring-curie" />
     </label>
     <div class="flex flex-wrap items-center gap-2">
-      <button type="button" class="rounded-full bg-sage-700 px-4 py-2 text-xs font-semibold text-white">All Resources</button>
-      <button type="button" class="rounded-full bg-cream-200 px-4 py-2 text-xs font-semibold text-ink-700 hover:bg-sage-50 hover:text-sage-700">Cancer Recovery</button>
-      <button type="button" class="rounded-full bg-cream-200 px-4 py-2 text-xs font-semibold text-ink-700 hover:bg-sage-50 hover:text-sage-700">Cancer Therapy</button>
-      <button type="button" class="rounded-full bg-cream-200 px-4 py-2 text-xs font-semibold text-ink-700 hover:bg-sage-50 hover:text-sage-700">Preventions</button>
-      <button type="button" class="rounded-full bg-cream-200 px-4 py-2 text-xs font-semibold text-ink-700 hover:bg-sage-50 hover:text-sage-700">Tips &amp; Strategies</button>
+      <button type="button" class="rounded-full bg-forest px-4 py-2 text-xs font-medium text-white">All Resources</button>
+      <button type="button" class="rounded-full bg-warm px-4 py-2 text-xs font-medium text-body hover:bg-frost hover:text-forest">Cancer Recovery</button>
+      <button type="button" class="rounded-full bg-warm px-4 py-2 text-xs font-medium text-body hover:bg-frost hover:text-forest">Cancer Therapy</button>
+      <button type="button" class="rounded-full bg-warm px-4 py-2 text-xs font-medium text-body hover:bg-frost hover:text-forest">Preventions</button>
+      <button type="button" class="rounded-full bg-warm px-4 py-2 text-xs font-medium text-body hover:bg-frost hover:text-forest">Tips &amp; Strategies</button>
     </div>
   </div>
 </section>
 
 <!-- All Categories -->
-<section id="topics" class="bg-cream-100 py-24">
+<section id="topics" class="bg-white py-24">
   <div class="mx-auto max-w-[1200px] px-6">
     <div data-reveal>
-      <h2 class="text-3xl text-ink-900 sm:text-4xl">All Categories</h2>
-      <p class="mt-2 text-base text-ink-700">Guides on recovery, therapy, prevention, and everyday tips for people living with cancer, from Curie Oncology Singapore.</p>
+      <h2 class="text-3xl text-moss sm:text-4xl">All Categories</h2>
+      <p class="mt-2 text-base text-body">Guides on recovery, therapy, prevention, and everyday tips for people living with cancer, from Curie Oncology Singapore.</p>
     </div>
 
     <div class="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
       <article class="overflow-hidden rounded-xl2 bg-white shadow-soft" data-reveal>
         <img src="assets/img/health-education/regaining-sexual-function.jpg" alt="Regaining Sexual Function After Breast, Ovarian, Colon, and Prostate Cancer" class="aspect-[16/10] w-full object-cover" />
         <div class="p-8">
-          <span class="text-xs font-semibold uppercase tracking-wide text-mustard-600">Tips &amp; Strategies</span>
-          <h3 class="mt-3 text-xl text-ink-900">Regaining Sexual Function After Breast, Ovarian, Colon, and Prostate Cancer</h3>
-          <p class="mt-3 text-sm leading-relaxed17 text-ink-700">Cancer treatment can affect sexual function through nerve and blood vessel changes. Lubricants, medication, and therapy can help support recovery.</p>
-          <a href="https://curieoncology.com.sg/regaining-sexual-function-after-breast-ovarian-colon-and-prostate-cancer-tips-and-strategies/" target="_blank" rel="noopener" class="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-sage-700">Read on Curie Oncology SG <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+          <span class="text-xs font-medium uppercase tracking-wide text-honey-text">Tips &amp; Strategies</span>
+          <h3 class="normal-case tracking-normal mt-3 text-xl text-moss">Regaining Sexual Function After Breast, Ovarian, Colon, and Prostate Cancer</h3>
+          <p class="mt-3 text-sm leading-relaxed17 text-body">Cancer treatment can affect sexual function through nerve and blood vessel changes. Lubricants, medication, and therapy can help support recovery.</p>
+          <a href="https://curieoncology.com.sg/regaining-sexual-function-after-breast-ovarian-colon-and-prostate-cancer-tips-and-strategies/" target="_blank" rel="noopener" class="mt-5 inline-flex items-center gap-1 text-sm font-medium text-forest">Read on Curie Oncology SG <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
         </div>
       </article>
 
       <article class="overflow-hidden rounded-xl2 bg-white shadow-soft" data-reveal>
         <img src="assets/img/health-education/stoma-and-sexual-intimacy.jpg" alt="Stoma and Sexual Intimacy: How to Enjoy Sex with a Stoma Bag" class="aspect-[16/10] w-full object-cover" />
         <div class="p-8">
-          <span class="text-xs font-semibold uppercase tracking-wide text-mustard-600">Tips &amp; Strategies</span>
-          <h3 class="mt-3 text-xl text-ink-900">Stoma and Sexual Intimacy: How to Enjoy Sex with a Stoma Bag</h3>
-          <p class="mt-3 text-sm leading-relaxed17 text-ink-700">Open communication with a partner, advance preparation, and a focus on sensuality beyond penetration can help maintain intimacy after a colostomy.</p>
-          <a href="https://curieoncology.com.sg/stoma-and-sexual-intimacy-how-to-enjoy-sex-with-a-stoma-bag/" target="_blank" rel="noopener" class="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-sage-700">Read on Curie Oncology SG <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+          <span class="text-xs font-medium uppercase tracking-wide text-honey-text">Tips &amp; Strategies</span>
+          <h3 class="normal-case tracking-normal mt-3 text-xl text-moss">Stoma and Sexual Intimacy: How to Enjoy Sex with a Stoma Bag</h3>
+          <p class="mt-3 text-sm leading-relaxed17 text-body">Open communication with a partner, advance preparation, and a focus on sensuality beyond penetration can help maintain intimacy after a colostomy.</p>
+          <a href="https://curieoncology.com.sg/stoma-and-sexual-intimacy-how-to-enjoy-sex-with-a-stoma-bag/" target="_blank" rel="noopener" class="mt-5 inline-flex items-center gap-1 text-sm font-medium text-forest">Read on Curie Oncology SG <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
         </div>
       </article>
 
       <article class="overflow-hidden rounded-xl2 bg-white shadow-soft" data-reveal>
         <img src="assets/img/health-education/urinary-catheters-utis.jpg" alt="Protecting Cancer Patients with Urinary Catheters: 6 Ways to Prevent UTIs" class="aspect-[16/10] w-full object-cover" />
         <div class="p-8">
-          <span class="text-xs font-semibold uppercase tracking-wide text-terracotta-500">Preventions</span>
-          <h3 class="mt-3 text-xl text-ink-900">Protecting Cancer Patients with Urinary Catheters: 6 Ways to Prevent UTIs</h3>
-          <p class="mt-3 text-sm leading-relaxed17 text-ink-700">Good hygiene, hydration, sterile technique, and prompt catheter removal all help reduce infection risk for patients on urinary catheters.</p>
-          <a href="https://curieoncology.com.sg/protecting-cancer-patients-with-urinary-catheters-6-ways-to-prevent-utis/" target="_blank" rel="noopener" class="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-sage-700">Read on Curie Oncology SG <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+          <span class="text-xs font-medium uppercase tracking-wide text-clay-text">Preventions</span>
+          <h3 class="normal-case tracking-normal mt-3 text-xl text-moss">Protecting Cancer Patients with Urinary Catheters: 6 Ways to Prevent UTIs</h3>
+          <p class="mt-3 text-sm leading-relaxed17 text-body">Good hygiene, hydration, sterile technique, and prompt catheter removal all help reduce infection risk for patients on urinary catheters.</p>
+          <a href="https://curieoncology.com.sg/protecting-cancer-patients-with-urinary-catheters-6-ways-to-prevent-utis/" target="_blank" rel="noopener" class="mt-5 inline-flex items-center gap-1 text-sm font-medium text-forest">Read on Curie Oncology SG <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
         </div>
       </article>
 
       <article class="overflow-hidden rounded-xl2 bg-white shadow-soft" data-reveal>
         <img src="assets/img/health-education/best-diet-breast-cancer.jpg" alt="The Best Diet for Breast Cancer Patients" class="aspect-[16/10] w-full object-cover" />
         <div class="p-8">
-          <span class="text-xs font-semibold uppercase tracking-wide text-sage-700">Cancer Therapy</span>
-          <h3 class="mt-3 text-xl text-ink-900">The Best Diet for Breast Cancer Patients</h3>
-          <p class="mt-3 text-sm leading-relaxed17 text-ink-700">A balanced, whole-food diet, limited added sugar, and caution around hormone-containing dairy is generally advised. Always check with your care team before trying ketogenic diets or fasting.</p>
-          <a href="https://curieoncology.com.sg/the-best-diet-for-breast-cancer-patients-the-role-of-milk-sugar-ketogenic-diets-and-intermittent-fasting/" target="_blank" rel="noopener" class="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-sage-700">Read on Curie Oncology SG <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+          <span class="text-xs font-medium uppercase tracking-wide text-forest">Cancer Therapy</span>
+          <h3 class="normal-case tracking-normal mt-3 text-xl text-moss">The Best Diet for Breast Cancer Patients</h3>
+          <p class="mt-3 text-sm leading-relaxed17 text-body">A balanced, whole-food diet, limited added sugar, and caution around hormone-containing dairy is generally advised. Always check with your care team before trying ketogenic diets or fasting.</p>
+          <a href="https://curieoncology.com.sg/the-best-diet-for-breast-cancer-patients-the-role-of-milk-sugar-ketogenic-diets-and-intermittent-fasting/" target="_blank" rel="noopener" class="mt-5 inline-flex items-center gap-1 text-sm font-medium text-forest">Read on Curie Oncology SG <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
         </div>
       </article>
 
       <article class="overflow-hidden rounded-xl2 bg-white shadow-soft" data-reveal>
         <img src="assets/img/health-education/chemo-induced-constipation.jpg" alt="Coping with Chemotherapy-Induced Constipation" class="aspect-[16/10] w-full object-cover" />
         <div class="p-8">
-          <span class="text-xs font-semibold uppercase tracking-wide text-sage-700">Cancer Recovery</span>
-          <span class="ml-2 text-xs font-semibold uppercase tracking-wide text-mustard-600">Tips &amp; Strategies</span>
-          <h3 class="mt-3 text-xl text-ink-900">Coping with Chemotherapy-Induced Constipation</h3>
-          <p class="mt-3 text-sm leading-relaxed17 text-ink-700">Staying hydrated, eating a fibre-rich diet, and keeping active can ease constipation during chemotherapy. Let your care team know if symptoms persist.</p>
-          <a href="https://curieoncology.com.sg/coping-with-chemotherapy-induced-constipation-tips-and-strategies/" target="_blank" rel="noopener" class="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-sage-700">Read on Curie Oncology SG <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+          <span class="text-xs font-medium uppercase tracking-wide text-forest">Cancer Recovery</span>
+          <span class="ml-2 text-xs font-medium uppercase tracking-wide text-honey-text">Tips &amp; Strategies</span>
+          <h3 class="normal-case tracking-normal mt-3 text-xl text-moss">Coping with Chemotherapy-Induced Constipation</h3>
+          <p class="mt-3 text-sm leading-relaxed17 text-body">Staying hydrated, eating a fibre-rich diet, and keeping active can ease constipation during chemotherapy. Let your care team know if symptoms persist.</p>
+          <a href="https://curieoncology.com.sg/coping-with-chemotherapy-induced-constipation-tips-and-strategies/" target="_blank" rel="noopener" class="mt-5 inline-flex items-center gap-1 text-sm font-medium text-forest">Read on Curie Oncology SG <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
         </div>
       </article>
 
       <article class="overflow-hidden rounded-xl2 bg-white shadow-soft" data-reveal>
         <img src="assets/img/health-education/aromatase-inhibitors-side-effects.jpg" alt="Managing Side Effects of Aromatase Inhibitors" class="aspect-[16/10] w-full object-cover" />
         <div class="p-8">
-          <span class="text-xs font-semibold uppercase tracking-wide text-sage-700">Cancer Recovery</span>
-          <span class="ml-2 text-xs font-semibold uppercase tracking-wide text-sage-700">Cancer Therapy</span>
-          <h3 class="mt-3 text-xl text-ink-900">Managing Side Effects of Aromatase Inhibitors</h3>
-          <p class="mt-3 text-sm leading-relaxed17 text-ink-700">Healthy eating, exercise, hydration, and complementary therapies can help manage side effects. Discuss any persistent symptoms with your oncologist.</p>
-          <a href="https://curieoncology.com.sg/managing-side-effects-of-aromatase-inhibitors-for-breast-cancer-patients/" target="_blank" rel="noopener" class="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-sage-700">Read on Curie Oncology SG <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+          <span class="text-xs font-medium uppercase tracking-wide text-forest">Cancer Recovery</span>
+          <span class="ml-2 text-xs font-medium uppercase tracking-wide text-forest">Cancer Therapy</span>
+          <h3 class="normal-case tracking-normal mt-3 text-xl text-moss">Managing Side Effects of Aromatase Inhibitors</h3>
+          <p class="mt-3 text-sm leading-relaxed17 text-body">Healthy eating, exercise, hydration, and complementary therapies can help manage side effects. Discuss any persistent symptoms with your oncologist.</p>
+          <a href="https://curieoncology.com.sg/managing-side-effects-of-aromatase-inhibitors-for-breast-cancer-patients/" target="_blank" rel="noopener" class="mt-5 inline-flex items-center gap-1 text-sm font-medium text-forest">Read on Curie Oncology SG <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
         </div>
       </article>
 
       <article class="overflow-hidden rounded-xl2 bg-white shadow-soft" data-reveal>
         <img src="assets/img/health-education/pressure-injuries-prevention.jpg" alt="Don't Let Pressure Injuries Slow You Down" class="aspect-[16/10] w-full object-cover" />
         <div class="p-8">
-          <span class="text-xs font-semibold uppercase tracking-wide text-sage-700">Cancer Recovery</span>
-          <span class="ml-2 text-xs font-semibold uppercase tracking-wide text-terracotta-500">Preventions</span>
-          <h3 class="mt-3 text-xl text-ink-900">Don't Let Pressure Injuries Slow You Down</h3>
-          <p class="mt-3 text-sm leading-relaxed17 text-ink-700">Regular repositioning, proper skin care, good nutrition, and pressure-relieving devices help prevent pressure injuries in bedridden patients.</p>
-          <a href="https://curieoncology.com.sg/dont-let-pressure-injuries-slow-you-down-a-guide-to-prevention-for-bedridden-cancer-patients/" target="_blank" rel="noopener" class="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-sage-700">Read on Curie Oncology SG <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+          <span class="text-xs font-medium uppercase tracking-wide text-forest">Cancer Recovery</span>
+          <span class="ml-2 text-xs font-medium uppercase tracking-wide text-clay-text">Preventions</span>
+          <h3 class="normal-case tracking-normal mt-3 text-xl text-moss">Don't Let Pressure Injuries Slow You Down</h3>
+          <p class="mt-3 text-sm leading-relaxed17 text-body">Regular repositioning, proper skin care, good nutrition, and pressure-relieving devices help prevent pressure injuries in bedridden patients.</p>
+          <a href="https://curieoncology.com.sg/dont-let-pressure-injuries-slow-you-down-a-guide-to-prevention-for-bedridden-cancer-patients/" target="_blank" rel="noopener" class="mt-5 inline-flex items-center gap-1 text-sm font-medium text-forest">Read on Curie Oncology SG <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
         </div>
       </article>
 
       <article class="overflow-hidden rounded-xl2 bg-white shadow-soft" data-reveal>
         <img src="assets/img/health-education/pancreatic-cancer-surgery-recovery.jpg" alt="Recovering from Pancreatic Cancer Surgery" class="aspect-[16/10] w-full object-cover" />
         <div class="p-8">
-          <span class="text-xs font-semibold uppercase tracking-wide text-sage-700">Cancer Recovery</span>
-          <h3 class="mt-3 text-xl text-ink-900">Recovering from Pancreatic Cancer Surgery</h3>
-          <p class="mt-3 text-sm leading-relaxed17 text-ink-700">A nutrient-dense diet with lean protein, complex carbohydrates, and fibre supports healing. A registered dietitian can help personalise the plan.</p>
-          <a href="https://curieoncology.com.sg/recovering-from-pancreatic-cancer-surgery-a-nutrient-rich-diet-guide-for-optimal-healing/" target="_blank" rel="noopener" class="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-sage-700">Read on Curie Oncology SG <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+          <span class="text-xs font-medium uppercase tracking-wide text-forest">Cancer Recovery</span>
+          <h3 class="normal-case tracking-normal mt-3 text-xl text-moss">Recovering from Pancreatic Cancer Surgery</h3>
+          <p class="mt-3 text-sm leading-relaxed17 text-body">A nutrient-dense diet with lean protein, complex carbohydrates, and fibre supports healing. A registered dietitian can help personalise the plan.</p>
+          <a href="https://curieoncology.com.sg/recovering-from-pancreatic-cancer-surgery-a-nutrient-rich-diet-guide-for-optimal-healing/" target="_blank" rel="noopener" class="mt-5 inline-flex items-center gap-1 text-sm font-medium text-forest">Read on Curie Oncology SG <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
         </div>
       </article>
 
       <article class="overflow-hidden rounded-xl2 bg-white shadow-soft" data-reveal>
         <img src="assets/img/health-education/blue-zones-lifestyle.png" alt="Unlocking the Secrets of Blue Zones" class="aspect-[16/10] w-full object-cover" />
         <div class="p-8">
-          <span class="text-xs font-semibold uppercase tracking-wide text-sage-700">Cancer Recovery</span>
-          <h3 class="mt-3 text-xl text-ink-900">Unlocking the Secrets of Blue Zones</h3>
-          <p class="mt-3 text-sm leading-relaxed17 text-ink-700">Plant-based eating, regular movement, strong social connections, and a sense of purpose may support quality of life alongside conventional treatment.</p>
-          <a href="https://curieoncology.com.sg/unlocking-the-secrets-of-blue-zones-how-lifestyle-modifications-can-help-cancer-patients-improve-outcomes/" target="_blank" rel="noopener" class="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-sage-700">Read on Curie Oncology SG <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+          <span class="text-xs font-medium uppercase tracking-wide text-forest">Cancer Recovery</span>
+          <h3 class="normal-case tracking-normal mt-3 text-xl text-moss">Unlocking the Secrets of Blue Zones</h3>
+          <p class="mt-3 text-sm leading-relaxed17 text-body">Plant-based eating, regular movement, strong social connections, and a sense of purpose may support quality of life alongside conventional treatment.</p>
+          <a href="https://curieoncology.com.sg/unlocking-the-secrets-of-blue-zones-how-lifestyle-modifications-can-help-cancer-patients-improve-outcomes/" target="_blank" rel="noopener" class="mt-5 inline-flex items-center gap-1 text-sm font-medium text-forest">Read on Curie Oncology SG <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
         </div>
       </article>
 
       <article class="overflow-hidden rounded-xl2 bg-white shadow-soft" data-reveal>
         <img src="assets/img/health-education/fatigue-to-fitness-exercise.jpg" alt="From Fatigue to Fitness: Exercise for Cancer Patients" class="aspect-[16/10] w-full object-cover" />
         <div class="p-8">
-          <span class="text-xs font-semibold uppercase tracking-wide text-sage-700">Cancer Recovery</span>
-          <h3 class="mt-3 text-xl text-ink-900">From Fatigue to Fitness: Exercise for Cancer Patients</h3>
-          <p class="mt-3 text-sm leading-relaxed17 text-ink-700">Tailored exercise, including walking, yoga, resistance training, and Tai Chi, can help improve strength and reduce fatigue. Check with your care team before starting any routine.</p>
-          <a href="https://curieoncology.com.sg/from-fatigue-to-fitness-how-exercise-can-help-cancer-patients-regain-strength-and-energy/" target="_blank" rel="noopener" class="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-sage-700">Read on Curie Oncology SG <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+          <span class="text-xs font-medium uppercase tracking-wide text-forest">Cancer Recovery</span>
+          <h3 class="normal-case tracking-normal mt-3 text-xl text-moss">From Fatigue to Fitness: Exercise for Cancer Patients</h3>
+          <p class="mt-3 text-sm leading-relaxed17 text-body">Tailored exercise, including walking, yoga, resistance training, and Tai Chi, can help improve strength and reduce fatigue. Check with your care team before starting any routine.</p>
+          <a href="https://curieoncology.com.sg/from-fatigue-to-fitness-how-exercise-can-help-cancer-patients-regain-strength-and-energy/" target="_blank" rel="noopener" class="mt-5 inline-flex items-center gap-1 text-sm font-medium text-forest">Read on Curie Oncology SG <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
         </div>
       </article>
 
       <article class="overflow-hidden rounded-xl2 bg-white shadow-soft" data-reveal>
         <img src="assets/img/health-education/friends-family-support.jpg" alt="Ways Friends and Family Can Rally Around a Loved One with Cancer" class="aspect-[16/10] w-full object-cover" />
         <div class="p-8">
-          <span class="text-xs font-semibold uppercase tracking-wide text-mustard-600">Tips &amp; Strategies</span>
-          <h3 class="mt-3 text-xl text-ink-900">Ways Friends and Family Can Rally Around a Loved One with Cancer</h3>
-          <p class="mt-3 text-sm leading-relaxed17 text-ink-700">Active listening, practical help with errands and appointments, emotional encouragement, and respecting privacy all help support a loved one through treatment.</p>
-          <a href="https://curieoncology.com.sg/7-heartwarming-ways-friends-and-relatives-can-rally-around-a-loved-one-with-cancer/" target="_blank" rel="noopener" class="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-sage-700">Read on Curie Oncology SG <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+          <span class="text-xs font-medium uppercase tracking-wide text-honey-text">Tips &amp; Strategies</span>
+          <h3 class="normal-case tracking-normal mt-3 text-xl text-moss">Ways Friends and Family Can Rally Around a Loved One with Cancer</h3>
+          <p class="mt-3 text-sm leading-relaxed17 text-body">Active listening, practical help with errands and appointments, emotional encouragement, and respecting privacy all help support a loved one through treatment.</p>
+          <a href="https://curieoncology.com.sg/7-heartwarming-ways-friends-and-relatives-can-rally-around-a-loved-one-with-cancer/" target="_blank" rel="noopener" class="mt-5 inline-flex items-center gap-1 text-sm font-medium text-forest">Read on Curie Oncology SG <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
         </div>
       </article>
 
       <article class="overflow-hidden rounded-xl2 bg-white shadow-soft" data-reveal>
         <img src="assets/img/health-education/gut-microbiome-cancer-therapy.jpg" alt="The Gut Microbiome's Role in Cancer Therapy" class="aspect-[16/10] w-full object-cover" />
         <div class="p-8">
-          <span class="text-xs font-semibold uppercase tracking-wide text-sage-700">Cancer Therapy</span>
-          <h3 class="mt-3 text-xl text-ink-900">The Gut Microbiome's Role in Cancer Therapy</h3>
-          <p class="mt-3 text-sm leading-relaxed17 text-ink-700">Probiotics and prebiotics may support immune function and reduce treatment side effects, as a complement to, not a replacement for, standard cancer therapies.</p>
-          <a href="https://curieoncology.com.sg/unleashing-the-power-of-the-gut-microbiome-in-cancer-therapy-the-role-of-probiotics-prebiotics-and-akkermansia-muciniphila/" target="_blank" rel="noopener" class="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-sage-700">Read on Curie Oncology SG <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+          <span class="text-xs font-medium uppercase tracking-wide text-forest">Cancer Therapy</span>
+          <h3 class="normal-case tracking-normal mt-3 text-xl text-moss">The Gut Microbiome's Role in Cancer Therapy</h3>
+          <p class="mt-3 text-sm leading-relaxed17 text-body">Probiotics and prebiotics may support immune function and reduce treatment side effects, as a complement to, not a replacement for, standard cancer therapies.</p>
+          <a href="https://curieoncology.com.sg/unleashing-the-power-of-the-gut-microbiome-in-cancer-therapy-the-role-of-probiotics-prebiotics-and-akkermansia-muciniphila/" target="_blank" rel="noopener" class="mt-5 inline-flex items-center gap-1 text-sm font-medium text-forest">Read on Curie Oncology SG <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
         </div>
       </article>
 
       <article class="overflow-hidden rounded-xl2 bg-white shadow-soft" data-reveal>
         <img src="assets/img/health-education/quit-smoking-cancer.jpg" alt="Quit Smoking for a Better Chance of Surviving Cancer" class="aspect-[16/10] w-full object-cover" />
         <div class="p-8">
-          <span class="text-xs font-semibold uppercase tracking-wide text-sage-700">Cancer Recovery</span>
-          <span class="ml-2 text-xs font-semibold uppercase tracking-wide text-terracotta-500">Preventions</span>
-          <h3 class="mt-3 text-xl text-ink-900">Quit Smoking for a Better Chance of Surviving Cancer</h3>
-          <p class="mt-3 text-sm leading-relaxed17 text-ink-700">Quitting smoking can improve treatment effectiveness and reduce recurrence risk. Cessation offers health benefits regardless of how long you've smoked.</p>
-          <a href="https://curieoncology.com.sg/quit-smoking-for-a-better-chance-of-surviving-cancer/" target="_blank" rel="noopener" class="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-sage-700">Read on Curie Oncology SG <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+          <span class="text-xs font-medium uppercase tracking-wide text-forest">Cancer Recovery</span>
+          <span class="ml-2 text-xs font-medium uppercase tracking-wide text-clay-text">Preventions</span>
+          <h3 class="normal-case tracking-normal mt-3 text-xl text-moss">Quit Smoking for a Better Chance of Surviving Cancer</h3>
+          <p class="mt-3 text-sm leading-relaxed17 text-body">Quitting smoking can improve treatment effectiveness and reduce recurrence risk. Cessation offers health benefits regardless of how long you've smoked.</p>
+          <a href="https://curieoncology.com.sg/quit-smoking-for-a-better-chance-of-surviving-cancer/" target="_blank" rel="noopener" class="mt-5 inline-flex items-center gap-1 text-sm font-medium text-forest">Read on Curie Oncology SG <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
         </div>
       </article>
 
       <article class="overflow-hidden rounded-xl2 bg-white shadow-soft" data-reveal>
         <img src="assets/img/health-education/sleeping-well-chemotherapy.jpg" alt="Sleeping Well During Chemotherapy" class="aspect-[16/10] w-full object-cover" />
         <div class="p-8">
-          <span class="text-xs font-semibold uppercase tracking-wide text-sage-700">Cancer Recovery</span>
-          <span class="ml-2 text-xs font-semibold uppercase tracking-wide text-sage-700">Cancer Therapy</span>
-          <span class="ml-2 text-xs font-semibold uppercase tracking-wide text-mustard-600">Tips &amp; Strategies</span>
-          <h3 class="mt-3 text-xl text-ink-900">Sleeping Well During Chemotherapy</h3>
-          <p class="mt-3 text-sm leading-relaxed17 text-ink-700">Consistent bedtimes, an optimised bedroom environment, relaxation techniques, and avoiding caffeine and screens before bed can all help improve sleep quality.</p>
-          <a href="https://curieoncology.com.sg/sleeping-well-during-chemotherapy-5-essential-habits-for-cancer-patients/" target="_blank" rel="noopener" class="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-sage-700">Read on Curie Oncology SG <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+          <span class="text-xs font-medium uppercase tracking-wide text-forest">Cancer Recovery</span>
+          <span class="ml-2 text-xs font-medium uppercase tracking-wide text-forest">Cancer Therapy</span>
+          <span class="ml-2 text-xs font-medium uppercase tracking-wide text-honey-text">Tips &amp; Strategies</span>
+          <h3 class="normal-case tracking-normal mt-3 text-xl text-moss">Sleeping Well During Chemotherapy</h3>
+          <p class="mt-3 text-sm leading-relaxed17 text-body">Consistent bedtimes, an optimised bedroom environment, relaxation techniques, and avoiding caffeine and screens before bed can all help improve sleep quality.</p>
+          <a href="https://curieoncology.com.sg/sleeping-well-during-chemotherapy-5-essential-habits-for-cancer-patients/" target="_blank" rel="noopener" class="mt-5 inline-flex items-center gap-1 text-sm font-medium text-forest">Read on Curie Oncology SG <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
         </div>
       </article>
     </div>
@@ -337,9 +325,9 @@
 </section>
 
 <!-- CTA -->
-<section class="bg-cream-200 py-24">
+<section class="bg-warm py-24">
   <div class="mx-auto max-w-[1000px] px-6">
-    <div class="rounded-xl2 bg-ink-900 px-10 py-16 text-center shadow-lift" data-reveal>
+    <div class="rounded-xl2 bg-moss px-10 py-16 text-center shadow-lift" data-reveal>
       <h2 class="text-3xl text-white sm:text-4xl">Still Have Questions?</h2>
       <p class="mx-auto mt-4 max-w-md text-base leading-relaxed17 text-white/70">Our clinical team is here to talk through anything on this page in more detail.</p>
       <div class="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
@@ -350,63 +338,51 @@
 </section>
 
   </main>
-  <footer class="border-t border-ink-900/[0.06] bg-cream-200">
-  <div class="mx-auto max-w-[1200px] px-8 pb-16">
-    <div class="flex flex-col items-center text-center" data-reveal>
-      <img src="assets/img/logo/curie-logo-stacked.svg" alt="Curie Oncology - Spring Will Come" class="h-[200px] w-auto" />
-    </div>
+  <footer class="border-t border-seafoam bg-warm">
+  <div class="mx-auto max-w-[1144px] px-6 pb-10">
+    <div class="grid grid-cols-1 gap-10 pb-14 pt-16 sm:grid-cols-2 lg:grid-cols-[236px_1fr_1fr_250px] lg:gap-10 lg:pt-[72px]" data-reveal>
+      <a href="index.html" class="block w-[200px] rounded-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-forest">
+        <img src="assets/img/logo/curie-logo-stacked.svg" alt="Curie Oncology - Spring Will Come" class="h-[118px] w-auto" />
+      </a>
 
-    <div class="mt-14 grid grid-cols-1 pt-50 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
       <div>
-        <p class="max-w-xs text-sm leading-relaxed17 text-ink-700">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </p>
-        <div class="mt-6 flex items-center gap-3">
-          <a href="#" aria-label="Facebook" class="flex h-10 w-10 items-center justify-center rounded-full bg-white text-ink-700 shadow-soft transition-transform duration-200 hover:-translate-y-0.5 hover:text-sage-700">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94Z"/></svg>
-          </a>
-          <a href="#" aria-label="Instagram" class="flex h-10 w-10 items-center justify-center rounded-full bg-white text-ink-700 shadow-soft transition-transform duration-200 hover:-translate-y-0.5 hover:text-sage-700">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
-          </a>
-          <a href="#" aria-label="YouTube" class="flex h-10 w-10 items-center justify-center rounded-full bg-white text-ink-700 shadow-soft transition-transform duration-200 hover:-translate-y-0.5 hover:text-sage-700">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23 12s0-3.6-.46-5.3a2.9 2.9 0 0 0-2-2C18.9 4.2 12 4.2 12 4.2s-6.9 0-8.54.5a2.9 2.9 0 0 0-2 2C1 8.4 1 12 1 12s0 3.6.46 5.3a2.9 2.9 0 0 0 2 2c1.64.5 8.54.5 8.54.5s6.9 0 8.54-.5a2.9 2.9 0 0 0 2-2C23 15.6 23 12 23 12ZM9.8 15.5V8.5l6.2 3.5-6.2 3.5Z"/></svg>
-          </a>
+        <p class="text-[15px] font-medium leading-[18px] tracking-body text-moss">Quick Links</p>
+        <ul class="mt-[18px] space-y-[18px] text-[15px] leading-[18px] tracking-body text-eucalyptus-text">
+          <li><a href="about.html" class="transition-colors duration-200 hover:text-forest">About Us</a></li>
+          <li><a href="meet-our-doctors.html" class="transition-colors duration-200 hover:text-forest">Our Doctors</a></li>
+          <li><a href="our-services.html" class="transition-colors duration-200 hover:text-forest">Oncology Services</a></li>
+          <li><a href="health-education.html" class="transition-colors duration-200 hover:text-forest">Resource Centre</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="text-[15px] font-medium leading-[18px] tracking-body text-moss">Resources</p>
+        <!-- PENDING: legal pages are client-provided copy (launch blocker) -->
+        <ul class="mt-[18px] space-y-[18px] text-[15px] leading-[18px] tracking-body text-eucalyptus-text">
+          <li><a href="#" class="transition-colors duration-200 hover:text-forest">Privacy Policy</a></li>
+          <li><a href="#" class="transition-colors duration-200 hover:text-forest">Terms of Use</a></li>
+          <li><a href="#" class="transition-colors duration-200 hover:text-forest">Disclaimer</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="text-[15px] font-medium leading-[18px] tracking-body text-moss">Contact</p>
+        <div class="mt-[18px] flex flex-col gap-[18px]">
+          <div class="flex flex-col gap-1">
+            <p class="text-[13px] leading-[18px] tracking-body text-body">Kuala Lumpur</p>
+            <a href="tel:+60128223310" class="text-[15px] leading-[18px] tracking-body text-eucalyptus-text transition-colors duration-200 hover:text-forest">+60 12 822 3310</a>
+          </div>
+          <div class="flex flex-col gap-1">
+            <p class="text-[13px] leading-[18px] tracking-body text-body">Penang</p>
+            <a href="tel:+6043710000" class="text-[15px] leading-[18px] tracking-body text-eucalyptus-text transition-colors duration-200 hover:text-forest">+604 371 0000 ext. 42617</a>
+          </div>
         </div>
       </div>
-
-      <div>
-        <p class="text-sm font-semibold text-ink-900">Quick Links</p>
-        <ul class="mt-4 space-y-3 text-sm text-ink-700">
-          <li><a href="about.html" class="hover:text-sage-700">About Us</a></li>
-          <li><a href="meet-our-doctors.html" class="hover:text-sage-700">Our Doctors</a></li>
-          <li><a href="our-services.html" class="hover:text-sage-700">Oncology Services</a></li>
-          <li><a href="health-education.html" class="hover:text-sage-700">Health Education</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <p class="text-sm font-semibold text-ink-900">Resources</p>
-        <ul class="mt-4 space-y-3 text-sm text-ink-700">
-          <li><a href="#" class="hover:text-sage-700">Privacy Policy</a></li>
-          <li><a href="#" class="hover:text-sage-700">Terms of Use</a></li>
-          <li><a href="#" class="hover:text-sage-700">Disclaimer</a></li>
-        </ul>
-        <p class="mt-3 text-xs italic text-ink-500">Legal copy pending client sign-off.</p>
-      </div>
-
-      <div id="contact">
-        <p class="text-sm font-semibold text-ink-900">Find Us</p>
-        <ul class="mt-4 space-y-3 text-sm leading-relaxed17 text-ink-700">
-          <li>Unit 2-3 &amp; 2-4, Cengild Medical Center Nexus,<br />Jalan Kerinchi Kanan, Bangsar South,<br />59200 Kuala Lumpur</li>
-          <li><a href="tel:+60128223310" class="hover:text-sage-700">+60 12 822 3310</a></li>
-          <li>Mon–Fri: 8:30am–5:30pm<br />Sat: 8:30am–12:30pm</li>
-        </ul>
-      </div>
     </div>
 
-    <div class="mt-14 flex flex-col gap-3 border-t border-ink-900/[0.06] pt-8 text-xs text-ink-500 sm:flex-row sm:items-center sm:justify-between">
+    <div class="flex flex-col gap-3 border-t border-seafoam pt-7 text-[13px] leading-4 tracking-body text-eucalyptus-text sm:flex-row sm:items-center sm:justify-between">
       <p>Curie Oncology Sdn Bhd © 2024. All Rights Reserved.</p>
-      <p class="italic">KKLIU / MOH approval notice pending client provision.</p>
+      <!-- PENDING: KKLIU / MOH approval notice from client -->
     </div>
   </div>
 </footer>
@@ -416,7 +392,7 @@
   target="_blank"
   rel="noopener"
   aria-label="Chat with us on WhatsApp"
-  class="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-sage-600 text-white shadow-floating transition-transform duration-200 ease-out hover:-translate-y-1 hover:bg-sage-700 active:translate-y-0"
+  class="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-forest text-white shadow-floating transition-transform duration-200 ease-out hover:-translate-y-1 hover:bg-moss active:translate-y-0"
 >
   <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39a9.9 9.9 0 0 0 4.75 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm5.8 14.06c-.24.68-1.4 1.33-1.93 1.4-.49.07-1.1.1-1.78-.11-.41-.13-.94-.3-1.62-.6-2.85-1.23-4.71-4.1-4.85-4.29-.14-.19-1.16-1.54-1.16-2.94 0-1.4.73-2.08.99-2.37.26-.28.57-.35.76-.35.19 0 .38 0 .55.01.18.01.42-.07.65.5.24.58.81 2 .88 2.15.07.14.12.31.02.5-.09.19-.14.31-.28.48-.14.16-.29.36-.42.49-.14.14-.28.29-.12.57.16.28.71 1.17 1.52 1.9 1.05.94 1.93 1.23 2.21 1.37.28.14.44.12.6-.07.16-.19.68-.79.86-1.06.18-.28.36-.23.61-.14.24.09 1.55.73 1.82.87.27.14.44.2.51.32.07.12.07.68-.17 1.36Z"/></svg>
 </a>
@@ -528,6 +504,107 @@
           pair.panel.style.maxHeight = 'none';
         }
       });
+    });
+  })();
+</script>
+
+
+<!-- Booking modal: opened by any [data-book-doctor] button (profile pages). Pre-selects that doctor.
+     NOTE: like the homepage form, this has no submission backend yet (pre-launch blocker). -->
+<div id="booking-modal" class="booking-modal fixed inset-0 z-[60] flex items-end justify-center bg-moss/55 sm:items-center sm:p-6" aria-hidden="true">
+  <div class="booking-dialog relative max-h-[92vh] w-full overflow-y-auto rounded-t-3xl bg-white px-5 pb-7 pt-3 shadow-floating sm:max-w-[560px] sm:rounded-[20px] sm:px-10 sm:pb-10 sm:pt-9" role="dialog" aria-modal="true" aria-labelledby="booking-title">
+    <div class="mx-auto mb-4 h-[5px] w-11 rounded-full bg-seafoam sm:hidden" aria-hidden="true"></div>
+    <div class="flex items-start justify-between gap-4">
+      <div>
+        <h2 id="booking-title" class="text-lg leading-[26px] sm:text-[22px] sm:leading-[30px]">Book a consultation</h2>
+        <p class="mt-1 text-sm tracking-body text-body">Our team will contact you to confirm a time.</p>
+      </div>
+      <button type="button" data-booking-close class="flex h-[38px] w-[38px] shrink-0 items-center justify-center rounded-full bg-mist text-moss transition-transform duration-200 hover:-translate-y-0.5 active:translate-y-0" aria-label="Close">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+    </div>
+
+    <div id="booking-doctor-chip" class="mt-5 flex items-center gap-3.5 rounded-[14px] bg-frost px-4 py-3">
+      <img id="booking-doctor-photo" src="" alt="" class="h-12 w-12 shrink-0 rounded-full bg-white object-cover object-top" />
+      <div class="min-w-0 flex-1">
+        <p id="booking-doctor-name" class="text-[15px] font-medium leading-5 tracking-normal text-moss"></p>
+        <p id="booking-doctor-meta" class="text-[13px] leading-[18px] tracking-body text-eucalyptus-text"></p>
+      </div>
+      <button type="button" id="booking-doctor-change" class="text-[13px] font-medium tracking-body text-forest underline hover:text-moss">Change</button>
+    </div>
+
+    <form class="mt-5 space-y-4" action="#" method="post" id="booking-form">
+      <div id="booking-doctor-select-wrap" class="hidden">
+        <label class="field-label" for="booking-doctor">Preferred doctor</label>
+        <select id="booking-doctor" name="doctor" class="field">
+          <option value="">No preference</option>
+          <option value="dr-ho-gwo-fuang">Dr Ho Gwo Fuang (Klang Valley)</option>
+          <option value="dr-lau-fen-nee">Dr Lau Fen Nee (Klang Valley)</option>
+          <option value="dr-yeoh-chit-cheng">Dr Yeoh Chit Cheng (Klang Valley)</option>
+          <option value="dr-sow-wen-jen">Dr Jenson Sow Wen Jen (Klang Valley)</option>
+          <option value="dr-tan-ai-lian">Dr Tan Ai Lian (Penang)</option>
+        </select>
+      </div>
+      <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+        <div><label class="field-label" for="booking-name">Full name (required)</label><input id="booking-name" name="name" required class="field" placeholder="Full name" /></div>
+        <div><label class="field-label" for="booking-phone">Phone (required)</label><input id="booking-phone" name="phone" type="tel" required class="field" placeholder="+60" /></div>
+      </div>
+      <div><label class="field-label" for="booking-email">Email (required)</label><input id="booking-email" name="email" type="email" required class="field" placeholder="email@example.com" /></div>
+      <div><label class="field-label" for="booking-message">Message (optional)</label><textarea id="booking-message" name="message" rows="3" class="field resize-none" placeholder="Tell us briefly how we can help"></textarea></div>
+      <label class="flex items-start gap-3 text-[13px] leading-5 tracking-body text-body">
+        <input type="checkbox" name="pdpa" required class="mt-0.5 h-[18px] w-[18px] shrink-0 accent-forest" />
+        <span>I consent to Curie Oncology collecting and processing my personal data in accordance with the <strong class="font-medium text-forest">Personal Data Protection Act (PDPA)</strong>.</span>
+      </label>
+      <button type="submit" class="btn-primary h-[52px] w-full">Request appointment</button>
+    </form>
+  </div>
+</div>
+
+<script>
+  (function () {
+    var modal = document.getElementById('booking-modal');
+    var triggers = document.querySelectorAll('[data-book-doctor]');
+    if (!modal || !triggers.length) return;
+
+    var select = document.getElementById('booking-doctor');
+    var chip = document.getElementById('booking-doctor-chip');
+    var selectWrap = document.getElementById('booking-doctor-select-wrap');
+    var lastTrigger = null;
+
+    function open(btn) {
+      lastTrigger = btn;
+      var d = btn.dataset;
+      document.getElementById('booking-doctor-name').textContent = d.doctorName || '';
+      document.getElementById('booking-doctor-meta').textContent = d.doctorMeta || '';
+      var photo = document.getElementById('booking-doctor-photo');
+      photo.src = d.doctorPhoto || '';
+      photo.alt = d.doctorName || '';
+      select.value = d.bookDoctor || '';
+      chip.classList.remove('hidden');
+      selectWrap.classList.add('hidden');
+      modal.classList.add('is-open');
+      modal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+      setTimeout(function () { document.getElementById('booking-name').focus(); }, 50);
+    }
+
+    function close() {
+      modal.classList.remove('is-open');
+      modal.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+      if (lastTrigger) lastTrigger.focus();
+    }
+
+    triggers.forEach(function (btn) {
+      btn.addEventListener('click', function (e) { e.preventDefault(); open(btn); });
+    });
+    modal.querySelectorAll('[data-booking-close]').forEach(function (b) { b.addEventListener('click', close); });
+    modal.addEventListener('click', function (e) { if (e.target === modal) close(); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && modal.classList.contains('is-open')) close(); });
+    document.getElementById('booking-doctor-change').addEventListener('click', function () {
+      chip.classList.add('hidden');
+      selectWrap.classList.remove('hidden');
+      select.focus();
     });
   })();
 </script>

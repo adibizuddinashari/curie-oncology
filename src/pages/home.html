@@ -1,215 +1,224 @@
-<!-- Hero (pinned) + Who We Are (scrolls up over it) -->
-<div class="relative">
-<section class="sticky top-0 z-0 flex w-full min-h-[calc(100vh-6rem)] items-center justify-center overflow-hidden px-6 text-center">
-  <div class="absolute inset-0">
-    <img src="assets/img/hero/hero-section-1.png" alt="Curie Oncology" class="h-full w-full object-cover" data-intro-fade />
-    <div class="absolute inset-0 bg-gradient-to-t from-cream-100 via-cream-100/85 to-cream-100/15"></div>
-  </div>
-  <div class="relative z-10 mx-auto max-w-4xl">
-    <h1 class="mt-6 text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-sage-700" data-intro>
-      <span class="block text-balance sm:whitespace-nowrap">Cancer Doesn't Spell The End</span>
-      <span class="block text-balance sm:whitespace-nowrap">Spring Will Come</span>
-    </h1>
+<!-- Hero -->
+<section class="page-hero overflow-hidden !h-[520px] lg:!h-[640px]" style="background-image: url('assets/img/hero/home-hero.jpg');">
+  <h1 class="max-w-[900px] !text-[28px] !leading-[40px] sm:!text-[44px] sm:!leading-[56px]" data-intro>Cancer Doesn't Spell The End<br />Spring Will Come</h1>
+</section>
+
+<!-- Who We Are -->
+<section class="bg-white px-6 pb-[104px] pt-24">
+  <div class="mx-auto flex max-w-[880px] flex-col items-center gap-8 text-center" data-reveal>
+    <h2 class="section-title">Who We Are</h2>
+    <div class="space-y-1.5 text-[17px] leading-[28px] tracking-body text-body">
+      <p>A regional oncology practice, specialising in complex oncology</p>
+      <p>Care in a multi-disciplinary role, specific and personalised to each patient</p>
+      <p>Helping patients overcome cancer, and rebuild their lives</p>
+    </div>
+    <figure class="flex w-full items-start gap-4 pt-4 sm:gap-7">
+      <span class="w-8 shrink-0 text-[64px] font-medium leading-[56px] text-curie sm:w-12 sm:text-[96px] sm:leading-[80px]" aria-hidden="true">&ldquo;</span>
+      <div class="flex flex-1 flex-col items-center gap-[18px]">
+        <blockquote class="text-lg leading-[30px] tracking-[0.04em] text-eucalyptus-text sm:text-xl sm:leading-8">Our mission at Curie Oncology is to advance cancer care to its best version. By integrating precision genomics, advanced clinical trials, and innovative therapeutics, we strive to deliver the full promise of modern science to every patient we serve.</blockquote>
+        <figcaption class="text-[15px] font-medium tracking-body text-moss">Dr John Chia (Co-Founder)</figcaption>
+      </div>
+      <span class="w-8 shrink-0 self-end text-right text-[64px] font-medium leading-[56px] text-curie sm:w-12 sm:text-[96px] sm:leading-[80px]" aria-hidden="true">&rdquo;</span>
+    </figure>
   </div>
 </section>
 
-<!-- Who We Are / Mission & Values -->
-<section class="relative z-10 bg-cream-200 py-24">
-  <div class="mx-auto max-w-[1200px] px-6">
-    <div class="mx-auto max-w-2xl text-center" data-reveal>
-      <h2 class="text-3xl text-sage-700 sm:text-4xl">Who We Are</h2>
-      <p class="mt-5 text-lg leading-relaxed17 text-ink-700">A regional oncology practice, specialising in complex oncology. We provide care, in a multi-disciplinary role, that is specific and personalised, helping patients overcome cancer, and rebuild their lives.</p>
+<!-- Our Mission -->
+<section class="grid grid-cols-1 lg:grid-cols-2">
+  <div class="flex flex-col justify-center gap-7 bg-curie px-6 py-20 sm:px-12 lg:min-h-[640px] lg:pl-[max(1.5rem,calc((100vw-1144px)/2))] lg:pr-[100px]" data-reveal>
+    <h2 class="section-title !text-moss">Our Mission</h2>
+    <p class="text-[17px] leading-[29px] tracking-body text-moss">In an era of medical and technological breakthroughs, we bring science to the clinic to cure cancer and restore health.</p>
+    <p class="text-[17px] leading-[29px] tracking-body text-moss">Our philosophy: accurately diagnose, understand, and personalise care through precision medicine and molecular imaging. Using immunotherapy, chemotherapy, and targeted agents, we detect and treat cancer early to maximise every patient's chance of cure.</p>
+  </div>
+  <div class="min-h-[360px] bg-cover bg-center lg:min-h-[640px]" style="background-image: url('assets/img/clinic/nurses-station-smiling.webp');" role="img" aria-label="Curie Oncology nurses at the nurses' station"></div>
+</section>
 
-      <div class="relative mt-10 px-8 sm:px-10">
-        <span class="absolute left-0 top-0 font-serif text-5xl leading-none text-sage-300" aria-hidden="true">&ldquo;</span>
-        <p class="text-lg leading-relaxed17 text-sage-700 sm:text-xl">Our mission at Curie Oncology is to advance cancer care to its best version. By integrating precision genomics, advanced clinical trials, and innovative therapeutics, we strive to deliver the full promise of modern science to every patient we serve.</p>
-        <span class="absolute bottom-0 right-0 font-serif text-5xl leading-none text-sage-300" aria-hidden="true">&rdquo;</span>
-        <p class="mt-6 font-semibold text-ink-900">Dr John Chia (Co-Founder)</p>
-      </div>
+<!-- Our Values -->
+<section class="grid grid-cols-1 bg-warm lg:grid-cols-2">
+  <div class="order-2 min-h-[360px] bg-cover bg-center lg:order-1 lg:min-h-[880px]" style="background-image: url('assets/img/clinic/clinic-team-entrance.jpg');" role="img" aria-label="The Curie Oncology team at the clinic entrance"></div>
+  <div class="order-1 flex flex-col justify-center gap-9 px-6 py-20 sm:px-12 lg:order-2 lg:pl-20 lg:pr-[max(1.5rem,calc((100vw-1144px)/2))]">
+    <div class="flex flex-col gap-5" data-reveal>
+      <h2 class="section-title !text-clay-text">Our Values</h2>
+      <p class="text-[17px] leading-[29px] tracking-body text-body">Each encounter with our doctors, nurses and patient assistants is guided by a desire to help, heal and comfort.</p>
     </div>
-
-    <div class="mt-12 grid grid-cols-1 gap-6 lg:grid-cols-[1.6fr_1fr]">
-      <div class="rounded-xl2 bg-white p-10 shadow-card" data-reveal>
-        <h3 class="text-2xl">Our Mission</h3>
-        <ul class="mt-6 space-y-4">
-          <li class="flex gap-3 text-ink-700">
-            <svg class="mt-1 h-4 w-4 shrink-0 text-sage-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg>
-            In an era of medical and technological breakthroughs, we bring science to the clinic to cure cancer and restore health.
-          </li>
-          <li class="flex gap-3 text-ink-700">
-            <svg class="mt-1 h-4 w-4 shrink-0 text-sage-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg>
-            Our philosophy: accurately diagnose, understand, and personalise care through precision medicine and molecular imaging.
-          </li>
-          <li class="flex gap-3 text-ink-700">
-            <svg class="mt-1 h-4 w-4 shrink-0 text-sage-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg>
-            Using immunotherapy, chemotherapy, and targeted agents, we detect and treat cancer early to maximise every patient's chance of cure.
-          </li>
-        </ul>
-      </div>
-      <div class="rounded-xl2 bg-sage-50 p-10 shadow-card" data-reveal>
-        <h3 class="text-2xl">Our Values</h3>
-        <ul class="mt-6 space-y-4 text-ink-700">
-          <li class="flex gap-3"><span class="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-sage-600"></span>Compassion First - we care for each patient as if they were our own family; every journey is personal, and every story matters.</li>
-          <li class="flex gap-3"><span class="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-sage-600"></span>Innovation with Purpose - we adopt breakthrough technologies early, giving patients access to the most advanced diagnostics and treatments available.</li>
-          <li class="flex gap-3"><span class="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-sage-600"></span>Driven by Research - studies that improve diagnosis, treatment, and prevention, toward a future free from the fear of cancer.</li>
-          <li class="flex gap-3"><span class="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-sage-600"></span>Rebuilding Lives - beyond treatment, we help patients reclaim their health, strength, and future.</li>
-        </ul>
-      </div>
-    </div>
+    <ul class="flex flex-col gap-7">
+      <li class="flex items-start gap-6" data-reveal>
+        <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-white"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C87D65" stroke-width="1.8" stroke-linejoin="round"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z"/></svg></span>
+        <div><h3 class="text-lg font-medium normal-case leading-[26px] tracking-[0.04em] text-moss">Compassion First</h3><p class="mt-2 leading-[27px] tracking-body">We care for each patient as if they were our own family. Every journey is personal, and every story matters.</p></div>
+      </li>
+      <li class="flex items-start gap-6" data-reveal>
+        <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-white"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C87D65" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6M10 3v5l-4 9a2 2 0 0 0 1.8 3h8.4a2 2 0 0 0 1.8-3l-4-9V3M8 14h8"/></svg></span>
+        <div><h3 class="text-lg font-medium normal-case leading-[26px] tracking-[0.04em] text-moss">Innovation with Purpose</h3><p class="mt-2 leading-[27px] tracking-body">We adopt breakthrough technologies early, giving patients access to the most advanced diagnostics and treatments available.</p></div>
+      </li>
+      <li class="flex items-start gap-6" data-reveal>
+        <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-white"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C87D65" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 18h8M9 18v-3M7 21h10M12 4l3 3-5 5-3-3 5-5ZM14 12a5 5 0 0 1 1 9"/></svg></span>
+        <div><h3 class="text-lg font-medium normal-case leading-[26px] tracking-[0.04em] text-moss">Driven by Research</h3><p class="mt-2 leading-[27px] tracking-body">We undertake and support studies that improve diagnosis, treatment, and prevention, working toward a future free from the fear of cancer.</p></div>
+      </li>
+      <li class="flex items-start gap-6" data-reveal>
+        <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-white"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C87D65" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21V11M12 11c0-4 3-6 7-6 0 4-3 6-7 6ZM12 14c0-3-2.5-5-6-5 0 3 2.5 5 6 5Z"/></svg></span>
+        <div><h3 class="text-lg font-medium normal-case leading-[26px] tracking-[0.04em] text-moss">Rebuilding Lives</h3><p class="mt-2 leading-[27px] tracking-body">Beyond treatment, we help patients reclaim their health, strength, and future, so they can move forward with confidence and hope.</p></div>
+      </li>
+    </ul>
   </div>
 </section>
-</div>
 
-<!-- Our Team -->
-<section class="bg-cream-100 py-24">
-  <div class="mx-auto max-w-[1200px] px-6">
-    <h2 class="text-center text-3xl text-ink-900 sm:text-4xl" data-reveal>Our Team of Oncologists</h2>
-
-    <div class="mt-14 grid grid-cols-2 gap-6 sm:grid-cols-3 lg:grid-cols-4">
-      <a href="dr-lau-fen-nee.html" class="group overflow-hidden rounded-xl2 bg-white shadow-soft transition duration-200 ease-out hover:-translate-y-1 hover:bg-[#A5DCB0]" data-reveal>
-        <div class="aspect-square overflow-hidden">
-          <img src="assets/img/doctors/Dr-Lau-Fen-Nee.webp" alt="Dr Lau Fen Nee" class="h-full w-full object-cover transition-transform duration-300 ease-out group-hover:scale-105" />
-        </div>
-        <div class="px-4 py-5 text-center">
-          <p class="font-semibold text-ink-900 transition-colors duration-200 group-hover:text-white">Dr Lau Fen Nee</p>
-          <p class="mt-1 text-sm text-ink-500 transition-colors duration-200 group-hover:text-white">Senior Consultant Clinical Oncologist</p>
+<!-- Our Team of Oncologists -->
+<section class="bg-white px-6 py-[104px]">
+  <div class="mx-auto max-w-[1144px]">
+    <h2 class="section-title text-center" data-reveal>Our Team of Oncologists</h2>
+    <div class="mt-14 grid grid-cols-1 gap-[22px] sm:grid-cols-2 lg:grid-cols-5">
+      <!-- Doctor card: Dr Ho Gwo Fuang -->
+      <a href="dr-ho-gwo-fuang.html" class="group flex flex-col overflow-hidden rounded-[20px] bg-white shadow-card transition-transform duration-300 ease-out hover:-translate-y-1" data-reveal>
+        <div class="aspect-square overflow-hidden"><img src="assets/img/doctors/dr-ho-gwo-fuang-hq.jpg" alt="Dr Ho Gwo Fuang" class="h-full w-full object-cover object-top transition-transform duration-300 ease-out group-hover:scale-105" /></div>
+        <div class="flex flex-1 flex-col items-center gap-2 px-3.5 pb-[26px] pt-[22px] text-center">
+          <p class="text-sm font-medium uppercase leading-[22px] tracking-heading text-moss">Dr Ho Gwo Fuang</p>
+          <p class="flex-1 text-[13px] leading-5 tracking-body text-eucalyptus-text">Senior Consultant Clinical Oncologist</p>
+          <span class="mt-1 inline-flex items-center gap-1.5 rounded-full bg-frost px-2.5 py-1 text-[11px] font-medium tracking-[0.06em] text-forest"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>Klang Valley</span>
         </div>
       </a>
-
-      <a href="dr-sow-wen-jen.html" class="group overflow-hidden rounded-xl2 bg-white shadow-soft transition duration-200 ease-out hover:-translate-y-1 hover:bg-[#A5DCB0]" data-reveal>
-        <div class="aspect-square overflow-hidden">
-          <img src="assets/img/doctors/Dr-Sow-Wen-Jen.webp" alt="Dr Sow Wen Jen (Jenson)" class="h-full w-full object-cover transition-transform duration-300 ease-out group-hover:scale-105" />
-        </div>
-        <div class="px-4 py-5 text-center">
-          <p class="font-semibold text-ink-900 transition-colors duration-200 group-hover:text-white">Dr Sow Wen Jen (Jenson)</p>
-          <p class="mt-1 text-sm text-ink-500 transition-colors duration-200 group-hover:text-white">Consultant Clinical Oncologist</p>
-        </div>
-      </a>
-
-      <a href="dr-yeoh-chit-cheng.html" class="group overflow-hidden rounded-xl2 bg-white shadow-soft transition duration-200 ease-out hover:-translate-y-1 hover:bg-[#A5DCB0]" data-reveal>
-        <div class="aspect-square overflow-hidden">
-          <img src="assets/img/doctors/Dr-Yeoh-Chit-Cheng.webp" alt="Dr Yeoh Chit Cheng" class="h-full w-full object-cover transition-transform duration-300 ease-out group-hover:scale-105" />
-        </div>
-        <div class="px-4 py-5 text-center">
-          <p class="font-semibold text-ink-900 transition-colors duration-200 group-hover:text-white">Dr Yeoh Chit Cheng</p>
-          <p class="mt-1 text-sm text-ink-500 transition-colors duration-200 group-hover:text-white">Details Pending</p>
+      <!-- Doctor card: Dr Lau Fen Nee -->
+      <a href="dr-lau-fen-nee.html" class="group flex flex-col overflow-hidden rounded-[20px] bg-white shadow-card transition-transform duration-300 ease-out hover:-translate-y-1" data-reveal>
+        <div class="aspect-square overflow-hidden"><img src="assets/img/doctors/Dr-Lau-Fen-Nee.webp" alt="Dr Lau Fen Nee" class="h-full w-full object-cover object-top transition-transform duration-300 ease-out group-hover:scale-105" /></div>
+        <div class="flex flex-1 flex-col items-center gap-2 px-3.5 pb-[26px] pt-[22px] text-center">
+          <p class="text-sm font-medium uppercase leading-[22px] tracking-heading text-moss">Dr Lau Fen Nee</p>
+          <p class="flex-1 text-[13px] leading-5 tracking-body text-eucalyptus-text">Senior Consultant Clinical Oncologist</p>
+          <span class="mt-1 inline-flex items-center gap-1.5 rounded-full bg-frost px-2.5 py-1 text-[11px] font-medium tracking-[0.06em] text-forest"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>Klang Valley</span>
         </div>
       </a>
-
-      <a href="dr-ho-gwo-fuang.html" class="group overflow-hidden rounded-xl2 bg-white shadow-soft transition duration-200 ease-out hover:-translate-y-1 hover:bg-[#A5DCB0]" data-reveal>
-        <div class="aspect-square overflow-hidden">
-          <img src="assets/img/doctors/Dr-Ho-Gwo-Fuang.jpg" alt="Dr. Ho Gwo Fuang" class="h-full w-full object-cover transition-transform duration-300 ease-out group-hover:scale-105" />
-        </div>
-        <div class="px-4 py-5 text-center">
-          <p class="font-semibold text-ink-900 transition-colors duration-200 group-hover:text-white">Dr. Ho Gwo Fuang</p>
-          <p class="mt-1 text-sm text-ink-500 transition-colors duration-200 group-hover:text-white">Senior Consultant Clinical Oncologist</p>
-        </div>
-      </a>
-
-      <a href="dato-dr-fuad-ismail.html" class="group overflow-hidden rounded-xl2 bg-white shadow-soft transition duration-200 ease-out hover:-translate-y-1 hover:bg-[#A5DCB0]" data-reveal>
-        <div class="aspect-square overflow-hidden">
-          <img src="assets/img/doctors/Dr-Fuad-Ismail.jpg" alt="Dato' Dr Fuad Ismail" class="h-full w-full object-cover transition-transform duration-300 ease-out group-hover:scale-105" />
-        </div>
-        <div class="px-4 py-5 text-center">
-          <p class="font-semibold text-ink-900 transition-colors duration-200 group-hover:text-white">Dato' Dr Fuad Ismail</p>
-          <p class="mt-1 text-sm text-ink-500 transition-colors duration-200 group-hover:text-white">Senior Consultant Clinical Oncologist</p>
+      <!-- Doctor card: Dr Yeoh Chit Cheng -->
+      <a href="dr-yeoh-chit-cheng.html" class="group flex flex-col overflow-hidden rounded-[20px] bg-white shadow-card transition-transform duration-300 ease-out hover:-translate-y-1" data-reveal>
+        <div class="aspect-square overflow-hidden"><img src="assets/img/doctors/Dr-Yeoh-Chit-Cheng.webp" alt="Dr Yeoh Chit Cheng" class="h-full w-full object-cover object-top transition-transform duration-300 ease-out group-hover:scale-105" /></div>
+        <div class="flex flex-1 flex-col items-center gap-2 px-3.5 pb-[26px] pt-[22px] text-center">
+          <p class="text-sm font-medium uppercase leading-[22px] tracking-heading text-moss">Dr Yeoh Chit Cheng</p>
+          <p class="flex-1 text-[13px] leading-5 tracking-body text-eucalyptus-text">Consultant Medical Oncologist</p>
+          <span class="mt-1 inline-flex items-center gap-1.5 rounded-full bg-frost px-2.5 py-1 text-[11px] font-medium tracking-[0.06em] text-forest"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>Klang Valley</span>
         </div>
       </a>
-
-      <a href="dr-muhammad-azrif.html" class="group overflow-hidden rounded-xl2 bg-white shadow-soft transition duration-200 ease-out hover:-translate-y-1 hover:bg-[#A5DCB0]" data-reveal>
-        <div class="aspect-square overflow-hidden">
-          <img src="assets/img/doctors/Dr-Muhammad-Azrif.jpg" alt="Dr Muhammad Azrif" class="h-full w-full object-cover transition-transform duration-300 ease-out group-hover:scale-105" />
-        </div>
-        <div class="px-4 py-5 text-center">
-          <p class="font-semibold text-ink-900 transition-colors duration-200 group-hover:text-white">Dr Muhammad Azrif</p>
-          <p class="mt-1 text-sm text-ink-500 transition-colors duration-200 group-hover:text-white">Senior Consultant Clinical Oncologist</p>
+      <!-- Doctor card: Dr Jenson Sow Wen Jen -->
+      <a href="dr-sow-wen-jen.html" class="group flex flex-col overflow-hidden rounded-[20px] bg-white shadow-card transition-transform duration-300 ease-out hover:-translate-y-1" data-reveal>
+        <div class="aspect-square overflow-hidden"><img src="assets/img/doctors/Dr-Sow-Wen-Jen.webp" alt="Dr Jenson Sow Wen Jen" class="h-full w-full object-cover object-top transition-transform duration-300 ease-out group-hover:scale-105" /></div>
+        <div class="flex flex-1 flex-col items-center gap-2 px-3.5 pb-[26px] pt-[22px] text-center">
+          <p class="text-sm font-medium uppercase leading-[22px] tracking-heading text-moss">Dr Jenson Sow Wen Jen</p>
+          <p class="flex-1 text-[13px] leading-5 tracking-body text-eucalyptus-text">Consultant Clinical Oncologist</p>
+          <span class="mt-1 inline-flex items-center gap-1.5 rounded-full bg-frost px-2.5 py-1 text-[11px] font-medium tracking-[0.06em] text-forest"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>Klang Valley</span>
         </div>
       </a>
-
-      <a href="dr-tan-ai-lian.html" class="group overflow-hidden rounded-xl2 bg-white shadow-soft transition duration-200 ease-out hover:-translate-y-1 hover:bg-[#A5DCB0]" data-reveal>
-        <div class="aspect-square overflow-hidden">
-          <img src="assets/img/doctors/Dr-Tan-Ai-Lian.jpeg" alt="Dr Tan Ai Lian" class="h-full w-full object-cover transition-transform duration-300 ease-out group-hover:scale-105" />
-        </div>
-        <div class="px-4 py-5 text-center">
-          <p class="font-semibold text-ink-900 transition-colors duration-200 group-hover:text-white">Dr Tan Ai Lian</p>
-          <p class="mt-1 text-sm text-ink-500 transition-colors duration-200 group-hover:text-white">Clinical Oncologist</p>
+      <!-- Doctor card: Dr Tan Ai Lian -->
+      <a href="dr-tan-ai-lian.html" class="group flex flex-col overflow-hidden rounded-[20px] bg-white shadow-card transition-transform duration-300 ease-out hover:-translate-y-1" data-reveal>
+        <div class="aspect-square overflow-hidden"><img src="assets/img/doctors/Dr-Tan-Ai-Lian.jpeg" alt="Dr Tan Ai Lian" class="h-full w-full object-cover object-top transition-transform duration-300 ease-out group-hover:scale-105" /></div>
+        <div class="flex flex-1 flex-col items-center gap-2 px-3.5 pb-[26px] pt-[22px] text-center">
+          <p class="text-sm font-medium uppercase leading-[22px] tracking-heading text-moss">Dr Tan Ai Lian</p>
+          <p class="flex-1 text-[13px] leading-5 tracking-body text-eucalyptus-text">Clinical Oncologist</p>
+          <span class="mt-1 inline-flex items-center gap-1.5 rounded-full bg-frost px-2.5 py-1 text-[11px] font-medium tracking-[0.06em] text-forest"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>Penang</span>
         </div>
       </a>
     </div>
   </div>
 </section>
 
-<!-- Location & Contact -->
-<section id="contact" class="bg-cream-200 py-24">
-  <div class="mx-auto max-w-[1200px] px-6">
-    <div class="grid grid-cols-1 gap-16 lg:grid-cols-2">
-      <div data-reveal>
-        <h2 class="text-3xl text-sage-700 sm:text-4xl">Visit Our Clinic</h2>
-        <p class="mt-4 max-w-md text-lg leading-relaxed17 text-ink-700">Our resident specialists see patients at our flagship centre in Bangsar South, Kuala Lumpur. Reach out to book a consultation or ask us a question.</p>
+<!-- Our Locations + Contact form -->
+<section id="contact" class="bg-warm px-6 pb-[120px] pt-[108px]">
+  <div class="mx-auto flex max-w-[1144px] flex-col gap-10">
+    <div class="flex flex-col items-center gap-3.5 text-center" data-reveal>
+      <h2 class="section-title">Our Locations</h2>
+      <p class="max-w-[560px] leading-[26px] tracking-[0.03em]">Two centres, one team. See our consultants in Kuala Lumpur or Penang.</p>
+    </div>
 
-        <div class="mt-8 grid grid-cols-2 gap-4">
-          <img src="assets/img/clinic/reception-desk.webp" alt="Curie Oncology reception desk" class="aspect-[4/3] w-full rounded-xl2 object-cover shadow-soft" />
-          <img src="assets/img/clinic/clinic-interior-lounge.jpg" alt="Curie Oncology clinic lounge" class="aspect-[4/3] w-full rounded-xl2 object-cover shadow-soft" />
-        </div>
-
-        <div class="mt-10 space-y-6">
-          <div class="flex gap-4">
-            <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-sage-50 text-sage-700">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
-            </span>
-            <div>
-              <p class="text-sm font-semibold text-ink-900">Address</p>
-              <p class="mt-1 text-ink-700">Unit 1-14, Curie Oncology &amp; Specialist Centre, Nexus, Bangsar South, 59200 Kuala Lumpur</p>
-            </div>
+    <div class="grid grid-cols-1 gap-7 lg:grid-cols-2">
+      <!-- Location card: Kuala Lumpur -->
+      <article class="flex flex-col overflow-hidden rounded-[20px] bg-white shadow-card" data-reveal>
+        <div class="h-[240px] bg-cover bg-center sm:h-[300px]" style="background-image: url('assets/img/clinic/reception-desk.webp');" role="img" aria-label="Curie Oncology Kuala Lumpur reception"></div>
+        <div class="flex flex-1 flex-col gap-[22px] px-6 pb-10 pt-9 sm:px-10">
+          <div class="flex flex-col gap-2">
+            <p class="section-eyebrow">Klang Valley</p>
+            <h3 class="text-[22px] leading-8 tracking-[0.06em] sm:text-2xl">Curie Oncology, Kuala Lumpur</h3>
           </div>
-          <div class="flex gap-4">
-            <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-sage-50 text-sage-700">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.68 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.32 1.85.55 2.81.68A2 2 0 0 1 22 16.92Z"/></svg>
-            </span>
-            <div>
-              <p class="text-sm font-semibold text-ink-900">Phone</p>
-              <p class="mt-1 text-ink-700"><a href="tel:+60128223310" class="hover:text-sage-700">+60 12 822 3310</a></p>
-            </div>
-          </div>
-          <div class="flex gap-4">
-            <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-sage-50 text-sage-700">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
-            </span>
-            <div>
-              <p class="text-sm font-semibold text-ink-900">Operating Hours</p>
-              <p class="mt-1 text-ink-700">Mon–Fri: 8:30am–5:30pm | Sat: 8:30am–12:30pm</p>
-            </div>
+          <ul class="flex flex-1 flex-col gap-4 text-[15px] leading-6 tracking-[0.03em]">
+            <li class="flex gap-3.5"><span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-frost"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2F5C46" stroke-width="2"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg></span>Unit 1-14, Curie Oncology &amp; Specialist Centre, Nexus, Bangsar South, 59200 Kuala Lumpur</li>
+            <li class="flex items-center gap-3.5"><span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-frost"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2F5C46" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.9.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg></span><a href="tel:+60128223310" class="hover:text-forest">+60 12 822 3310</a></li>
+            <li class="flex items-center gap-3.5"><span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-frost"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2F5C46" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><span><strong class="font-bold">Mon–Fri</strong>: 8:30am–5:30pm · <strong class="font-bold">Sat</strong>: 8:30am–12:30pm</span></li>
+          </ul>
+          <div class="flex flex-wrap gap-3">
+            <a href="https://maps.google.com/?q=Curie+Oncology+Nexus+Bangsar+South" target="_blank" rel="noopener" class="btn-primary">Get direction</a>
+            <a href="tel:+60128223310" class="btn-secondary" data-contact-clinic>Contact clinic</a>
           </div>
         </div>
-      </div>
+      </article>
 
-      <div class="h-fit rounded-xl2 bg-white p-10 shadow-card" data-reveal>
-        <h3 class="text-2xl">Drop Us a Message</h3>
-        <form class="mt-7 space-y-6" action="#" method="post">
-          <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
-            <label class="block">
-              <span class="text-xs font-medium text-ink-500">Your Name (required)</span>
-              <input type="text" name="name" required placeholder="Full Name" class="mt-2 w-full rounded-lg border-0 bg-cream-200 px-4 py-3 text-ink-900 placeholder:text-ink-300 focus:ring-2 focus:ring-sage-400" />
-            </label>
-            <label class="block">
-              <span class="text-xs font-medium text-ink-500">Your Email (required)</span>
-              <input type="email" name="email" required placeholder="email@example.com" class="mt-2 w-full rounded-lg border-0 bg-cream-200 px-4 py-3 text-ink-900 placeholder:text-ink-300 focus:ring-2 focus:ring-sage-400" />
-            </label>
+      <!-- Location card: Penang -->
+      <article class="flex flex-col overflow-hidden rounded-[20px] bg-white shadow-card" data-reveal>
+        <!-- STOCK PLACEHOLDER: replace with a real photo of the Curie Penang centre -->
+        <div class="h-[240px] bg-cover bg-center sm:h-[300px]" style="background-image: url('assets/img/stock/penang-placeholder.jpg');" role="img" aria-label="Clinic reception (placeholder photo)"></div>
+        <div class="flex flex-1 flex-col gap-[22px] px-6 pb-10 pt-9 sm:px-10">
+          <div class="flex flex-col gap-2">
+            <p class="section-eyebrow">Penang</p>
+            <h3 class="text-[22px] leading-8 tracking-[0.06em] sm:text-2xl">Curie Oncology, Bagan Specialist, Penang</h3>
           </div>
-          <label class="block">
-            <span class="text-xs font-medium text-ink-500">Your Message</span>
-            <textarea name="message" rows="4" placeholder="How can we help you?" class="mt-2 w-full rounded-lg border-0 bg-cream-200 px-4 py-3 text-ink-900 placeholder:text-ink-300 focus:ring-2 focus:ring-sage-400"></textarea>
-          </label>
-          <label class="flex items-start gap-3 text-sm text-ink-700">
-            <input type="checkbox" required class="mt-1 h-4 w-4 shrink-0 rounded border-ink-300 text-sage-600 focus:ring-sage-400" />
-            <span>I consent to Curie Oncology collecting and processing my personal data in accordance with the <a href="#" class="font-semibold text-sage-700 hover:underline">Personal Data Protection Act (PDPA)</a>.</span>
-          </label>
-          <button type="submit" class="btn-primary w-full justify-center !py-3.5">
-            Send
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          </button>
-        </form>
-      </div>
+          <ul class="flex flex-1 flex-col gap-4 text-[15px] leading-6 tracking-[0.03em]">
+            <li class="flex gap-3.5"><span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-frost"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2F5C46" stroke-width="2"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg></span>Room D2617, Block D, Level 2, Bagan Specialist Centre, Jalan Bagan 1, 13400 Butterworth, Penang</li>
+            <li class="flex items-center gap-3.5"><span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-frost"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2F5C46" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.9.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg></span><a href="tel:+6043710000" class="hover:text-forest">+604 371 0000 ext. 42617</a></li>
+            <li class="flex gap-3.5"><span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-frost"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2F5C46" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><span class="pt-1.5"><strong class="font-bold">Mon–Tues</strong>: 8:30am–5:30pm<br /><strong class="font-bold">Thurs–Fri</strong>: 8:30am–5:30pm<br /><strong class="font-bold">Saturday</strong>: 8:30am–1:30pm</span></li>
+          </ul>
+          <div class="flex flex-wrap gap-3">
+            <a href="https://maps.google.com/?q=Bagan+Specialist+Centre+Butterworth" target="_blank" rel="noopener" class="btn-primary">Get direction</a>
+            <a href="tel:+6043710000" class="btn-secondary" data-contact-clinic>Contact clinic</a>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <!-- Contact form (static markup — needs a form endpoint before launch) -->
+    <div id="message-form" class="scroll-mt-28 rounded-[20px] bg-white px-6 pb-11 pt-10 shadow-card sm:px-11" data-reveal>
+      <h3 class="text-lg font-medium tracking-[0.1em]">Drop Us a Message</h3>
+      <form class="mt-[26px] flex flex-col gap-[22px]" action="#" method="post">
+        <div class="grid grid-cols-1 gap-5 sm:grid-cols-2">
+          <div><label class="field-label" for="name">Your Name (required)</label><input id="name" name="name" required class="field h-14" placeholder="Full Name" /></div>
+          <div><label class="field-label" for="email">Your Email (required)</label><input id="email" name="email" type="email" required class="field h-14" placeholder="email@example.com" /></div>
+        </div>
+        <div>
+          <label class="field-label" for="doctor-select">Preferred Doctor</label>
+          <select id="doctor-select" name="doctor" class="field h-[52px]">
+            <option value="">No preference</option>
+            <option value="dr-ho-gwo-fuang">Dr Ho Gwo Fuang (Klang Valley)</option>
+            <option value="dr-lau-fen-nee">Dr Lau Fen Nee (Klang Valley)</option>
+            <option value="dr-yeoh-chit-cheng">Dr Yeoh Chit Cheng (Klang Valley)</option>
+            <option value="dr-sow-wen-jen">Dr Jenson Sow Wen Jen (Klang Valley)</option>
+            <option value="dr-tan-ai-lian">Dr Tan Ai Lian (Penang)</option>
+          </select>
+        </div>
+        <div><label class="field-label" for="message">Your Message</label><textarea id="message" name="message" rows="5" class="field resize-none" placeholder="How can we help you?"></textarea></div>
+        <label class="flex items-start gap-3.5 pt-1.5 text-sm leading-[22px] tracking-body text-forest">
+          <input type="checkbox" name="pdpa" required class="mt-1 h-4 w-4 shrink-0 accent-forest" />
+          <span>I consent to Curie Oncology collecting and processing my personal data in accordance with the <strong class="font-bold">Personal Data Protection Act (PDPA)</strong>.</span>
+        </label>
+        <button type="submit" class="btn-primary h-[54px] w-full text-[15px] normal-case">
+          Send
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </button>
+      </form>
     </div>
   </div>
 </section>
+
+<script>
+  (function () {
+    var doctor = new URLSearchParams(window.location.search).get('doctor');
+    var select = document.getElementById('doctor-select');
+    if (doctor && select && select.querySelector('option[value="' + doctor + '"]')) select.value = doctor;
+
+    // "Contact clinic": phones keep the tel: link and open the dialler; everywhere
+    // else (desktop) we scroll to the message form and focus the first field.
+    var isPhone = window.matchMedia('(pointer: coarse)').matches && window.matchMedia('(max-width: 1023px)').matches;
+    document.querySelectorAll('[data-contact-clinic]').forEach(function (link) {
+      link.addEventListener('click', function (e) {
+        if (isPhone) return;
+        e.preventDefault();
+        var form = document.getElementById('message-form');
+        var smooth = !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        form.scrollIntoView({ behavior: smooth ? 'smooth' : 'auto', block: 'start' });
+        var first = document.getElementById('name');
+        if (first) first.focus({ preventScroll: true });
+      });
+    });
+  })();
+</script>

@@ -1,22 +1,23 @@
-<header class="sticky top-0 z-50 border-b border-ink-900/[0.06] bg-cream-100/90 backdrop-blur transition-transform duration-300 ease-in-out">
-  <div class="mx-auto flex h-24 max-w-[1200px] items-center justify-between px-6">
+<header class="sticky top-0 z-50 border-b border-moss/[0.08] bg-white/95 backdrop-blur transition-transform duration-300 ease-in-out">
+  <div class="mx-auto flex h-[88px] max-w-[1240px] lg:h-[108px] items-center justify-between px-6">
     <a href="index.html" class="flex items-center gap-3">
-      <img src="assets/img/logo/curie-logo.svg" alt="Curie Oncology - Spring Will Come" class="h-[62px] w-auto" />
+      <img src="assets/img/logo/curie-logo.svg" alt="Curie Oncology - Spring Will Come" class="h-[46px] w-auto lg:h-[52px]" />
     </a>
 
-    <nav class="hidden items-center gap-8 lg:flex" aria-label="Primary">
-      <a href="index.html" class="text-sm text-ink-700 hover:text-sage-700 {{NAV_HOME}}">Home</a>
-      <a href="about.html" class="text-sm text-ink-700 hover:text-sage-700 {{NAV_ABOUT}}">About Us</a>
-      <a href="meet-our-doctors.html" class="text-sm text-ink-700 hover:text-sage-700 {{NAV_DOCTORS}}">Doctors</a>
-      <a href="our-services.html" class="text-sm text-ink-700 hover:text-sage-700 {{NAV_SERVICES}}">Oncology Services</a>
-      <a href="health-education.html" class="text-sm text-ink-700 hover:text-sage-700 {{NAV_HEALTH}}">Health Education</a>
-      <a href="index.html#contact" class="text-sm text-ink-700 hover:text-sage-700 {{NAV_CONTACT}}">Contact Us</a>
+    <nav class="hidden items-center gap-5 lg:flex xl:gap-7" aria-label="Primary">
+      <a href="index.html" class="whitespace-nowrap text-xs font-medium uppercase tracking-body text-body hover:text-forest {{NAV_HOME}}">Home</a>
+      <a href="about.html" class="whitespace-nowrap text-xs font-medium uppercase tracking-body text-body hover:text-forest {{NAV_ABOUT}}">About Us</a>
+      <a href="meet-our-doctors.html" class="whitespace-nowrap text-xs font-medium uppercase tracking-body text-body hover:text-forest {{NAV_DOCTORS}}">Doctors</a>
+      <a href="our-services.html" class="whitespace-nowrap text-xs font-medium uppercase tracking-body text-body hover:text-forest {{NAV_SERVICES}}">Oncology Services</a>
+      <a href="health-education.html" class="whitespace-nowrap text-xs font-medium uppercase tracking-body text-body hover:text-forest {{NAV_HEALTH}}">Resource Centre</a>
+      <a href="index.html#contact" class="whitespace-nowrap text-xs font-medium uppercase tracking-body text-body hover:text-forest {{NAV_CONTACT}}">Contact Us</a>
+      <a href="index.html#contact" class="btn-primary ml-2 h-[46px] whitespace-nowrap px-6 text-xs">Book Appointment</a>
     </nav>
 
     <button
       type="button"
       id="nav-toggle"
-      class="relative flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-ink-900 transition-colors duration-200 hover:bg-sage-50 active:bg-sage-100 lg:hidden"
+      class="relative flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-moss transition-colors duration-200 hover:bg-frost active:bg-seafoam lg:hidden"
       aria-expanded="false"
       aria-controls="mobile-nav"
       aria-label="Open menu"
@@ -27,13 +28,14 @@
   </div>
 
   <div id="mobile-nav" class="mobile-nav lg:hidden" aria-hidden="true">
-    <nav class="flex max-h-[calc(100vh-6rem)] flex-col overflow-y-auto divide-y divide-ink-900/[0.06] border-t border-ink-900/[0.06] bg-cream-100 px-6 shadow-lift" aria-label="Primary mobile" data-lenis-prevent>
-      <a href="index.html" class="py-4 text-base text-ink-700 hover:text-sage-700 {{NAV_HOME}}">Home</a>
-      <a href="about.html" class="py-4 text-base text-ink-700 hover:text-sage-700 {{NAV_ABOUT}}">About Us</a>
-      <a href="meet-our-doctors.html" class="py-4 text-base text-ink-700 hover:text-sage-700 {{NAV_DOCTORS}}">Doctors</a>
-      <a href="our-services.html" class="py-4 text-base text-ink-700 hover:text-sage-700 {{NAV_SERVICES}}">Oncology Services</a>
-      <a href="health-education.html" class="py-4 text-base text-ink-700 hover:text-sage-700 {{NAV_HEALTH}}">Health Education</a>
-      <a href="index.html#contact" class="py-4 text-base text-ink-700 hover:text-sage-700 {{NAV_CONTACT}}">Contact Us</a>
+    <nav class="flex max-h-[calc(100vh-6rem)] flex-col overflow-y-auto divide-y divide-moss/[0.08] border-t border-moss/[0.08] bg-white px-6 shadow-lift" aria-label="Primary mobile" data-lenis-prevent>
+      <a href="index.html" class="py-4 text-sm font-medium uppercase tracking-body text-body hover:text-forest {{NAV_HOME}}">Home</a>
+      <a href="about.html" class="py-4 text-sm font-medium uppercase tracking-body text-body hover:text-forest {{NAV_ABOUT}}">About Us</a>
+      <a href="meet-our-doctors.html" class="py-4 text-sm font-medium uppercase tracking-body text-body hover:text-forest {{NAV_DOCTORS}}">Doctors</a>
+      <a href="our-services.html" class="py-4 text-sm font-medium uppercase tracking-body text-body hover:text-forest {{NAV_SERVICES}}">Oncology Services</a>
+      <a href="health-education.html" class="py-4 text-sm font-medium uppercase tracking-body text-body hover:text-forest {{NAV_HEALTH}}">Resource Centre</a>
+      <a href="index.html#contact" class="py-4 text-sm font-medium uppercase tracking-body text-body hover:text-forest {{NAV_CONTACT}}">Contact Us</a>
+      <div class="py-5"><a href="index.html#contact" class="btn-primary w-full justify-center">Book Appointment</a></div>
     </nav>
   </div>
 </header>

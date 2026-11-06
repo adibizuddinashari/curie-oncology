@@ -25,34 +25,20 @@ const pages = [
     file: "about.html",
     src: "about.html",
     title: "About Us - Curie Oncology",
-    description: "Learn about Curie Oncology's mission, values, Singapore founding, and future plans in precision cancer care.",
+    description: "Curie Oncology's story, philosophy of personalised cancer care, and its network with Curie Singapore.",
     nav: "ABOUT",
-  },
-  {
-    file: "our-doctors.html",
-    src: "our-doctors.html",
-    title: "Our Doctors - Curie Oncology",
-    description: "Meet Curie Oncology's team of consultant clinical oncologists, with a fixed portrait frame that transitions as you scroll.",
-    nav: "DOCTORS",
-  },
-  {
-    file: "our-doctors-parallax.html",
-    src: "our-doctors-parallax.html",
-    title: "Our Doctors (Classic) - Curie Oncology",
-    description: "Meet Curie Oncology's team of consultant clinical oncologists in Kuala Lumpur.",
-    nav: "DOCTORS",
   },
   {
     file: "our-services.html",
     src: "our-services.html",
     title: "Oncology Services - Curie Oncology",
-    description: "Curie Oncology's clinical and diagnostic services, from chemotherapy infusion and radiation therapy to molecular testing and clinical trials.",
+    description: "Curie Oncology's clinical and diagnostic services, from chemotherapy infusion and CAR T cell therapy to molecular testing and clinical trials.",
     nav: "SERVICES",
   },
   {
     file: "health-education.html",
     src: "health-education.html",
-    title: "Health Education - Curie Oncology",
+    title: "Resource Centre - Curie Oncology",
     description: "Patient education guides on cancer recovery, cancer therapy, prevention, and everyday tips for people living with cancer.",
     nav: "HEALTH",
   },
@@ -60,56 +46,42 @@ const pages = [
     file: "meet-our-doctors.html",
     src: "meet-our-doctors.html",
     title: "Meet Our Doctors - Curie Oncology",
-    description: "Browse Curie Oncology's full team of consultant clinical oncologists and open each doctor's dedicated profile.",
+    description: "Meet Curie Oncology Malaysia's consultants in medical oncology and clinical oncology in Klang Valley and Penang.",
     nav: "DOCTORS",
   },
   {
     file: "dr-lau-fen-nee.html",
     src: "dr-lau-fen-nee.html",
     title: "Dr Lau Fen Nee - Curie Oncology",
-    description: "Dr Lau Fen Nee, Senior Consultant Clinical Oncologist at Curie Oncology, specialising in medical oncology and radiotherapy.",
+    description: "Dr Lau Fen Nee, Senior Consultant Clinical Oncologist at Curie Oncology, Klang Valley. Manages patients across all cancer types.",
     nav: "DOCTORS",
   },
   {
     file: "dr-ho-gwo-fuang.html",
     src: "dr-ho-gwo-fuang.html",
-    title: "Dr. Ho Gwo Fuang - Curie Oncology",
-    description: "Dr. Ho Gwo Fuang, Senior Consultant Clinical Oncologist at Curie Oncology, specialising in gastrointestinal cancers.",
+    title: "Dr Ho Gwo Fuang - Curie Oncology",
+    description: "Dr Ho Gwo Fuang, Senior Consultant Clinical Oncologist at Curie Oncology, Klang Valley. Focus: gastrointestinal, hepatobiliary and breast cancers.",
     nav: "DOCTORS",
   },
   {
     file: "dr-sow-wen-jen.html",
     src: "dr-sow-wen-jen.html",
-    title: "Dr Sow Wen Jen (Jenson) - Curie Oncology",
-    description: "Dr Sow Wen Jen (Jenson), Consultant Clinical Oncologist at Curie Oncology, specialising in gastrointestinal cancers.",
-    nav: "DOCTORS",
-  },
-  {
-    file: "dato-dr-fuad-ismail.html",
-    src: "dato-dr-fuad-ismail.html",
-    title: "Dato' Dr Fuad Ismail - Curie Oncology",
-    description: "Dato' Dr Fuad Ismail, Visiting Senior Consultant Clinical Oncologist at Curie Oncology, specialising in breast, cervical, and colorectal cancers.",
-    nav: "DOCTORS",
-  },
-  {
-    file: "dr-muhammad-azrif.html",
-    src: "dr-muhammad-azrif.html",
-    title: "Dr Muhammad Azrif - Curie Oncology",
-    description: "Dr Muhammad Azrif, Visiting Senior Consultant Clinical Oncologist at Curie Oncology, specialising in radiation oncology.",
+    title: "Dr Jenson Sow Wen Jen - Curie Oncology",
+    description: "Dr Jenson Sow Wen Jen, Consultant Clinical Oncologist at Curie Oncology, Klang Valley. Focus: gastrointestinal cancers.",
     nav: "DOCTORS",
   },
   {
     file: "dr-tan-ai-lian.html",
     src: "dr-tan-ai-lian.html",
     title: "Dr Tan Ai Lian - Curie Oncology",
-    description: "Dr Tan Ai Lian, Clinical Oncologist, sees patients at Bagan Specialist Centre in Penang.",
+    description: "Dr Tan Ai Lian, Clinical Oncologist at Curie Oncology, Penang. Focus: lung, head and neck and gastrointestinal cancers.",
     nav: "DOCTORS",
   },
   {
     file: "dr-yeoh-chit-cheng.html",
     src: "dr-yeoh-chit-cheng.html",
     title: "Dr Yeoh Chit Cheng - Curie Oncology",
-    description: "Dr Yeoh Chit Cheng at Curie Oncology - full profile details pending.",
+    description: "Dr Yeoh Chit Cheng, Consultant Medical Oncologist at Curie Oncology, Klang Valley. Focus: acute oncology, lymphoma, skin cancer, gynae cancers and cancer of unknown primary.",
     nav: "DOCTORS",
   },
 ];
@@ -117,7 +89,7 @@ const pages = [
 for (const page of pages) {
   let header = headerTemplate;
   for (const key of NAV_KEYS) {
-    header = header.replaceAll(`{{NAV_${key}}}`, key === page.nav ? "font-semibold text-sage-700" : "");
+    header = header.replaceAll(`{{NAV_${key}}}`, key === page.nav ? "!text-forest" : "");
   }
 
   const content = read(path.join(PAGES, page.src));
