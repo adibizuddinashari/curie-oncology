@@ -1098,10 +1098,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   bottom: 1.5rem;
 }
 
-.left-4{
-  left: 1rem;
-}
-
 .right-6{
   right: 1.5rem;
 }
@@ -1112,10 +1108,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 
 .top-1{
   top: 0.25rem;
-}
-
-.top-1\/2{
-  top: 50%;
 }
 
 .top-24{
@@ -1559,11 +1551,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   flex-shrink: 0;
 }
 
-.-translate-y-1\/2{
-  --tw-translate-y: -50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .-translate-y-full{
   --tw-translate-y: -100%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1870,10 +1857,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   border-width: 1px;
 }
 
-.border-0{
-  border-width: 0px;
-}
-
 .border-\[1\.5px\]{
   border-width: 1.5px;
 }
@@ -2156,11 +2139,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   padding-bottom: 0.5rem;
 }
 
-.py-2\.5{
-  padding-top: 0.625rem;
-  padding-bottom: 0.625rem;
-}
-
 .py-20{
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -2227,16 +2205,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   padding-bottom: 30px;
 }
 
-.pl-11{
-  padding-left: 2.75rem;
-}
-
 .pl-6{
   padding-left: 1.5rem;
-}
-
-.pr-4{
-  padding-right: 1rem;
 }
 
 .pt-1{
@@ -2634,11 +2604,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   color: rgb(33 70 47 / var(--tw-text-opacity, 1));
 }
 
-.text-seafoam{
-  --tw-text-opacity: 1;
-  color: rgb(181 217 196 / var(--tw-text-opacity, 1));
-}
-
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
@@ -2764,16 +2729,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   navigation: auto;
 }
 
-.placeholder\:text-seafoam::-moz-placeholder{
-  --tw-text-opacity: 1;
-  color: rgb(181 217 196 / var(--tw-text-opacity, 1));
-}
-
-.placeholder\:text-seafoam::placeholder{
-  --tw-text-opacity: 1;
-  color: rgb(181 217 196 / var(--tw-text-opacity, 1));
-}
-
 .hover\:-translate-y-0\.5:hover{
   --tw-translate-y: -0.125rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -2826,17 +2781,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .hover\:text-sage-800:hover{
   --tw-text-opacity: 1;
   color: rgb(33 70 47 / var(--tw-text-opacity, 1));
-}
-
-.focus\:ring-2:focus{
-  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
-}
-
-.focus\:ring-curie:focus{
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(134 195 157 / var(--tw-ring-opacity, 1));
 }
 
 .focus-visible\:outline:focus-visible{
