@@ -116,6 +116,25 @@
   .doctor-card:active .doctor-card__img {
     transform: scale(1.01);
   }
+  /* "Other doctors" thumbnails on profile pages (Paper: 268×358 card, photo 268×240) */
+  .other-doctor__photo {
+    @apply relative aspect-[268/240] overflow-hidden;
+  }
+  .other-doctor__body {
+    @apply flex flex-1 flex-col items-center gap-2 px-5 pb-6 pt-[22px] text-center;
+  }
+  .other-doctor__name {
+    @apply text-[20px] leading-6;
+  }
+  .other-doctor__role {
+    @apply text-[15px] leading-5 tracking-[0.02em] text-body;
+  }
+  .link-arrow {
+    @apply inline-flex items-center gap-2 pb-1.5 text-[15px] font-medium uppercase leading-[18px] tracking-body text-forest transition-colors duration-200 hover:text-moss;
+  }
+  .link-arrow:active {
+    transform: translateY(1px);
+  }
   .field {
     @apply w-full rounded-[10px] border border-field bg-mist px-4 py-3 text-base tracking-body text-moss placeholder:text-eucalyptus-text focus:border-forest focus:outline-none;
   }
