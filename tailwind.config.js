@@ -67,6 +67,17 @@ module.exports = {
         // it renders where installed, otherwise falls back to Outfit (free, similar geometry).
         sans: ['"TT Norms Pro"', "Outfit", "system-ui", "sans-serif"],
       },
+      // One size up from the Paper type scale (client request, Nov 2026).
+      fontSize: {
+        xs: ["0.875rem", { lineHeight: "1.25rem" }],
+        sm: ["1rem", { lineHeight: "1.5rem" }],
+        base: ["1.125rem", { lineHeight: "1.75rem" }],
+        lg: ["1.25rem", { lineHeight: "1.875rem" }],
+        xl: ["1.375rem", { lineHeight: "2rem" }],
+        "2xl": ["1.625rem", { lineHeight: "2.25rem" }],
+        "3xl": ["2.125rem", { lineHeight: "2.625rem" }],
+        "4xl": ["2.5rem", { lineHeight: "3rem" }],
+      },
       boxShadow: {
         soft: "0 2px 8px -2px rgba(31, 42, 40, 0.08), 0 8px 24px -8px rgba(31, 42, 40, 0.10)",
         card: "0 1px 2px rgba(31, 42, 40, 0.06), 0 12px 32px -12px rgba(76, 156, 104, 0.18)",

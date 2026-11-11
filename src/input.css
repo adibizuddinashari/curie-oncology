@@ -18,7 +18,7 @@
     }
   }
   body {
-    @apply bg-white text-body font-sans antialiased;
+    @apply bg-white text-body font-sans text-base antialiased;
     line-height: 1.7;
     letter-spacing: 0.03em;
   }
@@ -48,19 +48,19 @@
 
 @layer components {
   .btn-primary {
-    @apply inline-flex h-[46px] items-center justify-center gap-2 rounded-full bg-forest px-6 text-[13px] font-medium uppercase tracking-body text-white shadow-card transition-transform duration-200 ease-out hover:-translate-y-0.5 hover:bg-moss active:translate-y-0;
+    @apply inline-flex h-[46px] items-center justify-center gap-2 rounded-full bg-forest px-6 text-[15px] font-medium uppercase tracking-body text-white shadow-card transition-transform duration-200 ease-out hover:-translate-y-0.5 hover:bg-moss active:translate-y-0;
   }
   .btn-secondary {
-    @apply inline-flex h-[46px] items-center justify-center gap-2 rounded-full border-[1.5px] border-seafoam bg-white px-6 text-[13px] font-medium uppercase tracking-body text-forest transition-transform duration-200 ease-out hover:-translate-y-0.5 hover:border-forest active:translate-y-0;
+    @apply inline-flex h-[46px] items-center justify-center gap-2 rounded-full border-[1.5px] border-seafoam bg-white px-6 text-[15px] font-medium uppercase tracking-body text-forest transition-transform duration-200 ease-out hover:-translate-y-0.5 hover:border-forest active:translate-y-0;
   }
   .section-eyebrow {
     @apply text-xs font-medium uppercase tracking-label text-eucalyptus-text;
   }
   .section-title {
-    @apply text-[28px] leading-[38px] uppercase tracking-heading text-forest;
+    @apply text-[32px] leading-[42px] uppercase tracking-heading text-forest;
   }
   .body-copy {
-    @apply text-base leading-[28px] tracking-body text-body;
+    @apply text-base leading-[31px] tracking-body text-body;
   }
   /* Full-bleed page hero (Curie Singapore approach): photo + forest overlay + centred title */
   .page-hero {
@@ -73,14 +73,54 @@
     /* White faded wash (Paper page B): light at the top, near-solid white where the hero meets the page */
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.5) 55%, rgba(255, 255, 255, 0.97) 100%);
   }
+  .page-hero--warm::before {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.5) 55%, rgba(247, 244, 239, 0.97) 100%);
+  }
   .page-hero h1 {
-    @apply relative text-center text-[30px] leading-[40px] text-moss sm:text-[44px] sm:leading-[56px];
+    @apply relative text-center text-[34px] leading-[44px] text-moss sm:text-[48px] sm:leading-[60px];
+  }
+  /* Doctor cards (Paper "Meet Our Doctors": 320×420, photo 300 + name panel 120). Each photo's crop
+     comes from Paper as percentage offsets on .doctor-card__img, so the framing holds at any width. */
+  .doctor-grid {
+    @apply mt-11 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4;
+  }
+  .doctor-card {
+    @apply flex flex-col overflow-hidden rounded-lg bg-white;
+    box-shadow: 0 4px 24px rgba(130, 130, 130, 0.2);
+  }
+  .doctor-card__photo {
+    @apply relative aspect-[32/30] overflow-hidden;
+  }
+  .doctor-card__img {
+    @apply absolute bg-no-repeat;
+    transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .doctor-card__body {
+    @apply flex h-[120px] flex-col items-center justify-center gap-2.5 px-[26px] text-center;
+  }
+  .doctor-card__name {
+    @apply text-[22px] font-medium leading-[26px] tracking-[0.02em] text-moss transition-colors duration-200;
+  }
+  .doctor-card__role {
+    @apply text-base leading-5 tracking-[0.02em] text-body;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .doctor-card:hover .doctor-card__img {
+      transform: scale(1.04);
+    }
+  }
+  .doctor-card:hover .doctor-card__name,
+  .doctor-card:focus-visible .doctor-card__name {
+    @apply text-forest;
+  }
+  .doctor-card:active .doctor-card__img {
+    transform: scale(1.01);
   }
   .field {
     @apply w-full rounded-[10px] border border-field bg-mist px-4 py-3 text-base tracking-body text-moss placeholder:text-eucalyptus-text focus:border-forest focus:outline-none;
   }
   .field-label {
-    @apply mb-2 block text-[13px] tracking-body text-body;
+    @apply mb-2 block text-[15px] tracking-body text-body;
   }
 
   /* Booking modal (profile pages) — overlay fades, dialog rises; transform/opacity only */

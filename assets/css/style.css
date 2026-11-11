@@ -571,6 +571,8 @@ body{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
   font-family: "TT Norms Pro", Outfit, system-ui, sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
   --tw-text-opacity: 1;
   color: rgb(78 78 78 / var(--tw-text-opacity, 1));
   -webkit-font-smoothing: antialiased;
@@ -633,7 +635,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   background-color: rgb(47 92 70 / var(--tw-bg-opacity, 1));
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -674,7 +676,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -699,8 +701,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 
 .section-eyebrow{
-  font-size: 0.75rem;
-  line-height: 1rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.16em;
@@ -709,18 +711,18 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 
 .section-title{
-  font-size: 28px;
+  font-size: 32px;
   text-transform: uppercase;
-  line-height: 38px;
+  line-height: 42px;
   letter-spacing: 0.08em;
   --tw-text-opacity: 1;
   color: rgb(47 92 70 / var(--tw-text-opacity, 1));
 }
 
 .body-copy{
-  font-size: 1rem;
-  line-height: 1.5rem;
-  line-height: 28px;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  line-height: 31px;
   letter-spacing: 0.05em;
   --tw-text-opacity: 1;
   color: rgb(78 78 78 / var(--tw-text-opacity, 1));
@@ -760,20 +762,116 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.5) 55%, rgba(255, 255, 255, 0.97) 100%);
 }
 
+.page-hero--warm::before {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.5) 55%, rgba(247, 244, 239, 0.97) 100%);
+}
+
 .page-hero h1{
   position: relative;
   text-align: center;
-  font-size: 30px;
-  line-height: 40px;
+  font-size: 34px;
+  line-height: 44px;
   --tw-text-opacity: 1;
   color: rgb(23 51 37 / var(--tw-text-opacity, 1));
 }
 
 @media (min-width: 640px){
   .page-hero h1{
-    font-size: 44px;
-    line-height: 56px;
+    font-size: 48px;
+    line-height: 60px;
   }
+}
+
+/* Doctor cards (Paper "Meet Our Doctors": 320×420, photo 300 + name panel 120). Each photo's crop
+     comes from Paper as percentage offsets on .doctor-card__img, so the framing holds at any width. */
+
+.doctor-grid{
+  margin-top: 2.75rem;
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+@media (min-width: 640px){
+  .doctor-grid{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px){
+  .doctor-grid{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.doctor-card{
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+  box-shadow: 0 4px 24px rgba(130, 130, 130, 0.2);
+}
+
+.doctor-card__photo{
+  position: relative;
+  aspect-ratio: 32/30;
+  overflow: hidden;
+}
+
+.doctor-card__img{
+  position: absolute;
+  background-repeat: no-repeat;
+  transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.doctor-card__body{
+  display: flex;
+  height: 120px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+  padding-left: 26px;
+  padding-right: 26px;
+  text-align: center;
+}
+
+.doctor-card__name{
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  --tw-text-opacity: 1;
+  color: rgb(23 51 37 / var(--tw-text-opacity, 1));
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+}
+
+.doctor-card__role{
+  font-size: 1.125rem;
+  line-height: 1.25rem;
+  letter-spacing: 0.02em;
+  --tw-text-opacity: 1;
+  color: rgb(78 78 78 / var(--tw-text-opacity, 1));
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .doctor-card:hover .doctor-card__img {
+    transform: scale(1.04);
+  }
+}
+
+.doctor-card:hover .doctor-card__name,
+  .doctor-card:focus-visible .doctor-card__name{
+  --tw-text-opacity: 1;
+  color: rgb(47 92 70 / var(--tw-text-opacity, 1));
+}
+
+.doctor-card:active .doctor-card__img {
+  transform: scale(1.01);
 }
 
 .field{
@@ -788,8 +886,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   padding-right: 1rem;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
   letter-spacing: 0.05em;
   --tw-text-opacity: 1;
   color: rgb(23 51 37 / var(--tw-text-opacity, 1));
@@ -815,7 +913,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .field-label{
   margin-bottom: 0.5rem;
   display: block;
-  font-size: 13px;
+  font-size: 15px;
   letter-spacing: 0.05em;
   --tw-text-opacity: 1;
   color: rgb(78 78 78 / var(--tw-text-opacity, 1));
@@ -1167,10 +1265,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   margin-top: 2.5rem;
 }
 
-.mt-12{
-  margin-top: 3rem;
-}
-
 .mt-14{
   margin-top: 3.5rem;
 }
@@ -1247,8 +1341,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   aspect-ratio: 16/10;
 }
 
-.aspect-\[3\/4\]{
-  aspect-ratio: 3/4;
+.aspect-\[222\/211\]{
+  aspect-ratio: 222/211;
 }
 
 .aspect-\[4\/3\]{
@@ -1257,10 +1351,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 
 .aspect-\[4\/5\]{
   aspect-ratio: 4/5;
-}
-
-.aspect-square{
-  aspect-ratio: 1 / 1;
 }
 
 .\!h-\[520px\]{
@@ -1499,12 +1589,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   max-width: 1240px;
 }
 
-.max-w-\[1400px\]{
-  max-width: 1400px;
+.max-w-\[1352px\]{
+  max-width: 1352px;
 }
 
-.max-w-\[560px\]{
-  max-width: 560px;
+.max-w-\[1400px\]{
+  max-width: 1400px;
 }
 
 .max-w-\[640px\]{
@@ -1513,6 +1603,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 
 .max-w-\[660px\]{
   max-width: 660px;
+}
+
+.max-w-\[680px\]{
+  max-width: 680px;
 }
 
 .max-w-\[720px\]{
@@ -1812,6 +1906,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   white-space: nowrap;
 }
 
+.\!rounded-\[20px\]{
+  border-radius: 20px !important;
+}
+
 .rounded-2xl{
   border-radius: 1rem;
 }
@@ -2016,6 +2114,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   background-color: rgb(255 255 255 / 0.95);
 }
 
+.bg-\[linear-gradient\(180deg\2c \#86C39D_0\%\2c rgba\(134\2c 195\2c 157\2c 0\)_28\%\)\]{
+  background-image: linear-gradient(180deg,#86C39D 0%,rgba(134,195,157,0) 28%);
+}
+
 .bg-gradient-to-t{
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
 }
@@ -2037,6 +2139,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 
 .bg-cover{
   background-size: cover;
+}
+
+.bg-\[center_30\%\]{
+  background-position: center 30%;
 }
 
 .bg-center{
@@ -2114,11 +2220,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   padding-right: 1.75rem;
 }
 
-.px-\[26px\]{
-  padding-left: 26px;
-  padding-right: 26px;
-}
-
 .py-1{
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
@@ -2169,6 +2270,11 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   padding-bottom: 104px;
 }
 
+.py-\[92px\]{
+  padding-top: 92px;
+  padding-bottom: 92px;
+}
+
 .pb-10{
   padding-bottom: 2.5rem;
 }
@@ -2201,8 +2307,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   padding-bottom: 26px;
 }
 
-.pb-\[30px\]{
-  padding-bottom: 30px;
+.pb-\[92px\]{
+  padding-bottom: 92px;
 }
 
 .pl-6{
@@ -2257,6 +2363,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   padding-top: 2.25rem;
 }
 
+.pt-\[104px\]{
+  padding-top: 104px;
+}
+
 .pt-\[108px\]{
   padding-top: 108px;
 }
@@ -2273,27 +2383,31 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   text-align: right;
 }
 
-.\!text-\[28px\]{
-  font-size: 28px !important;
+.\!text-\[32px\]{
+  font-size: 32px !important;
 }
 
 .text-2xl{
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
-.text-3xl{
-  font-size: 1.875rem;
+  font-size: 1.625rem;
   line-height: 2.25rem;
 }
 
+.text-3xl{
+  font-size: 2.125rem;
+  line-height: 2.625rem;
+}
+
 .text-4xl{
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+  font-size: 2.5rem;
+  line-height: 3rem;
 }
 
 .text-\[11px\]{
   font-size: 11px;
+}
+
+.text-\[12px\]{
+  font-size: 12px;
 }
 
 .text-\[13px\]{
@@ -2312,8 +2426,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   font-size: 19px;
 }
 
-.text-\[20px\]{
-  font-size: 20px;
+.text-\[21px\]{
+  font-size: 21px;
 }
 
 .text-\[22px\]{
@@ -2324,8 +2438,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   font-size: 24px;
 }
 
-.text-\[32px\]{
-  font-size: 32px;
+.text-\[26px\]{
+  font-size: 26px;
+}
+
+.text-\[36px\]{
+  font-size: 36px;
 }
 
 .text-\[64px\]{
@@ -2333,28 +2451,28 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 
 .text-base{
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
-.text-lg{
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
 
+.text-lg{
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+}
+
 .text-sm{
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .text-xl{
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+  font-size: 1.375rem;
+  line-height: 2rem;
 }
 
 .text-xs{
-  font-size: 0.75rem;
-  line-height: 1rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .font-bold{
@@ -2381,12 +2499,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   font-style: italic;
 }
 
-.\!leading-\[40px\]{
-  line-height: 40px !important;
-}
-
-.leading-4{
-  line-height: 1rem;
+.\!leading-\[44px\]{
+  line-height: 44px !important;
 }
 
 .leading-5{
@@ -2405,12 +2519,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   line-height: 2rem;
 }
 
-.leading-\[18px\]{
-  line-height: 18px;
-}
-
-.leading-\[19px\]{
-  line-height: 19px;
+.leading-9{
+  line-height: 2.25rem;
 }
 
 .leading-\[21px\]{
@@ -2421,16 +2531,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   line-height: 22px;
 }
 
+.leading-\[24px\]{
+  line-height: 24px;
+}
+
 .leading-\[25px\]{
   line-height: 25px;
-}
-
-.leading-\[26px\]{
-  line-height: 26px;
-}
-
-.leading-\[27px\]{
-  line-height: 27px;
 }
 
 .leading-\[28px\]{
@@ -2445,16 +2551,28 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   line-height: 30px;
 }
 
-.leading-\[34px\]{
-  line-height: 34px;
+.leading-\[31px\]{
+  line-height: 31px;
 }
 
-.leading-\[36px\]{
-  line-height: 36px;
+.leading-\[32px\]{
+  line-height: 32px;
+}
+
+.leading-\[33px\]{
+  line-height: 33px;
+}
+
+.leading-\[38px\]{
+  line-height: 38px;
 }
 
 .leading-\[40px\]{
   line-height: 40px;
+}
+
+.leading-\[44px\]{
+  line-height: 44px;
 }
 
 .leading-\[56px\]{
@@ -2725,6 +2843,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
+.\[overflow-wrap\:anywhere\]{
+  overflow-wrap: anywhere;
+}
+
 @view-transition {
   navigation: auto;
 }
@@ -2817,12 +2939,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .active\:bg-seafoam:active{
   --tw-bg-opacity: 1;
   background-color: rgb(181 217 196 / var(--tw-bg-opacity, 1));
-}
-
-.group:hover .group-hover\:scale-105{
-  --tw-scale-x: 1.05;
-  --tw-scale-y: 1.05;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .group:hover .group-hover\:text-mustard-600{
@@ -2950,23 +3066,23 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
     padding-top: 2.25rem;
   }
 
-  .sm\:\!text-\[44px\]{
-    font-size: 44px !important;
+  .sm\:\!text-\[48px\]{
+    font-size: 48px !important;
   }
 
   .sm\:text-2xl{
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
-  .sm\:text-3xl{
-    font-size: 1.875rem;
+    font-size: 1.625rem;
     line-height: 2.25rem;
   }
 
+  .sm\:text-3xl{
+    font-size: 2.125rem;
+    line-height: 2.625rem;
+  }
+
   .sm\:text-4xl{
-    font-size: 2.25rem;
-    line-height: 2.5rem;
+    font-size: 2.5rem;
+    line-height: 3rem;
   }
 
   .sm\:text-5xl{
@@ -2974,20 +3090,20 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
     line-height: 1;
   }
 
-  .sm\:text-\[22px\]{
-    font-size: 22px;
-  }
-
-  .sm\:text-\[28px\]{
-    font-size: 28px;
+  .sm\:text-\[24px\]{
+    font-size: 24px;
   }
 
   .sm\:text-\[32px\]{
     font-size: 32px;
   }
 
-  .sm\:text-\[40px\]{
-    font-size: 40px;
+  .sm\:text-\[36px\]{
+    font-size: 36px;
+  }
+
+  .sm\:text-\[44px\]{
+    font-size: 44px;
   }
 
   .sm\:text-\[96px\]{
@@ -2995,28 +3111,28 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   }
 
   .sm\:text-xl{
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
-  .sm\:\!leading-\[56px\]{
-    line-height: 56px !important;
-  }
-
-  .sm\:leading-8{
+    font-size: 1.375rem;
     line-height: 2rem;
   }
 
-  .sm\:leading-\[30px\]{
-    line-height: 30px;
+  .sm\:\!leading-\[60px\]{
+    line-height: 60px !important;
   }
 
-  .sm\:leading-\[38px\]{
-    line-height: 38px;
+  .sm\:leading-9{
+    line-height: 2.25rem;
   }
 
-  .sm\:leading-\[46px\]{
-    line-height: 46px;
+  .sm\:leading-\[33px\]{
+    line-height: 33px;
+  }
+
+  .sm\:leading-\[42px\]{
+    line-height: 42px;
+  }
+
+  .sm\:leading-\[50px\]{
+    line-height: 50px;
   }
 
   .sm\:leading-\[80px\]{
@@ -3106,10 +3222,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
     height: 108px;
   }
 
-  .lg\:h-\[52px\]{
-    height: 52px;
-  }
-
   .lg\:h-full{
     height: 100%;
   }
@@ -3142,10 +3254,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .lg\:grid-cols-4{
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
   .lg\:grid-cols-5{
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
@@ -3158,8 +3266,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
     grid-template-columns: 1fr 1.35fr;
   }
 
-  .lg\:grid-cols-\[236px_1fr_1fr_250px\]{
-    grid-template-columns: 236px 1fr 1fr 250px;
+  .lg\:grid-cols-\[220px_1fr_1fr_320px\]{
+    grid-template-columns: 220px 1fr 1fr 320px;
   }
 
   .lg\:grid-cols-\[520px_1fr\]{
@@ -3212,6 +3320,19 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
 
+  .lg\:whitespace-nowrap{
+    white-space: nowrap;
+  }
+
+  .lg\:bg-\[linear-gradient\(90deg\2c \#86C39D_0\%\2c rgba\(134\2c 195\2c 157\2c 0\.45\)_9\%\2c rgba\(134\2c 195\2c 157\2c 0\)_26\%\)\]{
+    background-image: linear-gradient(90deg,#86C39D 0%,rgba(134,195,157,0.45) 9%,rgba(134,195,157,0) 26%);
+  }
+
+  .lg\:px-11{
+    padding-left: 2.75rem;
+    padding-right: 2.75rem;
+  }
+
   .lg\:px-24{
     padding-left: 6rem;
     padding-right: 6rem;
@@ -3252,11 +3373,24 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 
 @media (min-width: 1280px){
+  .xl\:h-\[52px\]{
+    height: 52px;
+  }
+
   .xl\:w-\[380px\]{
     width: 380px;
   }
 
-  .xl\:gap-7{
-    gap: 1.75rem;
+  .xl\:gap-5{
+    gap: 1.25rem;
+  }
+
+  .xl\:px-6{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .xl\:text-\[13px\]{
+    font-size: 13px;
   }
 }

@@ -43,6 +43,13 @@ const pages = [
     nav: "HEALTH",
   },
   {
+    file: "contact-us.html",
+    src: "contact-us.html",
+    title: "Contact Us - Curie Oncology",
+    description: "Contact Curie Oncology in Kuala Lumpur or Penang: clinic addresses, phone numbers, email, operating hours and a message form.",
+    nav: "CONTACT",
+  },
+  {
     file: "meet-our-doctors.html",
     src: "meet-our-doctors.html",
     title: "Meet Our Doctors - Curie Oncology",
@@ -53,21 +60,21 @@ const pages = [
     file: "dr-lau-fen-nee.html",
     src: "dr-lau-fen-nee.html",
     title: "Dr Lau Fen Nee - Curie Oncology",
-    description: "Dr Lau Fen Nee, Senior Consultant Clinical Oncologist at Curie Oncology, Klang Valley. Manages patients across all cancer types.",
+    description: "Dr Lau Fen Nee, Senior Consultant Clinical Oncologist at Curie Oncology, Klang Valley. Former Head of the Department of Radiotherapy and Oncology at the National Cancer Institute.",
     nav: "DOCTORS",
   },
   {
     file: "dr-ho-gwo-fuang.html",
     src: "dr-ho-gwo-fuang.html",
     title: "Dr Ho Gwo Fuang - Curie Oncology",
-    description: "Dr Ho Gwo Fuang, Senior Consultant Clinical Oncologist at Curie Oncology, Klang Valley. Focus: gastrointestinal, hepatobiliary and breast cancers.",
+    description: "Dr Ho Gwo Fuang, Senior Consultant Clinical Oncologist at Curie Oncology, Klang Valley. Professor and clinical oncologist.",
     nav: "DOCTORS",
   },
   {
     file: "dr-sow-wen-jen.html",
     src: "dr-sow-wen-jen.html",
     title: "Dr Jenson Sow Wen Jen - Curie Oncology",
-    description: "Dr Jenson Sow Wen Jen, Consultant Clinical Oncologist at Curie Oncology, Klang Valley. Focus: gastrointestinal cancers.",
+    description: "Dr Jenson Sow Wen Jen, Consultant Clinical Oncologist at Curie Oncology, Klang Valley. Special interest in GI cancers.",
     nav: "DOCTORS",
   },
   {
