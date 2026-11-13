@@ -2225,6 +2225,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   background-position: center;
 }
 
+.bg-no-repeat{
+  background-repeat: no-repeat;
+}
+
 .object-contain{
   -o-object-fit: contain;
      object-fit: contain;
