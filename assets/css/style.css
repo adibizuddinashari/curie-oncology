@@ -2235,6 +2235,11 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
      object-fit: cover;
 }
 
+.object-\[65\%_40\%\]{
+  -o-object-position: 65% 40%;
+     object-position: 65% 40%;
+}
+
 .object-bottom{
   -o-object-position: bottom;
      object-position: bottom;

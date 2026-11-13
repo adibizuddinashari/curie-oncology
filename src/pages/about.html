@@ -1,8 +1,9 @@
 <!-- About page: Tiffany's checklist sections 4.1–4.5 (4.6 and 4.7 are on hold per the client checklist).
      Copy for 4.1–4.3 from the checklist "About Us" tab; 4.5 from the Medical Consultant Profile master deck. -->
 
-<!-- Hero (Curie SG approach). STOCK PLACEHOLDER photo - replace with a real Curie photo -->
-<section class="page-hero" style="background-image: url('assets/img/stock/hero-about-building.jpg');">
+<!-- Hero (Curie SG approach). Real photo: KL centre entrance, retouched with warm sunlight (Paper, 13 Nov feedback).
+     Scaled to 130% and anchored left so the backlit sign sits right of the title. -->
+<section class="page-hero" style="background-image: url('assets/img/clinic/kl-centre-entrance-sunlit.jpg'); background-size: 130% auto; background-position: 0% 32%;">
   <h1 data-intro>About Us</h1>
 </section>
 
@@ -31,8 +32,8 @@
 <!-- 4.3 Personalised cancer care -->
 <section class="bg-white px-6 py-[104px]">
   <div class="mx-auto grid max-w-[1144px] grid-cols-1 items-center gap-12 lg:grid-cols-[520px_1fr] lg:gap-20">
-    <!-- STOCK PLACEHOLDER photo -->
-    <div class="h-[300px] rounded-[20px] bg-cover bg-center sm:h-[480px]" style="background-image: url('assets/img/stock/consultation.jpg');" role="img" aria-label="Doctor speaking with a patient (placeholder photo)" data-reveal></div>
+    <!-- Real staff photo (DSC02748), AI re-angled close-up in Paper -->
+    <div class="h-[300px] rounded-[20px] bg-cover sm:h-[480px]" style="background-image: url('assets/img/clinic/staff-laughing-closeup.jpg'); background-position: 50% 42%;" role="img" aria-label="Three Curie Oncology nurses laughing together outside the clinic" data-reveal></div>
     <div class="flex flex-col gap-5" data-reveal>
       <p class="section-eyebrow">Our philosophy</p>
       <h2 class="section-title">Personalised cancer care</h2>
@@ -55,7 +56,8 @@
       <div class="h-[280px] rounded-[20px] bg-cover bg-center md:h-[380px]" style="background-image: url('assets/img/clinic/clinic-interior-lounge.jpg');" role="img" aria-label="Patient lounge"></div>
       <div class="grid grid-cols-2 gap-6 md:grid-cols-1">
         <div class="h-[178px] rounded-[20px] bg-cover bg-center" style="background-image: url('assets/img/clinic/reception-desk.webp');" role="img" aria-label="Reception"></div>
-        <div class="h-[178px] rounded-[20px] bg-cover bg-center" style="background-image: url('assets/img/clinic/nurses-station.webp');" role="img" aria-label="Nurses' station"></div>
+        <!-- Nurses' station, widened without the sink; crop copied from Paper as percentage offsets -->
+        <div class="relative h-[178px] overflow-hidden rounded-[20px]" role="img" aria-label="Nurses' station"><div class="absolute bg-cover bg-center" style="left:-20.856%;top:-52.809%;width:137.571%;height:184.27%;background-image:url('assets/img/clinic/nurses-station-wide.jpg');"></div></div>
       </div>
     </div>
   </div>
