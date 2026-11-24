@@ -80,9 +80,13 @@
   .page-hero--fade-bottom::before {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 6%, #fff 98%);
   }
-  /* Resource Centre hero (Paper): light wash, solid white from three-quarters down */
+  /* Resource Centre hero (Paper, 24 Nov): the visible slice of Paper's box gradient, 21% to 87% white */
   .page-hero--fade-low::before {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 26%, #fff 76%);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.21) 0%, rgba(255, 255, 255, 0.87) 100%);
+  }
+  /* Contact hero (Paper, 24 Nov): visible slice of Paper's box gradient, 43% to 88% white */
+  .page-hero--contact::before {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.43) 0%, rgba(255, 255, 255, 0.88) 100%);
   }
 
   /* Home hero intro: photo layer under the white wash and headline. Fades up from white while
