@@ -778,8 +778,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 26%, #fff 76%);
 }
 
-/* Home hero video: white veil + video sit under the white wash and headline.
-     JS adds .is-active (veil on), .is-playing (video fades in from white), .is-done (dissolve to still). */
+/* Home hero intro: photo layer under the white wash and headline. Fades up from white while
+     settling from a slight zoom (transform + opacity only). Triggered by the footer intro script. */
 
 .home-hero::before {
   z-index: 1;
@@ -789,34 +789,21 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   z-index: 2;
 }
 
-.home-hero__video {
+.home-hero__img {
   position: absolute;
   inset: 0;
   z-index: 0;
-  display: none;
-  background: #fff;
-  transition: opacity 1.4s ease-in-out;
+  background-size: cover;
+  background-position: center;
 }
 
-.home-hero__video.is-active {
-  display: block;
+.home-hero__img[data-intro-fade] {
+  transform: scale(1.06);
+  transition: opacity 1.6s ease-out, transform 2.4s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-.home-hero__video.is-done {
-  opacity: 0;
-}
-
-.home-hero__video video {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  opacity: 0;
-  transition: opacity 1.2s ease-out;
-}
-
-.home-hero__video video.is-playing {
-  opacity: 1;
+.home-hero__img[data-intro-fade].is-revealed {
+  transform: scale(1);
 }
 
 .page-hero h1{
@@ -1228,8 +1215,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
     transition: none;
   }
 
-  [data-intro-fade] {
+  [data-intro-fade],
+    .home-hero__img[data-intro-fade] {
     opacity: 1;
+    transform: none;
     transition: none;
   }
 
