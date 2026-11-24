@@ -1,7 +1,45 @@
 <!-- Hero -->
-<section class="page-hero overflow-hidden !h-[520px] lg:!h-[640px]" style="background-image: url('assets/img/hero/home-hero.jpg');">
+<!-- Hero video (21 Nov photoshoot, 10.5s, plays once): fades in from white, then dissolves to the
+     still hero image when it ends. Without JS, with reduced motion, or if autoplay is blocked,
+     only the still image shows. Script in this file, right below. -->
+<section class="page-hero home-hero overflow-hidden !h-[520px] lg:!h-[640px]" style="background-image: url('assets/img/hero/home-hero.jpg');">
+  <div class="home-hero__video" aria-hidden="true">
+    <video muted playsinline preload="auto" disablepictureinpicture data-src-large="assets/video/home-hero-1080.mp4" data-src-small="assets/video/home-hero-720.mp4"></video>
+  </div>
   <h1 class="max-w-[900px] !text-[32px] !leading-[44px] sm:!text-[48px] sm:!leading-[60px]" data-intro>Cancer Doesn't Spell The End<br />Spring Will Come</h1>
 </section>
+<script>
+  (function () {
+    var hero = document.querySelector('.home-hero');
+    var wrap = hero && hero.querySelector('.home-hero__video');
+    var video = wrap && wrap.querySelector('video');
+    if (!video || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+    var small = window.matchMedia('(max-width: 900px)').matches;
+    video.src = video.getAttribute(small ? 'data-src-small' : 'data-src-large');
+
+    // White veil covers the still image until the video is ready to fade in.
+    wrap.classList.add('is-active');
+
+    function finish() {
+      wrap.classList.add('is-done');          // dissolve to the still image underneath
+      setTimeout(function () { wrap.remove(); }, 1600);
+    }
+
+    video.addEventListener('ended', finish);
+    video.addEventListener('error', finish);
+
+    video.addEventListener('playing', function () {
+      video.classList.add('is-playing');      // fade in from white
+    }, { once: true });
+
+    var p = video.play();
+    if (p && p.catch) p.catch(finish);        // autoplay blocked (e.g. Low Power Mode): show the still
+
+    // Safety net: never leave the hero white if the video stalls on a slow connection.
+    setTimeout(function () { if (!video.classList.contains('is-playing')) finish(); }, 6000);
+  })();
+</script>
 
 <!-- Who We Are -->
 <section class="bg-white px-6 pb-[104px] pt-24">
@@ -38,7 +76,8 @@
 
 <!-- Our Values -->
 <section class="grid grid-cols-1 bg-warm lg:grid-cols-2">
-  <div class="order-2 min-h-[360px] bg-cover bg-center lg:order-1 lg:min-h-[880px]" style="background-image: url('assets/img/clinic/clinic-team-entrance.jpg');" role="img" aria-label="The Curie Oncology team at the clinic entrance"></div>
+  <!-- 21 Nov photoshoot (Paper "Doctor patient conversation"), cropped as framed in Paper -->
+  <div class="order-2 min-h-[360px] bg-cover bg-center lg:order-1 lg:min-h-[880px]" style="background-image: url('assets/img/photoshoot/home-values-consultation.jpg');" role="img" aria-label="A Curie Oncology doctor and nurses talking with a patient in the treatment area"></div>
   <div class="order-1 flex flex-col justify-center gap-9 px-6 py-20 sm:px-12 lg:order-2 lg:pl-20 lg:pr-[max(1.5rem,calc((100vw-1144px)/2))]">
     <div class="flex flex-col gap-5" data-reveal>
       <h2 class="section-title !text-clay-text">Our Values</h2>

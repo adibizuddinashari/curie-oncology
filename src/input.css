@@ -76,6 +76,48 @@
   .page-hero--warm::before {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.5) 55%, rgba(247, 244, 239, 0.97) 100%);
   }
+  /* Doctors hero (Paper): clear at the top, fading to solid white at the bottom */
+  .page-hero--fade-bottom::before {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 6%, #fff 98%);
+  }
+  /* Resource Centre hero (Paper): light wash, solid white from three-quarters down */
+  .page-hero--fade-low::before {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 26%, #fff 76%);
+  }
+
+  /* Home hero video: white veil + video sit under the white wash and headline.
+     JS adds .is-active (veil on), .is-playing (video fades in from white), .is-done (dissolve to still). */
+  .home-hero::before {
+    z-index: 1;
+  }
+  .home-hero h1 {
+    z-index: 2;
+  }
+  .home-hero__video {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    display: none;
+    background: #fff;
+    transition: opacity 1.4s ease-in-out;
+  }
+  .home-hero__video.is-active {
+    display: block;
+  }
+  .home-hero__video.is-done {
+    opacity: 0;
+  }
+  .home-hero__video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1.2s ease-out;
+  }
+  .home-hero__video video.is-playing {
+    opacity: 1;
+  }
+
   .page-hero h1 {
     @apply relative text-center text-[34px] leading-[44px] text-moss sm:text-[48px] sm:leading-[60px];
   }
