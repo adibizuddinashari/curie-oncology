@@ -2101,6 +2101,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   border-color: rgb(134 195 157 / var(--tw-border-opacity, 1));
 }
 
+.border-forest\/15{
+  border-color: rgb(47 92 70 / 0.15);
+}
+
 .border-frost{
   --tw-border-opacity: 1;
   border-color: rgb(229 242 236 / var(--tw-border-opacity, 1));
