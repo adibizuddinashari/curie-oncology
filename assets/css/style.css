@@ -2972,6 +2972,37 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   navigation: auto;
 }
 
+/* Mobile tap targets: on touch screens, small text links get an invisible
+   hit area of at least ~44px tall via ::after, so the layout doesn't move. */
+
+@media (pointer: coarse) {
+  footer li > a,
+  footer a[href^="tel:"],
+  footer a[href^="mailto:"],
+  nav[aria-label="Breadcrumb"] a,
+  .link-arrow,
+  a[href^="https://curieoncology.com.sg"],
+  a[href="https://cengild.com/"],
+  li > a[href^="tel:"]:not(.btn-primary):not(.btn-secondary),
+  li > a[href^="mailto:"] {
+    position: relative;
+  }
+
+  footer li > a::after,
+  footer a[href^="tel:"]::after,
+  footer a[href^="mailto:"]::after,
+  nav[aria-label="Breadcrumb"] a::after,
+  .link-arrow::after,
+  a[href^="https://curieoncology.com.sg"]::after,
+  a[href="https://cengild.com/"]::after,
+  li > a[href^="tel:"]:not(.btn-primary):not(.btn-secondary)::after,
+  li > a[href^="mailto:"]::after {
+    content: "";
+    position: absolute;
+    inset: -10px -6px;
+  }
+}
+
 .hover\:-translate-y-0\.5:hover{
   --tw-translate-y: -0.125rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
