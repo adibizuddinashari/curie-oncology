@@ -93,7 +93,9 @@ const pages = [
   },
 ];
 
-for (const page of pages) {
+module.exports = { pages, NAV_KEYS };
+
+if (require.main === module) for (const page of pages) {
   let header = headerTemplate;
   for (const key of NAV_KEYS) {
     header = header.replaceAll(`{{NAV_${key}}}`, key === page.nav ? "!text-forest" : "");
@@ -106,7 +108,10 @@ for (const page of pages) {
     .replace("{{DESCRIPTION}}", page.description)
     .replace("{{HEADER}}", header)
     .replace("{{CONTENT}}", content)
-    .replace("{{FOOTER}}", footer);
+    .replace("{{FOOTER}}", footer)
+    // CMS region markers are read by build-theme.js; the static site keeps the
+    // marked HTML and drops the markers themselves.
+    .replace(/[ \t]*<!-- @\/?cms[^>]*-->\n/g, "");
 
   fs.writeFileSync(path.join(ROOT, page.file), html);
   console.log(`built ${page.file}`);

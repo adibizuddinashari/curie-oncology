@@ -6,8 +6,10 @@
   "scripts": {
     "build:pages": "node src/build.js",
     "build:css": "tailwindcss -i src/input.css -o assets/css/style.css",
-    "build": "npm run build:pages && npm run build:css",
-    "watch:css": "tailwindcss -i src/input.css -o assets/css/style.css --watch"
+    "build": "npm run build:pages && npm run build:css && npm run build:theme",
+    "watch:css": "tailwindcss -i src/input.css -o assets/css/style.css --watch",
+    "build:theme": "node src/build-theme.js",
+    "export:content": "node src/export-content.js"
   },
   "keywords": [],
   "author": "",

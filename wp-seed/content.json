@@ -1,0 +1,767 @@
+{
+  "generated": "2026-11-26T07:09:08.539Z",
+  "locations": [
+    {
+      "key": "kl",
+      "title": "Curie Oncology, Kuala Lumpur",
+      "show_on_contact": true,
+      "menu_order": 0,
+      "eyebrow": "Klang Valley",
+      "footer_label": "Kuala Lumpur",
+      "address": "Unit 1-14, Curie Oncology & Specialist Centre, Nexus, Bangsar South, 59200 Kuala Lumpur",
+      "phone": "+60 12 822 3310",
+      "email": "talk2us@curieoncology.com.my",
+      "hours_heading": "Operating Hours",
+      "hours": [
+        {
+          "days": "Monday to Friday",
+          "time": "8:30am – 5:30pm"
+        },
+        {
+          "days": "Saturday",
+          "time": "8:30am – 12:30pm"
+        }
+      ],
+      "closed_note": "Closed on Sunday and Public Holidays",
+      "map_url": "https://maps.app.goo.gl/CQFgqrEvUqENXdGa6",
+      "website": "",
+      "photo": "img/clinic/reception-desk.webp",
+      "photo_position": "50% 50%",
+      "photo_alt": "Curie Oncology Kuala Lumpur reception",
+      "address_profile": "Unit 1-14, Level 1, Nexus, Jalan Kerinchi, Bangsar South, 59200 Kuala Lumpur, Federal Territory of Kuala Lumpur"
+    },
+    {
+      "key": "penang",
+      "title": "Curie Oncology, Bagan Specialist, Penang",
+      "show_on_contact": true,
+      "menu_order": 1,
+      "eyebrow": "Penang",
+      "footer_label": "Penang",
+      "address": "Room D2617, Block D, Level 2, Bagan Specialist Centre, Jalan Bagan 1, 13400 Butterworth, Penang",
+      "phone": "+604 371 0000 ext. 42617",
+      "email": "",
+      "hours_heading": "",
+      "hours": [
+        {
+          "days": "Mon–Tues",
+          "time": "8:30am – 5:30pm"
+        },
+        {
+          "days": "Thurs–Fri",
+          "time": "8:30am – 5:30pm"
+        },
+        {
+          "days": "Saturday",
+          "time": "8:30am – 1:30pm"
+        }
+      ],
+      "closed_note": "Closed on Sunday and Public Holidays",
+      "map_url": "https://maps.app.goo.gl/WqZvno67UoVi7sRN6",
+      "website": "",
+      "photo": "img/clinic/bagan-centre-corridor.jpg",
+      "photo_position": "50% 40%",
+      "photo_alt": "Curie Oncology corridor at Bagan Specialist Centre, Penang",
+      "address_profile": "Bagan Specialist Centre, Room D2617, Block D, Level 2, Butterworth"
+    },
+    {
+      "key": "cengild-kl",
+      "title": "CENGILD, KL",
+      "show_on_contact": false,
+      "menu_order": 10,
+      "website": "https://cengild.com/"
+    },
+    {
+      "key": "assunta-hospital-pj-selangor",
+      "title": "Assunta Hospital, PJ Selangor",
+      "show_on_contact": false,
+      "menu_order": 11,
+      "website": "https://assunta.com.my/"
+    }
+  ],
+  "doctors": [
+    {
+      "slug": "dr-ho-gwo-fuang",
+      "title": "Dr Ho Gwo Fuang",
+      "menu_order": 0,
+      "role": "Senior Consultant Clinical Oncologist",
+      "title_line": "Senior Consultant Clinical Oncologist (Resident) · MRCP (UK), FRCR (UK), MB ChB (UK), BSc (Scotland)",
+      "region": "klang-valley",
+      "show_on_home": true,
+      "clinic": "kl",
+      "clinic_address_profile": "Unit 1-14, Level 1, Nexus, Jalan Kerinchi, Bangsar South, 59200 Kuala Lumpur, Federal Territory of Kuala Lumpur",
+      "summary": "Professor and clinical oncologist whose research interests focused on cancer therapeutics. Highlights include:",
+      "highlights": [
+        "17 years at Universiti Malaya Medical Centre and UM Specialist Centre",
+        "Joint Commission International (JCI) Outstanding Young Malaysian Award for medical innovation (2009)",
+        "Co-author, Pan-Asian Adapted ESMO Clinical Practice Guidelines for hepatocellular carcinoma (2020)",
+        "Author, <em>Cancer and You</em> (2015) and <em>Written for Cancer Patient</em> (2014)"
+      ],
+      "hours_summary": "Tue, Wed: 9am – 12pm",
+      "languages": "English, Bahasa Melayu and Mandarin",
+      "schedule": [
+        {
+          "day": "Tuesday",
+          "time": "9:00AM–12:00PM"
+        },
+        {
+          "day": "Wednesday",
+          "time": "9:00AM–12:00PM"
+        }
+      ],
+      "schedule_note": "Closed on Sundays and public holidays.",
+      "visiting_locations": [
+        "cengild-kl"
+      ],
+      "about": "Dr. Ho Gwo Fuang, professor and clinical oncologist, completed his Certificate for Completion of Specialist Training (CCST) in 2007. Since then, he joined the Faculty of Medicine at Universiti Malaya and held positions at both the Universiti Malaya Medical Centre and UM Specialist Centre for 17 years.\n\nIn 2009, Dr. Ho received the Joint Commission International (JCI) Outstanding Young Malaysian Award for medical innovation. His educational background includes a BSc (Medical Science) from the University of St. Andrews, Scotland (1995), an MB ChB (Bachelor of Medicine & Bachelor of Surgery) from the University of Manchester, UK (1998), an MRCP from The Royal College Of Physicians, Edinburgh, UK (2001), and an FRCR from The Royal College Of Radiologists, London, UK (2005). His training took place at Barts and The London National Health Service (NHS) Trust and The Royal Marsden NHS Trust in London.\n\nDr. Ho’s research interests focused on cancer therapeutics, including chemotherapy, biological therapy, targeted therapy, radiotherapy, radiosurgery, brachytherapy, and radio-isotopes treatment. He authored books such as “Cancer and You” (2015) and “Written for Cancer Patient” (2014). Additionally, he co-authored the Pan-Asian Adapted ESMO Clinical Practice Guidelines for hepatocellular carcinoma (2020) and ASCO Resource Stratified Guideline for Early Detection for Colorectal Cancer (2019), as well as the Treatment of Patients with Early Stage Colorectal Cancer Resource Stratified Guideline (2019). Dr. Ho actively participated in national and international collaborative research and contributed to the training of new oncologists in Malaysia.",
+      "details": [
+        {
+          "heading": "Research interests",
+          "text": "Chemotherapy, biological therapy, targeted therapy, radiotherapy, radiosurgery, brachytherapy and radio-isotopes treatment."
+        },
+        {
+          "heading": "Research and training",
+          "text": "National and international collaborative research, and training of new oncologists in Malaysia."
+        }
+      ],
+      "education": [
+        {
+          "label": "1995",
+          "text": "BSc (Medical Science), University of St. Andrews, Scotland"
+        },
+        {
+          "label": "1998",
+          "text": "MB ChB (Bachelor of Medicine & Bachelor of Surgery), University of Manchester, UK"
+        },
+        {
+          "label": "2001",
+          "text": "MRCP, The Royal College of Physicians, Edinburgh, UK"
+        },
+        {
+          "label": "2005",
+          "text": "FRCR, The Royal College of Radiologists, London, UK"
+        },
+        {
+          "label": "2007",
+          "text": "Certificate for Completion of Specialist Training (CCST). Training at Barts and The London NHS Trust and The Royal Marsden NHS Trust, London"
+        }
+      ],
+      "recognition_title": "Recognition & Publications",
+      "recognition": [
+        {
+          "text": "Joint Commission International (JCI) Outstanding Young Malaysian Award for medical innovation (2009)"
+        },
+        {
+          "text": "Co-author, Pan-Asian Adapted ESMO Clinical Practice Guidelines for hepatocellular carcinoma (2020)"
+        },
+        {
+          "text": "Co-author, ASCO Resource Stratified Guideline for Early Detection for Colorectal Cancer (2019)"
+        },
+        {
+          "text": "Co-author, Treatment of Patients with Early Stage Colorectal Cancer Resource Stratified Guideline (2019)"
+        },
+        {
+          "text": "Author, <em>Cancer and You</em> (2015) and <em>Written for Cancer Patient</em> (2014)"
+        }
+      ],
+      "photo_portrait": "img/doctors/cards/dr-ho-gwo-fuang.jpg",
+      "photo_card": "img/doctors/cards/dr-ho-gwo-fuang.jpg",
+      "photo_cutout": "img/doctors/cutouts/dr-ho-gwo-fuang.png",
+      "cutout_flip": false,
+      "crop_home": "left:-10.34%;top:-14.69%;width:125.45%;height:203.32%;background-position:50% 18%;",
+      "crop_grid": "left:-11.25%;top:-1.667%;width:122.5%;height:129.333%;background-position:50% 20%;background-size:cover;",
+      "crop_other": "left:-5.224%;top:-2.917%;width:118.657%;height:133.75%;background-position:50% 18%;background-size:cover;",
+      "seo_description": "Dr Ho Gwo Fuang, Senior Consultant Clinical Oncologist at Curie Oncology, Klang Valley. Professor and clinical oncologist."
+    },
+    {
+      "slug": "dr-lau-fen-nee",
+      "title": "Dr Lau Fen Nee",
+      "menu_order": 1,
+      "role": "Senior Consultant Clinical Oncologist",
+      "title_line": "Senior Consultant Clinical Oncologist (Resident) · MBBS (UM), FRCR (UK)",
+      "region": "klang-valley",
+      "show_on_home": true,
+      "clinic": "kl",
+      "clinic_address_profile": "Unit 1-14, Level 1, Nexus, Jalan Kerinchi, Bangsar South, 59200 Kuala Lumpur, Federal Territory of Kuala Lumpur",
+      "summary": "Former Head of the Department of Radiotherapy and Oncology at the National Cancer Institute, with almost 30 years of service with the Ministry of Health. Highlights include:",
+      "highlights": [
+        "Registered with the National Specialists Register in Clinical Oncology since 1999",
+        "Chairman, Specialty Subcommittee for Clinical Oncology, National Specialist Register",
+        "Country Project Leader, Radiation Oncology, Forum for Nuclear Cooperation in Asia (2014–2021)",
+        "Lecturer, Supervisor and Examiner, Master of Clinical Oncology, University of Malaya"
+      ],
+      "hours_summary": "Mon, Thu: 9am – 5pm",
+      "languages": "English, Bahasa Malaysia, Hokkien, Cantonese and Mandarin",
+      "schedule": [
+        {
+          "day": "Monday",
+          "time": "9:00AM–5:00PM"
+        },
+        {
+          "day": "Thursday",
+          "time": "9:00AM–5:00PM"
+        }
+      ],
+      "schedule_note": "Appointment may be scheduled outside of regular clinic hours upon request, contingent upon availability.\nClosed on Sundays and public holidays.",
+      "visiting_locations": [
+        "cengild-kl"
+      ],
+      "about": "Dr. Lau Fen Nee has served with the Ministry of Health for almost 30 years. She was the former Head of the Department of Radiotherapy and Oncology at the National Cancer Institute. She received her Bachelor of Medicine and Bachelor of Surgery (MBBS) from Universiti Malaya in 1991. Following that, she attained her Fellowship of the Royal College of Radiologists (Clinical Oncology), United Kingdom, in 1999. She has been registered with the National Specialists Register in Clinical Oncology since 1999.\n\nHer career began in 1991 as House Officer at University Hospital Kuala Lumpur. A year later, she was appointed as a Medical Officer at the Department of Obstetrics and Gynaecology, Hospital Sultanah Aminah Johor Bahru. In 1995, she assumed the role of Medical Officer at Institute of Radiotherapy and Oncology, Hospital Kuala Lumpur. In 1996, she left for the UK where she was appointed as Visiting Specialist Registrar at the Department of Clinical Oncology, Royal Marsden Hospital. In 1999, she took on the role of Clinical Oncologist at Institute of Radiotherapy and Oncology, Hospital Kuala Lumpur until 2013 when she moved to Institut Kanser Negara as Consultant Clinical Oncologist. She was later promoted to head that department.\n\nDr. Lau was also appointed as the Chairman of the Specialty Subcommittee for Clinical Oncology for the National Specialist Register (NSR) and Chairman of the Parallel Pathway Committee for FRCR (Clinical Oncology) training. She was also the Country Project Leader for Radiation Oncology in the Forum for Nuclear Cooperation in Asia (FNCA) from 2014 to 2021.\n\nHer academic work covers roles as a Lecturer, Supervisor, and Examiner for the Master of Clinical Oncology (MCO) and Lecturer for Master of Medical Physics programs conducted by the University of Malaya. She was also a Lecturer for the Post-basic Oncology Nursing Course (Allied Health Science College) and a Lecturer for the Advanced Diploma in Computed Tomography (ADCT) course for therapy radiographers.",
+      "details": [],
+      "education": [
+        {
+          "label": "1991",
+          "text": "MBBS, Universiti Malaya"
+        },
+        {
+          "label": "1996",
+          "text": "Visiting Specialist Registrar, Department of Clinical Oncology, Royal Marsden Hospital, UK"
+        },
+        {
+          "label": "1999",
+          "text": "Fellowship of the Royal College of Radiologists (Clinical Oncology), United Kingdom"
+        },
+        {
+          "label": "1999",
+          "text": "Registered with the National Specialists Register in Clinical Oncology"
+        }
+      ],
+      "recognition_title": "Leadership & Teaching",
+      "recognition": [
+        {
+          "text": "Chairman, Specialty Subcommittee for Clinical Oncology, National Specialist Register (NSR)"
+        },
+        {
+          "text": "Chairman, Parallel Pathway Committee for FRCR (Clinical Oncology) training"
+        },
+        {
+          "text": "Country Project Leader, Radiation Oncology, Forum for Nuclear Cooperation in Asia (2014–2021)"
+        },
+        {
+          "text": "Lecturer, Supervisor and Examiner, Master of Clinical Oncology, University of Malaya"
+        },
+        {
+          "text": "Lecturer, Master of Medical Physics, University of Malaya"
+        },
+        {
+          "text": "Lecturer, Post-basic Oncology Nursing Course (Allied Health Science College)"
+        },
+        {
+          "text": "Lecturer, Advanced Diploma in Computed Tomography (ADCT) for therapy radiographers"
+        }
+      ],
+      "photo_portrait": "img/doctors/Dr-Lau-Fen-Nee.webp",
+      "photo_card": "img/doctors/cards/dr-lau-fen-nee.webp",
+      "photo_cutout": "img/doctors/cutouts/dr-lau-fen-nee.png",
+      "cutout_flip": false,
+      "crop_home": "left:0%;top:-3.32%;width:100%;height:103.32%;background-position:50% 50%;",
+      "crop_grid": "left:0%;top:-17.667%;width:100%;height:117.667%;background-position:50% 20%;background-size:cover;",
+      "crop_other": "left:0%;top:-19.167%;width:100%;height:119.167%;background-position:50% 15%;background-size:cover;",
+      "seo_description": "Dr Lau Fen Nee, Senior Consultant Clinical Oncologist at Curie Oncology, Klang Valley. Former Head of the Department of Radiotherapy and Oncology at the National Cancer Institute."
+    },
+    {
+      "slug": "dr-yeoh-chit-cheng",
+      "title": "Dr Yeoh Chit Cheng",
+      "menu_order": 2,
+      "role": "Consultant Medical Oncologist",
+      "title_line": "Consultant Medical Oncologist · FRCP (Edinburgh), PhD (London), MRCP (UK)",
+      "region": "klang-valley",
+      "show_on_home": true,
+      "clinic": "kl",
+      "clinic_address_profile": "Unit 1-14, Level 1, Nexus, Jalan Kerinchi, Bangsar South, 59200 Kuala Lumpur, Federal Territory of Kuala Lumpur",
+      "summary": "Consultant Medical Oncologist trained at University College London, focusing on gynaecological cancers, lymphoma, skin cancer, acute oncology and cancer of unknown primary. Highlights include:",
+      "highlights": [
+        "Clinical Excellence Award (2016, 2019, 2020, 2021, 2023)",
+        "Alexander Spiers Prize, Royal College of Physicians (2019)",
+        "Best Cancer Team, Quality in Care (QiC), Westminster (2014)",
+        "Chief and Principal Investigator across multiple oncology studies"
+      ],
+      "hours_summary": "Mon, Tue: 8.30am – 1pm, 2 – 5.30pm\nWed, Fri: 2 – 5.30pm\nThu: 8.30am – 1pm",
+      "languages": "English, Bahasa Malaysia, Cantonese, Hokkien and Hainanese, conversational Dutch",
+      "schedule": [
+        {
+          "day": "Monday",
+          "time": "8:30AM–1:00PM, 2:00PM–5:30PM"
+        },
+        {
+          "day": "Tuesday",
+          "time": "8:30AM–1:00PM, 2:00PM–5:30PM"
+        },
+        {
+          "day": "Wednesday",
+          "time": "2:00PM–5:30PM"
+        },
+        {
+          "day": "Thursday",
+          "time": "8:30AM–1:00PM"
+        },
+        {
+          "day": "Friday",
+          "time": "2:00PM–5:30PM"
+        }
+      ],
+      "schedule_note": "Closed on Sundays and public holidays.",
+      "visiting_locations": [
+        "cengild-kl",
+        "assunta-hospital-pj-selangor"
+      ],
+      "about": "Dr Yeoh is a Consultant Medical Oncologist with a career spanning a broad spectrum of oncology, cancer research, medical education and the development of cancer services.\n\nDr Yeoh completed Specialist Registrar training at University College London and has practised at consultant level since 2012, serving as Chief Investigator and Principal Investigator across multiple oncology studies, with publications on gynae cancers, molecular biomarkers, cancer genetics and personalised cancer treatment.\n\nDr Yeoh is also experienced in breast, lung and colorectal cancers, and in cancer genetics counselling.",
+      "details": [
+        {
+          "heading": "Cancer types managed",
+          "text": "Gynaecological cancers, lymphoma, skin cancer, acute oncology and cancer of unknown primary."
+        },
+        {
+          "heading": "Clinical interests",
+          "text": "Molecular oncology, translational cancer research and cancer vaccine immunotherapy\nDevelopment of acute oncology services and immunotherapy delivered in patients’ homes"
+        }
+      ],
+      "education": [
+        {
+          "label": "1994",
+          "text": "BMedSc, Ireland"
+        },
+        {
+          "label": "1997",
+          "text": "MBBS, University College Cork, Ireland"
+        },
+        {
+          "label": "2002",
+          "text": "MRCP, United Kingdom"
+        },
+        {
+          "label": "Training",
+          "text": "Specialist Registrar Training, University College London, UK"
+        },
+        {
+          "label": "2010",
+          "text": "PhD, Queen Mary University of London, UK"
+        },
+        {
+          "label": "2019",
+          "text": "FRCP, Edinburgh, UK"
+        }
+      ],
+      "recognition_title": "Recognition",
+      "recognition": [
+        {
+          "text": "Clinical Excellence Award (2016, 2019, 2020, 2021, 2023): 8 points in total, a national award for outstanding clinicians"
+        },
+        {
+          "text": "Alexander Spiers Prize, Royal College of Physicians (2019)"
+        },
+        {
+          "text": "Fellowship, RCP Malaysia, Johor (2019), for teaching contribution in Malaysia"
+        },
+        {
+          "text": "Best Cancer Team, Quality in Care (QiC), Westminster (2014)"
+        },
+        {
+          "text": "Best Innovation Team, QiC: Acute Oncology Walk-in Bay (2013)"
+        }
+      ],
+      "photo_portrait": "img/doctors/Dr-Yeoh-Chit-Cheng.webp",
+      "photo_card": "img/doctors/cards/dr-yeoh-chit-cheng.webp",
+      "photo_cutout": "img/doctors/cutouts/dr-yeoh-chit-cheng.png",
+      "cutout_flip": false,
+      "crop_home": "left:-4.855%;top:-5.213%;width:104.77%;height:111.85%;background-position:50% 50%;",
+      "crop_grid": "left:0%;top:-18.667%;width:100%;height:118.667%;background-position:50% 20%;background-size:cover;",
+      "crop_other": "left:0%;top:-22.5%;width:100%;height:122.5%;background-position:50% 12%;background-size:cover;",
+      "seo_description": "Dr Yeoh Chit Cheng, Consultant Medical Oncologist at Curie Oncology, Klang Valley. Focus: acute oncology, lymphoma, skin cancer, gynae cancers and cancer of unknown primary."
+    },
+    {
+      "slug": "dr-sow-wen-jen",
+      "title": "Dr Jenson Sow Wen Jen",
+      "menu_order": 3,
+      "role": "Consultant Clinical Oncologist",
+      "title_line": "Consultant Clinical Oncologist (Resident) · MBBS (IMU), MCO (UM)",
+      "region": "klang-valley",
+      "show_on_home": true,
+      "clinic": "kl",
+      "clinic_address_profile": "Unit 1-14, Level 1, Nexus, Jalan Kerinchi, Bangsar South, 59200 Kuala Lumpur, Federal Territory of Kuala Lumpur",
+      "summary": "Clinical Oncologist with special interest in GI cancers, trained to provide oncology care through chemotherapy and radiation therapy. Highlights include:",
+      "highlights": [
+        "Young Newcomers in Oncology Clinical Research accolade, Clinical Research Malaysia Bulletin (2019)",
+        "Committee member, Malaysian Oncological Society",
+        "Involved in Pan-Asian Guideline Adaptation (PAGA) projects in metastatic colorectal and biliary tract cancer",
+        "Works closely with Dr. Choo Su Pin, GI medical oncologist, Curie Oncology, Singapore"
+      ],
+      "hours_summary": "Mon, Tue: 2 – 5pm\nWed, Sat: 9am – 1pm\nThu, Fri: 9am – 5pm",
+      "languages": "English, Bahasa Malaysia, Mandarin, Hokkien, Foochow and Cantonese",
+      "schedule": [
+        {
+          "day": "Monday",
+          "time": "2:00PM–5:00PM"
+        },
+        {
+          "day": "Tuesday",
+          "time": "2:00PM–5:00PM"
+        },
+        {
+          "day": "Wednesday",
+          "time": "9:00AM–1:00PM"
+        },
+        {
+          "day": "Thursday",
+          "time": "9:00AM–5:00PM"
+        },
+        {
+          "day": "Friday",
+          "time": "9:00AM–5:00PM"
+        },
+        {
+          "day": "Saturday",
+          "time": "9:00AM–1:00PM"
+        }
+      ],
+      "schedule_note": "Closed on Sundays and public holidays.",
+      "visiting_locations": [
+        "cengild-kl",
+        "assunta-hospital-pj-selangor"
+      ],
+      "about": "Dr. Sow Wen Jen (Jenson) is a Clinical Oncologist with special interest in GI cancers, trained to provide oncology care through chemotherapy and radiation therapy. He also received basic training in palliative care management. He graduated with a Bachelor of Medicine and Bachelor of Surgery (MBBS) from International Medical University (IMU) in 2008. In 2018 he completed his Master of Clinical Oncology at University Malaya Medical Centre (UMMC). In December 2020, he became a fully certified Clinical Oncologist under the National Specialists Registry (NSR).\n\nUpon completion of his internship as house officer in 2010, he went on to pursue a career pathway in oncology. In 2012, he joined the Oncology Division of Hospital Kuala Lumpur as a Medical Officer to continue his clinical interest in this field. Upon graduation in the Clinical Oncology Master Program, he began practising as an independent Clinical Oncologist at Oncology Department in Sabah Women and Children Hospital, Likas, Sabah. In June 2020, he was transferred back to Institut Kanser Negara (IKN) to continue his service.\n\nDr. Jenson frequently gives public health talks and emphasises the importance of cancer awareness. He is also actively involved in numerous clinical research during his years in Ministry of Health. In 2019, he received the accolade of “Young Newcomers in Oncology Clinical Research, Clinical Research Malaysia Bulletin: Issue no.18” for his clinical research work.\n\nHe is an active member of the Malaysian Oncological Society (MOS) since June 2013 and currently the committee member of MOS. He is also an active member of the European Society of Medical Oncology (ESMO) since January 2015, the European School of Radiation Oncology (ESTRO) and the International Atomic Energy Agency (IAEA) since January 2020.\n\nDr. Jenson is also involved in several international clinical guideline projects such as Pan-Asian Guideline Adaptation (PAGA) in Metastatic Colorectal Cancer which was recently published in the European Society of Medical Oncology (ESMO), 2023 and the upcoming PAGA in Biliary Tract Cancer, 2024.\n\nDr. Jenson manages a variety of solid tumour malignancies with special interest in gastrointestinal (GI) tract cancer. He works closely with Dr. Choo Su Pin, a GI medical oncologist from Curie Oncology, Singapore, in the care of patients with GI cancer. He focuses on personalized cancer care using various systemic/ targeted therapy/immunotherapy as well as radiation-guided therapy to treat his patients.",
+      "details": [
+        {
+          "heading": "Cancer types managed",
+          "text": "A variety of solid tumour malignancies, with special interest in gastrointestinal (GI) tract cancer."
+        },
+        {
+          "heading": "Treatment focus",
+          "text": "Personalized cancer care using systemic therapy, targeted therapy, immunotherapy and radiation-guided therapy."
+        }
+      ],
+      "education": [
+        {
+          "label": "2008",
+          "text": "MBBS, International Medical University (IMU)"
+        },
+        {
+          "label": "2018",
+          "text": "Master of Clinical Oncology, University Malaya Medical Centre (UMMC)"
+        },
+        {
+          "label": "2020",
+          "text": "Fully certified Clinical Oncologist, National Specialists Registry (NSR)"
+        }
+      ],
+      "recognition_title": "Recognition & Memberships",
+      "recognition": [
+        {
+          "text": "Young Newcomers in Oncology Clinical Research, Clinical Research Malaysia Bulletin: Issue no.18 (2019)"
+        },
+        {
+          "text": "Malaysian Oncological Society (MOS): member since June 2013 and committee member"
+        },
+        {
+          "text": "European Society of Medical Oncology (ESMO): member since January 2015"
+        },
+        {
+          "text": "European School of Radiation Oncology (ESTRO) and International Atomic Energy Agency (IAEA): member since January 2020"
+        },
+        {
+          "text": "Pan-Asian Guideline Adaptation (PAGA) in Metastatic Colorectal Cancer (ESMO, 2023) and Biliary Tract Cancer (2024)"
+        }
+      ],
+      "photo_portrait": "img/doctors/Dr-Sow-Wen-Jen.webp",
+      "photo_card": "img/doctors/cards/dr-sow-wen-jen.webp",
+      "photo_cutout": "img/doctors/cutouts/dr-sow-wen-jen.png",
+      "cutout_flip": false,
+      "crop_home": "left:0%;top:0%;width:100%;height:100%;background-position:50% 50%;",
+      "crop_grid": "left:-4.375%;top:-7.333%;width:104.375%;height:107.333%;background-position:50% 20%;background-size:cover;",
+      "crop_other": "left:-7.09%;top:-15.417%;width:107.09%;height:147.083%;background-position:50% 15%;background-size:cover;",
+      "seo_description": "Dr Jenson Sow Wen Jen, Consultant Clinical Oncologist at Curie Oncology, Klang Valley. Special interest in GI cancers."
+    },
+    {
+      "slug": "dr-tan-ai-lian",
+      "title": "Dr Tan Ai Lian",
+      "menu_order": 4,
+      "role": "Consultant Clinical Oncologist",
+      "title_line": "Consultant Clinical Oncologist · FRCR (UK), Doctor of Medicine (Taiwan)",
+      "region": "penang",
+      "show_on_home": true,
+      "clinic": "penang",
+      "clinic_address_profile": "Bagan Specialist Centre, Room D2617, Block D, Level 2, Butterworth",
+      "summary": "Consultant Clinical Oncologist at Curie Penang with ten years as a specialist in Malaysian public hospitals, focusing on lung, head and neck (including nasopharyngeal) and gastrointestinal cancers. Highlights include:",
+      "highlights": [
+        "Principal Investigator in 25 international cancer trials",
+        "Excellent Service Award, Penang State Health Department (2008, 2015)",
+        "Published IMRT research in nasopharyngeal cancer (2012)",
+        "Oncology attachments, National Cancer Centre Singapore and Preston Hospital, UK"
+      ],
+      "hours_summary": "Mon – Tue, Thu – Fri: 8.30am – 5.30pm\nSat: 8.30am – 1.30pm",
+      "languages": "English, Bahasa Malaysia, Mandarin, Cantonese and Hokkien",
+      "schedule": [
+        {
+          "day": "Monday",
+          "time": "8:30AM–5:30PM"
+        },
+        {
+          "day": "Tuesday",
+          "time": "8:30AM–5:30PM"
+        },
+        {
+          "day": "Thursday",
+          "time": "8:30AM–5:30PM"
+        },
+        {
+          "day": "Friday",
+          "time": "8:30AM–5:30PM"
+        },
+        {
+          "day": "Saturday",
+          "time": "8:30AM–1:30PM"
+        }
+      ],
+      "schedule_note": "Closed on Sundays and public holidays.",
+      "visiting_locations": [],
+      "about": "Dr Tan is a Consultant Clinical Oncologist at Curie Penang, with ten years as a specialist in Malaysian public hospitals, leading cancer trials in Johor Bahru and Penang.\n\nDr Tan previously practised as Clinical Oncologist at Hospital Pulau Pinang (2018–2026) and as visiting oncologist at Hospital Alor Setar, and before that at Hospital Sultan Ismail, Johor Bahru (2016–2018).\n\nFrom 2006 to 2015, Dr Tan volunteered as a doctor at the Tzu Chi, Amata and Mitta free and cancer support clinics.",
+      "details": [
+        {
+          "heading": "Cancer types managed",
+          "text": "Lung, head and neck (including nasopharyngeal) and gastrointestinal cancers. Also treats hepatobiliary and breast cancers."
+        },
+        {
+          "heading": "Clinical interests",
+          "text": "Principal Investigator in 25 industry-sponsored trials, 16 of them in lung cancer\nPublished on IMRT for nasopharyngeal cancer and chemotherapy safety (2012–2014)"
+        }
+      ],
+      "education": [
+        {
+          "label": "2004",
+          "text": "Doctor of Medicine, China Medical University, Taiwan"
+        },
+        {
+          "label": "2007 – 2015",
+          "text": "Oncology training, Penang General Hospital"
+        },
+        {
+          "label": "2015",
+          "text": "FRCR (Clinical Oncology), Royal College of Radiologists, UK"
+        },
+        {
+          "label": "Current",
+          "text": "National Specialist Register, Malaysia"
+        }
+      ],
+      "recognition_title": "Recognition",
+      "recognition": [
+        {
+          "text": "Principal Investigator in 25 international trials across lung, head and neck, GI and breast cancer"
+        },
+        {
+          "text": "Excellent Service Award, Penang State Health Department (2008, 2015)"
+        },
+        {
+          "text": "Best House Officer, National Taiwan University Hospital (2004)"
+        },
+        {
+          "text": "Published IMRT research in nasopharyngeal cancer, Asian Pacific Journal of Cancer Prevention (2012)"
+        },
+        {
+          "text": "Oncology attachments: National Cancer Centre Singapore (2017); Preston Hospital, UK (2015)"
+        }
+      ],
+      "photo_portrait": "img/doctors/Dr-Tan-Ai-Lian.jpeg",
+      "photo_card": "img/doctors/Dr-Tan-Ai-Lian.jpeg",
+      "photo_cutout": "img/doctors/cutouts/dr-tan-ai-lian.png",
+      "cutout_flip": true,
+      "crop_home": "left:-70.41%;top:-29.38%;width:200.09%;height:211.85%;background-position:50% 50%;",
+      "crop_grid": "left:-8.4375%;top:-18%;width:116.5625%;height:125.333%;background-position:73% 22%;background-size:175%;",
+      "crop_other": "left:-12.313%;top:-26.25%;width:115.672%;height:172.5%;background-position:72% 18%;background-size:160%;",
+      "seo_description": "Dr Tan Ai Lian, Clinical Oncologist at Curie Oncology, Penang. Focus: lung, head and neck and gastrointestinal cancers."
+    }
+  ],
+  "topics": [
+    {
+      "name": "Tips & Strategies",
+      "colour": "honey"
+    },
+    {
+      "name": "Preventions",
+      "colour": "clay"
+    },
+    {
+      "name": "Cancer Therapy",
+      "colour": "forest"
+    },
+    {
+      "name": "Cancer Recovery",
+      "colour": "forest"
+    }
+  ],
+  "articles": [
+    {
+      "title": "Regaining Sexual Function After Breast, Ovarian, Colon, and Prostate Cancer",
+      "menu_order": 0,
+      "topics": [
+        "Tips & Strategies"
+      ],
+      "image": "img/health-education/regaining-sexual-function.jpg",
+      "image_position": "",
+      "excerpt": "Cancer treatment can affect sexual function through nerve and blood vessel changes. Lubricants, medication, and therapy can help support recovery.",
+      "url": "https://curieoncology.com.sg/regaining-sexual-function-after-breast-ovarian-colon-and-prostate-cancer-tips-and-strategies/",
+      "link_label": "Read on Curie Oncology SG"
+    },
+    {
+      "title": "Stoma and Sexual Intimacy: How to Enjoy Sex with a Stoma Bag",
+      "menu_order": 1,
+      "topics": [
+        "Tips & Strategies"
+      ],
+      "image": "img/health-education/stoma-and-sexual-intimacy.jpg",
+      "image_position": "",
+      "excerpt": "Open communication with a partner, advance preparation, and a focus on sensuality beyond penetration can help maintain intimacy after a colostomy.",
+      "url": "https://curieoncology.com.sg/stoma-and-sexual-intimacy-how-to-enjoy-sex-with-a-stoma-bag/",
+      "link_label": "Read on Curie Oncology SG"
+    },
+    {
+      "title": "Protecting Cancer Patients with Urinary Catheters: 6 Ways to Prevent UTIs",
+      "menu_order": 2,
+      "topics": [
+        "Preventions"
+      ],
+      "image": "img/health-education/urinary-catheters-utis.jpg",
+      "image_position": "",
+      "excerpt": "Good hygiene, hydration, sterile technique, and prompt catheter removal all help reduce infection risk for patients on urinary catheters.",
+      "url": "https://curieoncology.com.sg/protecting-cancer-patients-with-urinary-catheters-6-ways-to-prevent-utis/",
+      "link_label": "Read on Curie Oncology SG"
+    },
+    {
+      "title": "The Best Diet for Breast Cancer Patients",
+      "menu_order": 3,
+      "topics": [
+        "Cancer Therapy"
+      ],
+      "image": "img/health-education/best-diet-breast-cancer.jpg",
+      "image_position": "",
+      "excerpt": "A balanced, whole-food diet, limited added sugar, and caution around hormone-containing dairy is generally advised. Always check with your care team before trying ketogenic diets or fasting.",
+      "url": "https://curieoncology.com.sg/the-best-diet-for-breast-cancer-patients-the-role-of-milk-sugar-ketogenic-diets-and-intermittent-fasting/",
+      "link_label": "Read on Curie Oncology SG"
+    },
+    {
+      "title": "Coping with Chemotherapy-Induced Constipation",
+      "menu_order": 4,
+      "topics": [
+        "Cancer Recovery",
+        "Tips & Strategies"
+      ],
+      "image": "img/health-education/chemo-induced-constipation.jpg",
+      "image_position": "",
+      "excerpt": "Staying hydrated, eating a fibre-rich diet, and keeping active can ease constipation during chemotherapy. Let your care team know if symptoms persist.",
+      "url": "https://curieoncology.com.sg/coping-with-chemotherapy-induced-constipation-tips-and-strategies/",
+      "link_label": "Read on Curie Oncology SG"
+    },
+    {
+      "title": "Managing Side Effects of Aromatase Inhibitors",
+      "menu_order": 5,
+      "topics": [
+        "Cancer Recovery",
+        "Cancer Therapy"
+      ],
+      "image": "img/health-education/aromatase-inhibitors-side-effects.jpg",
+      "image_position": "",
+      "excerpt": "Healthy eating, exercise, hydration, and complementary therapies can help manage side effects. Discuss any persistent symptoms with your oncologist.",
+      "url": "https://curieoncology.com.sg/managing-side-effects-of-aromatase-inhibitors-for-breast-cancer-patients/",
+      "link_label": "Read on Curie Oncology SG"
+    },
+    {
+      "title": "Don't Let Pressure Injuries Slow You Down",
+      "menu_order": 6,
+      "topics": [
+        "Cancer Recovery",
+        "Preventions"
+      ],
+      "image": "img/health-education/pressure-injuries-prevention.jpg",
+      "image_position": "",
+      "excerpt": "Regular repositioning, proper skin care, good nutrition, and pressure-relieving devices help prevent pressure injuries in bedridden patients.",
+      "url": "https://curieoncology.com.sg/dont-let-pressure-injuries-slow-you-down-a-guide-to-prevention-for-bedridden-cancer-patients/",
+      "link_label": "Read on Curie Oncology SG"
+    },
+    {
+      "title": "Recovering from Pancreatic Cancer Surgery",
+      "menu_order": 7,
+      "topics": [
+        "Cancer Recovery"
+      ],
+      "image": "img/health-education/pancreatic-cancer-surgery-recovery.jpg",
+      "image_position": "",
+      "excerpt": "A nutrient-dense diet with lean protein, complex carbohydrates, and fibre supports healing. A registered dietitian can help personalise the plan.",
+      "url": "https://curieoncology.com.sg/recovering-from-pancreatic-cancer-surgery-a-nutrient-rich-diet-guide-for-optimal-healing/",
+      "link_label": "Read on Curie Oncology SG"
+    },
+    {
+      "title": "Unlocking the Secrets of Blue Zones",
+      "menu_order": 8,
+      "topics": [
+        "Cancer Recovery"
+      ],
+      "image": "img/health-education/blue-zones-lifestyle-my.jpg",
+      "image_position": "65% 40%",
+      "excerpt": "Plant-based eating, regular movement, strong social connections, and a sense of purpose may support quality of life alongside conventional treatment.",
+      "url": "https://curieoncology.com.sg/unlocking-the-secrets-of-blue-zones-how-lifestyle-modifications-can-help-cancer-patients-improve-outcomes/",
+      "link_label": "Read on Curie Oncology SG"
+    },
+    {
+      "title": "From Fatigue to Fitness: Exercise for Cancer Patients",
+      "menu_order": 9,
+      "topics": [
+        "Cancer Recovery"
+      ],
+      "image": "img/health-education/fatigue-to-fitness-my.jpg",
+      "image_position": "",
+      "excerpt": "Tailored exercise, including walking, yoga, resistance training, and Tai Chi, can help improve strength and reduce fatigue. Check with your care team before starting any routine.",
+      "url": "https://curieoncology.com.sg/from-fatigue-to-fitness-how-exercise-can-help-cancer-patients-regain-strength-and-energy/",
+      "link_label": "Read on Curie Oncology SG"
+    },
+    {
+      "title": "Ways Friends and Family Can Rally Around a Loved One with Cancer",
+      "menu_order": 10,
+      "topics": [
+        "Tips & Strategies"
+      ],
+      "image": "img/health-education/friends-family-support.jpg",
+      "image_position": "",
+      "excerpt": "Active listening, practical help with errands and appointments, emotional encouragement, and respecting privacy all help support a loved one through treatment.",
+      "url": "https://curieoncology.com.sg/7-heartwarming-ways-friends-and-relatives-can-rally-around-a-loved-one-with-cancer/",
+      "link_label": "Read on Curie Oncology SG"
+    },
+    {
+      "title": "The Gut Microbiome's Role in Cancer Therapy",
+      "menu_order": 11,
+      "topics": [
+        "Cancer Therapy"
+      ],
+      "image": "img/health-education/gut-microbiome-cancer-therapy.jpg",
+      "image_position": "",
+      "excerpt": "Probiotics and prebiotics may support immune function and reduce treatment side effects, as a complement to, not a replacement for, standard cancer therapies.",
+      "url": "https://curieoncology.com.sg/unleashing-the-power-of-the-gut-microbiome-in-cancer-therapy-the-role-of-probiotics-prebiotics-and-akkermansia-muciniphila/",
+      "link_label": "Read on Curie Oncology SG"
+    },
+    {
+      "title": "Quit Smoking for a Better Chance of Surviving Cancer",
+      "menu_order": 12,
+      "topics": [
+        "Cancer Recovery",
+        "Preventions"
+      ],
+      "image": "img/health-education/quit-smoking-cancer.jpg",
+      "image_position": "",
+      "excerpt": "Quitting smoking can improve treatment effectiveness and reduce recurrence risk. Cessation offers health benefits regardless of how long you've smoked.",
+      "url": "https://curieoncology.com.sg/quit-smoking-for-a-better-chance-of-surviving-cancer/",
+      "link_label": "Read on Curie Oncology SG"
+    },
+    {
+      "title": "Sleeping Well During Chemotherapy",
+      "menu_order": 13,
+      "topics": [
+        "Cancer Recovery",
+        "Cancer Therapy",
+        "Tips & Strategies"
+      ],
+      "image": "img/health-education/sleeping-well-chemotherapy.jpg",
+      "image_position": "",
+      "excerpt": "Consistent bedtimes, an optimised bedroom environment, relaxation techniques, and avoiding caffeine and screens before bed can all help improve sleep quality.",
+      "url": "https://curieoncology.com.sg/sleeping-well-during-chemotherapy-5-essential-habits-for-cancer-patients/",
+      "link_label": "Read on Curie Oncology SG"
+    }
+  ]
+}

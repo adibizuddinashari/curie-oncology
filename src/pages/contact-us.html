@@ -12,6 +12,7 @@
     </div>
 
     <div class="grid grid-cols-1 gap-7 lg:grid-cols-2">
+<!-- @cms locations -->
       <!-- Location card: Kuala Lumpur -->
       <article class="flex flex-col overflow-hidden rounded-[20px] bg-white shadow-card" data-reveal>
         <div class="h-[240px] bg-cover bg-center sm:h-[300px]" style="background-image: url('assets/img/clinic/reception-desk.webp');" role="img" aria-label="Curie Oncology Kuala Lumpur reception"></div>
@@ -52,6 +53,7 @@
           </div>
         </div>
       </article>
+<!-- @/cms -->
     </div>
 
     <!-- Contact form (static markup — needs a form endpoint before launch) -->
@@ -66,11 +68,13 @@
           <label class="field-label" for="doctor-select">Preferred Doctor</label>
           <select id="doctor-select" name="doctor" class="field h-[52px]">
             <option value="">No preference</option>
+<!-- @cms doctor-options -->
             <option value="dr-ho-gwo-fuang">Dr Ho Gwo Fuang (Klang Valley)</option>
             <option value="dr-lau-fen-nee">Dr Lau Fen Nee (Klang Valley)</option>
             <option value="dr-yeoh-chit-cheng">Dr Yeoh Chit Cheng (Klang Valley)</option>
             <option value="dr-sow-wen-jen">Dr Jenson Sow Wen Jen (Klang Valley)</option>
             <option value="dr-tan-ai-lian">Dr Tan Ai Lian (Penang)</option>
+<!-- @/cms -->
           </select>
         </div>
         <div><label class="field-label" for="message">Your Message</label><textarea id="message" name="message" rows="5" class="field resize-none" placeholder="How can we help you?"></textarea></div>
