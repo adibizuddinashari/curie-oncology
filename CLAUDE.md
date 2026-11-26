@@ -45,7 +45,7 @@ Read `DESIGN-BRIEF.md` before styling anything — it's the teardown of the desi
 - **Global elements on every page** (build once, into `src/partials/header.html` / `footer.html`, not per-page): sticky "Book Appointment" CTA, language switcher (EN/BM/中文), WhatsApp + call button widget.
 - Doctors, services, and articles are currently individual hardcoded sections/cards in `src/pages/*.html`. Keep each doctor/service/article as a clearly separable markup block (consistent structure, easy to copy/duplicate) so a future migration to a CMS or data-driven template is straightforward, even though nothing is dynamically templated today.
 - **Multilingual**: the header/footer already have an EN/BM/中文 language switcher in the markup; actual translated page variants are not yet built. When they are, keep the same static-file approach (e.g. `about.html`, `about-bm.html`, `about-zh.html`) rather than introducing a runtime i18n framework.
-- **Forms**: the appointment/contact form on the homepage is static markup only (no backend). It needs either a form-endpoint service (e.g. Formspree, Netlify Forms) or a small serverless handler before it can actually receive submissions — flag this as a pre-launch blocker. It must keep the PDPA consent checkbox per the sitemap.
+- **Forms**: on the live WordPress site, the Home/Contact message forms and the booking modal post to `wp-theme/curie/inc/forms.php`, which emails the Clinic Settings main email (confirmed arriving, 26 Nov 2026) and saves a private Enquiry post. The static `src` build keeps `action="#"`. Keep the PDPA consent checkbox per the sitemap.
 
 ## Animation & Transition Effects
 The site should feel considered and alive, not static — but restrained, since this is a healthcare site read by anxious patients. Motion should clarify hierarchy and reward attention, never distract or feel gimmicky.
@@ -61,7 +61,7 @@ The site should feel considered and alive, not static — but restrained, since 
 - Always check `brand_assets/` before designing. It contains the logo (SVG/PNG/JPG), all five doctor headshots, and clinic/team photography.
 - Use these real assets — do not use placeholder images or invent a wordmark where a real one exists.
 - Colors: derive the palette from the logo's sage-green tagline and the clinic's warm mid-century interior tones (see `DESIGN-BRIEF.md`) — do not invent brand colors, and do not default to the reference site's teal.
-- Doctor bios (the written profile text, not photos) are still pending — flag missing bio copy to the client rather than fabricating biographical claims for real staff.
+- Doctor bios were confirmed by the client (26 Nov 2026). For any new doctor, still never fabricate biographical claims; use only client-supplied copy.
 
 ## Anti-Generic Guardrails
 - **Colors**: no default Tailwind palette (indigo-500, blue-600, etc.). Derive everything from the real sage-green/mustard brand palette.
@@ -79,7 +79,7 @@ The site should feel considered and alive, not static — but restrained, since 
 
 ## Compliance (do not skip)
 - Malaysian healthcare advertising rules (KKLIU) apply to all Services and Health Education copy: **no claims of guaranteed outcomes**, educational tone only — this is a content/copy constraint, flag it if you see copy drifting into promissory claims.
-- Privacy Policy, Terms of Use, Disclaimer, and the KKLIU/MOH approval notice are **client-provided legal content and a launch blocker** — do not fabricate placeholder legal text and ship it as final; mark these pages clearly as pending real copy until the client supplies it.
+- Privacy Policy, Terms of Use, Disclaimer, and the KKLIU/MOH approval notice are **client-provided legal content**. The site launched on 26 Nov 2026 without them by Adib's decision (footer links are still `#`). Add them when the client supplies the text, and never fabricate placeholder legal copy.
 
 ## Hard Rules
 - Do not add sections, features, or content not in `SITEMAP.md`.
