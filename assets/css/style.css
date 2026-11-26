@@ -1637,10 +1637,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 18px;
 }
 
-.w-\[200px\]{
-  width: 200px;
-}
-
 .w-\[340px\]{
   width: 340px;
 }
@@ -1655,6 +1651,11 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 
 .w-auto{
   width: auto;
+}
+
+.w-fit{
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .w-full{
@@ -3087,6 +3088,11 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
     grid-column: span 2 / span 2;
   }
 
+  .sm\:mx-0{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
   .sm\:hidden{
     display: none;
   }
@@ -3105,6 +3111,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 
   .sm\:w-12{
     width: 3rem;
+  }
+
+  .sm\:w-\[200px\]{
+    width: 200px;
   }
 
   .sm\:max-w-\[560px\]{
