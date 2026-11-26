@@ -1,10 +1,10 @@
 ---
 # cPanel Git Version Control deploy (Deploy HEAD Commit).
-# Copies the WordPress theme + site images into the staging WordPress install.
-# DEPLOYPATH must match the staging subdomain's document root.
+# Copies the WordPress theme + site images into the LIVE WordPress install
+# (curieoncology.com.my, public_html). Deploy = cPanel Git: Update from Remote, then Deploy HEAD Commit.
 deployment:
   tasks:
-    - export DEPLOYPATH=$HOME/staging.curieoncology.com.my/wp-content/themes/curie
+    - export DEPLOYPATH=$HOME/public_html/wp-content/themes/curie
     - /bin/mkdir -p $DEPLOYPATH
     - /bin/cp -R wp-theme/curie/. $DEPLOYPATH/
     - /bin/cp -R assets $DEPLOYPATH/
