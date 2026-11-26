@@ -97,6 +97,8 @@ update_option( 'show_on_front', 'page' );
 update_option( 'page_on_front', $page_ids['home'] );
 update_option( 'permalink_structure', '/%postname%/' );
 update_option( 'blogdescription', 'Spring Will Come' );
+update_option( 'timezone_string', 'Asia/Kuala_Lumpur' );
+update_option( 'date_format', 'j F Y' );
 flush_rewrite_rules();
 WP_CLI::log( 'Pages ready.' );
 

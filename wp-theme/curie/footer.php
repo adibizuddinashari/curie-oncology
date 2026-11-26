@@ -188,7 +188,7 @@
       <button type="button" id="booking-doctor-change" class="text-[15px] font-medium tracking-body text-forest underline hover:text-moss">Change</button>
     </div>
 
-    <form class="mt-5 space-y-4" action="#" method="post" id="booking-form">
+    <form class="mt-5 space-y-4" action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>" method="post" id="booking-form" data-curie-form><?php curie_form_fields( 'booking' ); ?>
       <div id="booking-doctor-select-wrap" class="hidden">
         <label class="field-label" for="booking-doctor">Preferred doctor</label>
         <select id="booking-doctor" name="doctor" class="field">

@@ -54,6 +54,11 @@ function toPhp(html) {
         if (file.startsWith("dr-")) return `href="<?php echo esc_url( curie_doctor_url( '${file}' ) ); ?>${hash}"`;
         throw new Error(`Unmapped link: ${m}`);
       })
+      // Enquiry forms post to WordPress (see inc/forms.php).
+      .replace(/<form([^>]*?) action="#" method="post"([^>]*)>/g, (_, before, after) => {
+        const type = /booking-form/.test(before + after) ? "booking" : "message";
+        return `<form${before} action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>" method="post"${after} data-curie-form><?php curie_form_fields( '${type}' ); ?>`;
+      })
       // Theme assets.
       .replace(/(['"(])assets\//g, "$1<?php echo CURIE_ASSETS; ?>/")
   );

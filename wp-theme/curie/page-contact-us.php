@@ -27,7 +27,7 @@ get_header();
     <!-- Contact form (static markup — needs a form endpoint before launch) -->
     <div id="message-form" class="scroll-mt-28 rounded-[20px] bg-white px-6 pb-11 pt-10 shadow-card sm:px-11" data-reveal>
       <h3 class="text-lg font-medium tracking-[0.1em]">Drop Us a Message</h3>
-      <form class="mt-[26px] flex flex-col gap-[22px]" action="#" method="post">
+      <form class="mt-[26px] flex flex-col gap-[22px]" action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>" method="post" data-curie-form><?php curie_form_fields( 'message' ); ?>
         <div class="grid grid-cols-1 gap-5 sm:grid-cols-2">
           <div><label class="field-label" for="name">Your Name (required)</label><input id="name" name="name" required class="field h-14" placeholder="Full Name" /></div>
           <div><label class="field-label" for="email">Your Email (required)</label><input id="email" name="email" type="email" required class="field h-14" placeholder="email@example.com" /></div>

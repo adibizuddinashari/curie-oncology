@@ -17,3 +17,4 @@ require_once __DIR__ . '/inc/setup.php';
 require_once __DIR__ . '/inc/content-types.php';
 require_once __DIR__ . '/inc/fields.php';
 require_once __DIR__ . '/inc/admin.php';
+require_once __DIR__ . '/inc/forms.php';
